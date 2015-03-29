@@ -4,7 +4,7 @@
 	<coordinates>
 		<system>1</system>
 		<left>278</left>
-		<top>90</top>
+		<top>60</top>
 		<origin x="185" y="10">!IsEmpty(ListItem.Property(Addon.broken))</origin>
 	</coordinates>
 	<include>dialogeffect</include>
@@ -17,7 +17,7 @@
 				<left>0</left>
 				<top>0</top>
 				<width>1380</width>
-				<height>900</height>
+				<height>964</height>
 				<texture border="40">DialogBack.png</texture>
 			</control>
 			<control type="image">
@@ -240,7 +240,7 @@
 						<left>15</left>
 						<top>292</top>
 						<width>900</width>
-						<height>255</height>
+						<height>285</height>
 						<font>font13</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
@@ -251,7 +251,7 @@
 						<left>915</left>
 						<top>292</top>
 						<width>38</width>
-						<height>255</height>
+						<height>285</height>
 						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -265,7 +265,7 @@
 					<control type="label">
 						<description>Disclaimer txt</description>
 						<left>0</left>
-						<top>555</top>
+						<top>588</top>
 						<width>900</width>
 						<height>38</height>
 						<label>$LOCALIZE[24052]</label>
@@ -277,7 +277,7 @@
 					<control type="textbox">
 						<description>Disclaimer</description>
 						<left>15</left>
-						<top>592</top>
+						<top>525</top>
 						<width>900</width>
 						<height>60</height>
 						<font>font12</font>
@@ -306,7 +306,7 @@
 						<left>15</left>
 						<top>308</top>
 						<width>900</width>
-						<height>360</height>
+						<height>390</height>
 						<font>font13</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
@@ -317,7 +317,7 @@
 						<left>915</left>
 						<top>308</top>
 						<width>38</width>
-						<height>360</height>
+						<height>390</height>
 						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -334,7 +334,7 @@
 				<left>45</left>
 				<top>465</top>
 				<width>330</width>
-				<height>405</height>
+				<height>469</height>
 				<onleft>60</onleft>
 				<onright>60</onright>
 				<onup>9000</onup>
@@ -353,6 +353,14 @@
 					<width>330</width>
 					<height>64</height>
 					<label>24069</label>
+					<align>center</align>
+					<font>font12_title</font>
+				</control>
+				<control type="button" id="12">
+					<description>Launch Addon button</description>
+					<width>330</width>
+					<height>64</height>
+					<label>518</label>
 					<align>center</align>
 					<font>font12_title</font>
 				</control>
