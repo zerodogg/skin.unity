@@ -41,8 +41,8 @@
 			
 			<!--icon-->
 			<control type="image" id="400">
-				<left>134.5r</left>
-				<top>130.5r</top>
+				<left>134r</left>
+				<top>130r</top>
 				<width>68</width>
 				<height>68</height>
 				<aspectratio>keep</aspectratio>

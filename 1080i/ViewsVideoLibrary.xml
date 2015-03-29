@@ -2349,7 +2349,7 @@
 						<top>650</top>
 						<visible>Container.Content(Movies)</visible>
 						<include>media.flags.small</include>
-						<animation effect="zoom" start="100" end="84.5" center="485,600" time="0" condition="true">Conditional</animation>
+						<animation effect="zoom" start="100" end="84" center="485,600" time="0" condition="true">Conditional</animation>
 					</control>
 					
 				</control>

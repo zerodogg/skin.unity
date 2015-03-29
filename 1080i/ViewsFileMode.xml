@@ -748,7 +748,7 @@
 				<scrolltime>200</scrolltime>
 				<preloaditems>2</preloaditems>
 				
-				<itemlayout height="116.5" width="610">
+				<itemlayout height="116" width="610">
 			
 					<!--bg (fallback)-->
 					<control type="image">
@@ -811,7 +811,7 @@
 					
 				</itemlayout>
 				
-				<focusedlayout height="116.5" width="610">
+				<focusedlayout height="116" width="610">
 			
 					<!--bg (fallback)-->
 					<control type="image">
