@@ -689,8 +689,8 @@
 						<focusedlayout height="35">
 						
 							<control type="image">
-								<left>7.5</left>
-								<top>7.5</top>
+								<left>7</left>
+								<top>7</top>
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
@@ -856,8 +856,8 @@
 						<focusedlayout height="35">
 						
 							<control type="image">
-								<left>7.5</left>
-								<top>7.5</top>
+								<left>7</left>
+								<top>7</top>
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
@@ -1023,8 +1023,8 @@
 						<focusedlayout height="35">
 						
 							<control type="image">
-								<left>7.5</left>
-								<top>7.5</top>
+								<left>7</left>
+								<top>7</top>
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
@@ -1194,8 +1194,8 @@
 						<focusedlayout height="35">
 						
 							<control type="image">
-								<left>7.5</left>
-								<top>7.5</top>
+								<left>7</left>
+								<top>7</top>
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>

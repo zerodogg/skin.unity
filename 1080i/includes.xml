@@ -651,8 +651,8 @@
 			
 			<!--player controls button-->
 			<control type="button">
-				<left>134.5r</left>
-				<top>130.5r</top>
+				<left>134r</left>
+				<top>130r</top>
 				<width>68</width>
 				<height>68</height>
 				<label>31003</label>
@@ -668,8 +668,8 @@
 			
 			<!--music cover-->
 			<control type="image">
-				<left>134.5r</left>
-				<top>130.5r</top>
+				<left>134r</left>
+				<top>130r</top>
 				<width>68</width>
 				<height>68</height>
 				<aspectratio>keep</aspectratio>
@@ -678,8 +678,8 @@
 			
 			<!--video cover-->
 			<control type="image">
-				<left>134.5r</left>
-				<top>130.5r</top>
+				<left>134r</left>
+				<top>130r</top>
 				<width>68</width>
 				<height>68</height>
 				<aspectratio>scale</aspectratio>
