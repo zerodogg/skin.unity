@@ -62,7 +62,7 @@
 			<control type="image">
 				<left>64</left>
 				<top>110</top>
-				<width>225</width>
+				<width>318</width>
 				<height>34</height>
 				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
@@ -1235,7 +1235,7 @@
 				<width>1920</width>
 				<height>10</height>
 				<texture flipy="true">homeshadow.png</texture>
-			</control>
+			</control>-->
 		
 			<!--bottom shadow-->
 			<!--control type="image">
@@ -1469,14 +1469,32 @@
 		
 		<!--weather info-->
 		<control type="group">
-			<left>30</left>
-			<top>0</top>
+			<left>60</left>
+			<top>930</top>
 			<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
 			<include>Window_OpenClose_Animation</include>
 			
+			<!--breadcrumb bg-->
+			<control type="image">
+				<left>4</left>
+				<top>0</top>
+				<width>500</width>
+				<height>90</height>
+				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+			</control>
+			
+			<!--breadcrumb strip-->
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>4</width>
+				<height>90</height>
+				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+			</control>
+			
 			<control type="image">
 				<description>Weather image</description>
-				<left>0</left>
+				<left>4</left>
 				<top>0</top>
 				<width>90</width>
 				<height>90</height>
@@ -1486,22 +1504,21 @@
 			
 			<control type="label">
 				<description>Location label</description>
-				<left>98</left>
-				<top>8</top>
-				<width>750</width>
+				<left>102</left>
+				<top>12</top>
+				<width>390</width>
 				<height>22</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>text.primary</textcolor>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>
 			
 			<control type="grouplist">
-				<left>98</left>
-				<top>30</top>
-				<width>1500</width>
+				<left>102</left>
+				<top>40</top>
+				<width>390</width>
 				<height>45</height>
 				<orientation>horizontal</orientation>
 				<align>left</align>
@@ -1509,14 +1526,13 @@
 				
 				<control type="label">
 					<description>Temp label</description>
-					<width min="0" max="450">auto</width>
+					<width min="0" max="300">auto</width>
 					<height>45</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font28_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+					<textcolor>text.primary</textcolor>
+					<label>$INFO[Window(Weather).Property(Current.Temperature)]</label>
 				</control>
 				
 				<control type="label">
@@ -1526,20 +1542,18 @@
 					<font>font10</font>
 					<aligny>center</aligny>
 					<label>$INFO[System.TemperatureUnits]</label>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>text.primary</textcolor>
 					<visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
 				</control>
 				
 				<control type="label">
 					<description>Conditions Label</description>
-					<width>750</width>
+					<width>300</width>
 					<height>33</height>
 					<font>font10</font>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>$VAR[Colour.500]</textcolor>
 				</control>
 				
 			</control>
