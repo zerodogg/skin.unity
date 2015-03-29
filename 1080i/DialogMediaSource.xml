@@ -377,7 +377,7 @@
 				</control>
 				
 				<!--name button-->
-				<control type="button" id="12">
+				<control type="edit" id="12">
 					<left>590</left>
 					<top>685</top>
 					<width>1110</width>
