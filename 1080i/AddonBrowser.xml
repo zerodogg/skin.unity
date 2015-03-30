@@ -214,6 +214,12 @@
 						<label>25001</label>
 					</control>
 					
+					<!--hide broken-->
+					<control type="radiobutton" id="8">
+						<include>ButtonCommonValues</include>
+						<label>24999</label>
+					</control>
+					
 					<include>CommonNowPlaying_Controls</include>
 					
 				</control>
