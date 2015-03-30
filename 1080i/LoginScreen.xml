@@ -27,7 +27,7 @@
 				<width>255</width>
 				<height>150</height>
 				<aspectratio aligny="top" align="left">keep</aspectratio>
-				<texture>xbmc-logo.png</texture>
+				<texture>kodi-logo.png</texture>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="image">

@@ -46,7 +46,7 @@
 				<control type="label">
 					<width min="0" max="90">auto</width>
 					<include>WindowTitleCommons</include>
-					<label>XBMC</label>
+					<label>Kodi</label>
 				</control>
 				
 				<control type="label">
