@@ -69,6 +69,7 @@
 				<ondown>450</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>200</scrolltime>
+				<itemgap>0</itemgap>
 				
 				<itemlayout height="60">
 				

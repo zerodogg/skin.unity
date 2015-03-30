@@ -121,8 +121,8 @@
 					<left>555</left>
 					<top>100</top>
 					<width>800</width>
-					<height>580</height>
-					<itemgap>5</itemgap>
+					<height>960</height>
+					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>60</onleft>
 					<onright>60</onright>
@@ -132,9 +132,9 @@
 				
 				<!--scrollbar-->
 				<control type="scrollbar" id="60">
-					<left>1525</left>
-					<top>380</top>
-					<height>600</height>
+					<left>1355</left>
+					<top>90</top>
+					<height>980</height>
 					<onleft>5</onleft>
 					<onright>3</onright>
 				</control>
