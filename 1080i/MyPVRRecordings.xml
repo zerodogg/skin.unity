@@ -268,12 +268,35 @@
 					<left>15</left>
 					<top>405</top>
 					<width>435</width>
-					<height>420</height>
+					<height>338</height>
 					<font>font13</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[Container(50).ListItem.Plot]</label>
 					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="label">
+					<description>Disk usage text</description>
+					<left>15</left>
+					<top>788</top>
+					<width>435</width>
+					<height>30</height>
+					<label>$INFO[PVR.backenddiskspace]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>grey</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font12</font>
+					<visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
+				</control>
+				<control type="progress">
+					<description>Disk usage bar</description>
+					<left>15</left>
+					<top>822</top>
+					<width>435</width>
+					<height>18</height>>
+					<info>PVR.backenddiskspaceprogr</info>
+					<visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
 			</control>
 		</control>
