@@ -177,7 +177,7 @@
 								<selectedcolor>$VAR[Colour.500]</selectedcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-								<info>ListItem.ChannelNumber</info>
+								<info>ListItem.ChannelNumberLabel</info>
 							</control>
 							
 							<!--recording icon-->
@@ -309,7 +309,7 @@
 								<selectedcolor>$VAR[Colour.Alt]</selectedcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-								<info>ListItem.ChannelNumber</info>
+								<info>ListItem.ChannelNumberLabel</info>
 							</control>
 							
 							<!--recording icon-->
