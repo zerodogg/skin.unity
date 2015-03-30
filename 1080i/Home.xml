@@ -620,6 +620,7 @@
 			
 			<!--search-->
 			<control type="group">
+				<visible>System.HasAddon(script.globalsearch)</visible>
 				
 				<!--search background-->
 				<control type="image">
@@ -629,6 +630,15 @@
 					<height>45</height>
 					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 					<animation effect="zoom" start="60,0,776,45" end="608,0,228,45" time="500" condition="!Player.HasMedia">conditional</animation>
+				</control>
+				
+				<!--background strip-->
+				<control type="image">
+					<left>64r</left>
+					<top>0</top>
+					<width>4</width>
+					<height>45</height>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 				</control>
 				
 				<!--global search button-->
@@ -659,7 +669,6 @@
 					<onright>601</onright>
 					<onup>9003</onup>
 					<ondown>9000</ondown>
-					<visible>System.HasAddon(script.globalsearch)</visible>
 					<radiowidth>24</radiowidth>
 					<radioheight>24</radioheight>
 					<radioposx>188</radioposx>
@@ -925,15 +934,6 @@
 					<radioposx>210</radioposx>
 				</control>
 				
-			</control>
-		
-			<!--background strip-->
-			<control type="image">
-				<left>64r</left>
-				<top>0</top>
-				<width>4</width>
-				<height>45</height>
-				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 			</control>
 			
 		</control>
