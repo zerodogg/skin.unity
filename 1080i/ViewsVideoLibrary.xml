@@ -1328,7 +1328,7 @@
 					<height>287</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true" colordiffuse="$VAR[Colour.500]">Fanart_Fallback_Small.png</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -1341,7 +1341,7 @@
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordertexture background="true" colordiffuse="tertiary">backgrounds/white.png</bordertexture>
 					<bordersize>0</bordersize>
-					<visible>!IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>!IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--info strip background-->
@@ -2628,7 +2628,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -2753,7 +2753,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -2870,7 +2870,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -3009,7 +3009,7 @@
 					<height>400</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">defaultfolder.png</texture>
-					<visible>IsEmpty(ListItem.Art(tvshow.poster)</visible>
+					<visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				
 				<!--poster-->
@@ -3020,7 +3020,7 @@
 					<height>402</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<visible>!IsEmpty(ListItem.Art(tvshow.poster)</visible>
+					<visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				
 				<!--info strip background-->

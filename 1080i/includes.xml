@@ -194,10 +194,7 @@
 			<visible>
 			ControlGroup(9000).HasFocus | 
 			Control.HasFocus(9001) | 
-			Control.HasFocus(8999) | 
-			Window.IsVisible(MovieInformation) | 
-			Window.IsVisible(AlbumInformation) | 
-			Window.IsVisible(SongInformations) | 
+			Control.HasFocus(8999) |  
 			Window.IsVisible(AddonInformation) | 
 			Window.IsVisible(ShutdownMenu) | 
 			Window.IsVisible(ContextMenu) | 
@@ -373,7 +370,7 @@
 			<font>-</font>
 			<texturefocus colordiffuse="$VAR[Colour.500]">hassub.png</texturefocus>
 			<texturenofocus colordiffuse="$VAR[Colour.500]">hassub.png</texturenofocus>
-			<animation effect="fade" start="100" end="70" time="300" condition="Window.IsVisible(movieinformation) | Window.IsVisible(selectdialog) | Window.IsVisible(contentsettings) | Window.IsVisible(filebrowser) | Window.IsVisible(albumformation) | Window.IsVisible(addonformation) | Window.IsVisible(addonSettings) | Window.IsVisible(mediasource) | Window.IsVisible(shutdownmenu) | Window.IsVisible(contextmenu)">Conditional</animation>
+			<animation effect="fade" start="100" end="70" time="300" condition="Window.IsVisible(movieinformation) | Window.IsVisible(selectdialog) | Window.IsVisible(contentsettings) | Window.IsVisible(filebrowser) | Window.IsVisible(addoninformation) | Window.IsVisible(addonSettings) | Window.IsVisible(mediasource) | Window.IsVisible(shutdownmenu) | Window.IsVisible(contextmenu)">Conditional</animation>
 		</control>
 		
 		<!--side blade tab arrow bg (for fade effect)-->
@@ -394,7 +391,7 @@
 			<height>32</height>
 			<texture colordiffuse="white">previous-32.png</texture>
 			<animation effect="rotate" start="0" end="180" center="auto" time="200"  condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">Conditional</animation>
-			<animation effect="fade" start="100" end="70" time="300" condition="Window.IsVisible(movieinformation) | Window.IsVisible(selectdialog) | Window.IsVisible(contentsettings) | Window.IsVisible(filebrowser) | Window.IsVisible(albumformation) | Window.IsVisible(addonformation) | Window.IsVisible(addonSettings) | Window.IsVisible(mediasource) | Window.IsVisible(shutdownmenu) | Window.IsVisible(contextmenu)">Conditional</animation>
+			<animation effect="fade" start="100" end="70" time="300" condition="Window.IsVisible(movieinformation) | Window.IsVisible(selectdialog) | Window.IsVisible(contentsettings) | Window.IsVisible(filebrowser) | Window.IsVisible(addonSettings) | Window.IsVisible(mediasource) | Window.IsVisible(shutdownmenu) | Window.IsVisible(contextmenu)">Conditional</animation>
 		</control>
 		
 		<!--side blade bg-->
