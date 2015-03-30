@@ -38,7 +38,7 @@
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>75</left>
+						<left>0</left>
 						<top>0</top>
 						<width>150</width>
 						<height>180</height>
@@ -58,7 +58,7 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>885</left>
+						<left>300</left>
 						<top>8</top>
 						<width>585</width>
 						<height>105</height>
@@ -70,7 +70,7 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>0</left>
+						<left>8</left>
 						<top>120</top>
 						<width>885</width>
 						<height>75</height>
@@ -101,7 +101,7 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>75</left>
+						<left>0</left>
 						<top>0</top>
 						<width>150</width>
 						<height>180</height>
@@ -121,7 +121,7 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>885</left>
+						<left>300</left>
 						<top>8</top>
 						<width>585</width>
 						<height>105</height>
@@ -133,7 +133,7 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>0</left>
+						<left>8</left>
 						<top>120</top>
 						<width>885</width>
 						<height>75</height>
