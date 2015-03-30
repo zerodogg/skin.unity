@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <window type="dialog">
+
 	<defaultcontrol always="true">450</defaultcontrol>
+	
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
+	
 	<controls>
+	
 		<control type="group">
-			<include>SideBladeRight</include>		
+			<include>SideBladeRight</include>
+			
 			<!--close window button-->
 			<control type="button" id="20">
 				<left>1925</left>
@@ -26,6 +32,20 @@
 				<ondown>2</ondown>
 				<visible>system.getbool(input.enablemouse)</visible>
 			</control>
+			
+			<!--title-->
+			<control type="label">
+				<left>1920</left>
+				<top>15</top>
+				<width>360</width>
+				<height>60</height>
+				<font>menu.title</font>
+				<textcolor>white</textcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>1036</label>
+			</control>
+			
 			<control type="image">
 				<left>-87r</left>
 				<top>95</top>
@@ -37,6 +57,7 @@
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 			</control>
+			
 			<control type="list" id="450">
 				<left>-10r</left>
 				<top>300</top>
@@ -48,7 +69,9 @@
 				<ondown>450</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>200</scrolltime>
+				
 				<itemlayout height="60">
+				
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -56,6 +79,7 @@
 						<height>60</height>
 						<texture colordiffuse="button.border">-</texture>
 					</control>
+					
 					<control type="label">
 						<left>15</left>
 						<top>0</top>
@@ -67,8 +91,11 @@
 						<textcolor>text.primary</textcolor>
 						<info>ListItem.Label</info>
 					</control>
+					
 				</itemlayout>
+				
 				<focusedlayout height="60">
+				
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -77,6 +104,7 @@
 						<visible>!Control.HasFocus(450)</visible>
 						<texture colordiffuse="button.border">-</texture>
 					</control>
+					
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -85,6 +113,7 @@
 						<visible>Control.HasFocus(450)</visible>
 						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
+					
 					<control type="label">
 						<left>15</left>
 						<top>0</top>
@@ -97,6 +126,7 @@
 						<info>ListItem.Label</info>
 						<visible>!Control.HasFocus(450)</visible>
 					</control>
+					
 					<control type="label">
 						<left>15</left>
 						<top>0</top>
@@ -109,8 +139,11 @@
 						<info>ListItem.Label</info>
 						<visible>Control.HasFocus(450)</visible>
 					</control>
+					
 				</focusedlayout>
+				
 			</control>
+			
 			<control type="label">
 				<description>Page label</description>
 				<left>-10r</left>
@@ -123,6 +156,9 @@
 				<textcolor>text.primary</textcolor>
 				<label>$INFO[Container(450).NumItems] $LOCALIZE[31025]  [COLOR=$VAR[Colour.500]]$LOCALIZE[31024] $INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR]</label>
 			</control>
+			
 		</control>
+		
 	</controls>
+	
 </window>
