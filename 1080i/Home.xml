@@ -58,7 +58,7 @@
 				
 			</control>
 					
-			<!--sort method bg-->
+			<!--user profile bg-->
 			<control type="image">
 				<left>64</left>
 				<top>110</top>
@@ -67,7 +67,7 @@
 				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
 		
-			<!--sort method strip-->
+			<!--user profile strip-->
 			<control type="image">
 				<left>60</left>
 				<top>110</top>
@@ -76,7 +76,7 @@
 				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 			</control>
 		
-			<!--sort method label-->
+			<!--user profile label-->
 			<control type="label">
 				<left>73</left>
 				<top>110</top>
@@ -162,12 +162,12 @@
 		
 		<!--Now playing LiveTV Info-->
 		<control type="group">
-			<left>735r</left>
-			<top>155</top>
+			<left>795r</left>
+			<top>200</top>
 			<visible>Container(9000).HasFocus(12) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 			
 			<control type="group">
-				<animation effect="slide" start="0,0" end="0,150" time="0" condition="PVR.IsRecording">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,140" time="0" condition="PVR.IsRecording">conditional</animation>
 				<visible>PVR.HasNonRecordingTimer</visible>
 			
 				<control type="image">
