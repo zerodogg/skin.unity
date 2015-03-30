@@ -37,10 +37,10 @@
 				
 				<!--content list-->
 				<control type="list" id="8000">
-					<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(8000).NumItems,4)">conditional</animation>
-					<animation effect="slide" start="0,0" end="270,0" time="0" condition="StringCompare(Container(8000).NumItems,3)">conditional</animation>
-					<animation effect="slide" start="0,0" end="405,0" time="0" condition="StringCompare(Container(8000).NumItems,2)">conditional</animation>
-					<animation effect="slide" start="0,0" end="540,0" time="0" condition="StringCompare(Container(8000).NumItems,1)">conditional</animation>
+					<animation effect="slide" start="0,0" end="105,0" time="0" condition="StringCompare(Container(8000).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="210,0" time="0" condition="StringCompare(Container(8000).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="315,0" time="0" condition="StringCompare(Container(8000).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="420,0" time="0" condition="StringCompare(Container(8000).NumItems,1)">conditional</animation>
 					<centerleft>50%</centerleft>
 					<top>85</top>
 					<width>1050</width>
@@ -320,9 +320,9 @@
 				
 				<!--content list-->
 				<control type="list" id="8001">
-					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8001).NumItems,3)">conditional</animation>
-					<animation effect="slide" start="0,0" end="360,0" time="0" condition="StringCompare(Container(8001).NumItems,2)">conditional</animation>
-					<animation effect="slide" start="0,0" end="540,0" time="0" condition="StringCompare(Container(8001).NumItems,1)">conditional</animation>
+					<animation effect="slide" start="0,0" end="170,0" time="0" condition="StringCompare(Container(8001).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="340,0" time="0" condition="StringCompare(Container(8001).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="510,0" time="0" condition="StringCompare(Container(8001).NumItems,1)">conditional</animation>
 					<centerleft>50%</centerleft>
 					<top>119</top>
 					<width>1020</width>
@@ -635,9 +635,9 @@
 				
 				<!--content list-->
 				<control type="list" id="8002">
-					<animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(8002).NumItems,3)">conditional</animation>
-					<animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(8002).NumItems,2)">conditional</animation>
-					<animation effect="slide" start="0,0" end="450,0" time="0" condition="StringCompare(Container(8002).NumItems,1)">conditional</animation>
+					<animation effect="slide" start="0,0" end="123,0" time="0" condition="StringCompare(Container(8002).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(8002).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="369,0" time="0" condition="StringCompare(Container(8002).NumItems,1)">conditional</animation>
 					<centerleft>50%</centerleft>
 					<top>119</top>
 					<width>984</width>
