@@ -38,7 +38,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>1125</left>
+						<left>75</left>
 						<top>0</top>
 						<width>1050</width>
 						<height>60</height>
@@ -90,7 +90,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>1125</left>
+						<left>75</left>
 						<top>0</top>
 						<width>1050</width>
 						<height>60</height>

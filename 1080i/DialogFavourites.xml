@@ -57,7 +57,7 @@
 						<texture colordiffuse="button.border">-</texture>
 					</control>
 					<control type="label">
-						<left>340</left>
+						<left>15</left>
 						<top>0</top>
 						<width>325</width>
 						<height>60</height>
@@ -86,7 +86,7 @@
 						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					<control type="label">
-						<left>340</left>
+						<left>15</left>
 						<top>0</top>
 						<width>325</width>
 						<height>60</height>
@@ -98,7 +98,7 @@
 						<visible>!Control.HasFocus(450)</visible>
 					</control>
 					<control type="label">
-						<left>340</left>
+						<left>15</left>
 						<top>0</top>
 						<width>325</width>
 						<height>60</height>

@@ -207,7 +207,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>592</left>
+						<left>52</left>
 						<top>0</top>
 						<width>540</width>
 						<height>45</height>
@@ -242,7 +242,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>592</left>
+						<left>52</left>
 						<top>0</top>
 						<width>540</width>
 						<height>45</height>
@@ -347,7 +347,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>592</left>
+						<left>52</left>
 						<top>0</top>
 						<width>540</width>
 						<height>45</height>
@@ -382,7 +382,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>592</left>
+						<left>52</left>
 						<top>0</top>
 						<width>540</width>
 						<height>45</height>

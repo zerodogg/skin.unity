@@ -117,7 +117,7 @@
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
-						<left>600</left>
+						<left>150</left>
 						<top>0</top>
 						<width>450</width>
 						<height>45</height>
@@ -130,7 +130,7 @@
 						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
 					</control>
 					<control type="label">
-						<left>600</left>
+						<left>225</left>
 						<top>0</top>
 						<width>375</width>
 						<height>45</height>
@@ -191,7 +191,7 @@
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
-						<left>600</left>
+						<left>150</left>
 						<top>0</top>
 						<width>450</width>
 						<height>45</height>
@@ -204,7 +204,7 @@
 						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
 					</control>
 					<control type="label">
-						<left>600</left>
+						<left>225</left>
 						<top>0</top>
 						<width>375</width>
 						<height>45</height>

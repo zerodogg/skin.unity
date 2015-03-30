@@ -1109,7 +1109,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1124,7 +1124,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>919</left>
+						<left>319</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1220,7 +1220,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1235,7 +1235,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>919</left>
+						<left>319</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1631,7 +1631,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>825</left>
+						<left>225</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1646,7 +1646,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>759</left>
+						<left>159</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1742,7 +1742,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>825</left>
+						<left>225</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1757,7 +1757,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>759</left>
+						<left>159</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2409,7 +2409,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>770</left>
+						<left>170</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2424,7 +2424,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>704</left>
+						<left>104</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2520,7 +2520,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>770</left>
+						<left>170</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2535,7 +2535,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>704</left>
+						<left>104</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>

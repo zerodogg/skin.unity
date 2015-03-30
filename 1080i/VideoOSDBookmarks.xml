@@ -173,14 +173,14 @@
 						<control type="image">
 							<left>5</left>
 							<top>205</top>
-							<width>170</width>
+							<width>275</width>
 							<height>50</height>
 							<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 						</control>
 							
 						<!--main label-->
 						<control type="label">
-							<left>25</left>
+							<left>15</left>
 							<top>208</top>
 							<width>250</width>
 							<height>60</height>

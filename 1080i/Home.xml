@@ -1070,15 +1070,24 @@
 					
 					<!--label-->
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>text.primary</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					<!--seperator-->
+					<control type="image">
+						<left>360</left>
+						<top>15</top>
+						<width>1</width>
+						<height>62</height>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					
 				</itemlayout>
@@ -1094,9 +1103,9 @@
 					</control>
 					
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>text.primary</textcolor>
@@ -1108,9 +1117,9 @@
 					</control>
 					
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>$VAR[Colour.500]</textcolor>
@@ -1119,6 +1128,15 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(9000)</visible>
 						<include>VisibleFadeEffect</include>
+					</control>
+					
+					<!--seperator-->
+					<control type="image">
+						<left>360</left>
+						<top>15</top>
+						<width>1</width>
+						<height>62</height>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					
 				</focusedlayout>
