@@ -183,19 +183,6 @@ msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-#empty strings from id 31062 to 31100
 #Skin Settings labels
 
 msgctxt "#31062"
@@ -250,16 +237,7 @@ msgctxt "#31074"
 msgid "Hide debug information"
 msgstr ""
 
-
-
-
-
-
-
-
-
-
-
+#empty strings from id 31075 to 31100
 
 msgctxt "#31101"
 msgid "Home screen options"
@@ -767,4 +745,8 @@ msgstr ""
 
 msgctxt "#31959"
 msgid "SYSTEM"
+msgstr ""
+
+msgctxt "#31960"
+msgid "RADIO"
 msgstr ""
