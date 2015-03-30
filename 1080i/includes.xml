@@ -1627,6 +1627,17 @@
 		
 	</include>
 	
+	<include name="KeyboardButton">
+		<width>75</width>
+		<height>75</height>
+		<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+		<texturefocus border="5">KeyboardKey.png</texturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font13</font>
+		<focusedcolor>black</focusedcolor>
+	</include>
+	
 	<include name="TVNextAiredListCommonLayout">
 		<itemlayout height="225" width="420">
 			<control type="image">
