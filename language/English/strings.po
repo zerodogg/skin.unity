@@ -86,7 +86,9 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr ""
 
-#empty string with id 31030
+msgctxt "#31030"
+msgid "Reset Skin"
+msgstr ""
 
 msgctxt "#31031"
 msgid "Pic Thumbs"
@@ -237,7 +239,11 @@ msgctxt "#31074"
 msgid "Hide debug information"
 msgstr ""
 
-#empty strings from id 31075 to 31100
+msgctxt "#31075"
+msgid "Reset all Skin Settings"
+msgstr ""
+
+#empty strings from id 31076 to 31100
 
 msgctxt "#31101"
 msgid "Home screen options"
