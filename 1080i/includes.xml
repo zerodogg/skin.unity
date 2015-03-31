@@ -276,6 +276,24 @@
 		<disabledcolor>disabled</disabledcolor>
 	</include>
 	
+	<include name="ButtonSettingCommonValues">
+		<height>60</height>
+		<width>355</width>
+		<textoffsetx>15</textoffsetx>
+		<textwidth>280</textwidth>
+		<aligny>center</aligny>
+		<font>button</font>
+		<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
+		<texturenofocus colordiffuse="$VAR[Colour.500]">button-border-355s.png</texturenofocus>
+		<alttexturefocus colordiffuse="white">backgrounds/white.png</alttexturefocus>
+		<alttexturenofocus colordiffuse="$VAR[Colour.500]">button-border-355s.png</alttexturenofocus>
+		<pulseonselect>false</pulseonselect>
+		<textcolor>white</textcolor>
+		<selectedcolor>$VAR[Colour.900]</selectedcolor>
+		<focusedcolor>$VAR[Colour.900]</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+	</include>
+	
 	<include name="ButtonMediaSubCommonValues">
 		<height>60</height>
 		<width>332</width>
