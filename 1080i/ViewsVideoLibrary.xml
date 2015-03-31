@@ -1109,7 +1109,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1124,7 +1124,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>919</left>
+						<left>319</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1220,7 +1220,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1235,7 +1235,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>919</left>
+						<left>319</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1328,7 +1328,7 @@
 					<height>287</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true" colordiffuse="$VAR[Colour.500]">Fanart_Fallback_Small.png</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -1341,7 +1341,7 @@
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordertexture background="true" colordiffuse="tertiary">backgrounds/white.png</bordertexture>
 					<bordersize>0</bordersize>
-					<visible>!IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>!IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--info strip background-->
@@ -1631,7 +1631,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>825</left>
+						<left>225</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1646,7 +1646,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>759</left>
+						<left>159</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1742,7 +1742,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>825</left>
+						<left>225</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1757,7 +1757,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>759</left>
+						<left>159</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2409,7 +2409,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>770</left>
+						<left>170</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2424,7 +2424,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>704</left>
+						<left>104</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2520,7 +2520,7 @@
 					
 					<!--secondary label (non videos)-->
 					<control type="label">
-						<left>770</left>
+						<left>170</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2535,7 +2535,7 @@
 					
 					<!--secondary label (videos)-->
 					<control type="label">
-						<left>704</left>
+						<left>104</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -2628,7 +2628,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -2753,7 +2753,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -2870,7 +2870,7 @@
 					<height>400</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				
 				<!--fanart (no fallback)-->
@@ -3009,7 +3009,7 @@
 					<height>400</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]" background="true">defaultfolder.png</texture>
-					<visible>IsEmpty(ListItem.Art(tvshow.poster)</visible>
+					<visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				
 				<!--poster-->
@@ -3020,7 +3020,7 @@
 					<height>402</height>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<visible>!IsEmpty(ListItem.Art(tvshow.poster)</visible>
+					<visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				
 				<!--info strip background-->

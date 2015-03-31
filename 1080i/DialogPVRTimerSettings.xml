@@ -129,15 +129,6 @@
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
-		<control type="sliderex" id="10">
-			<description>Default Slider</description>
-			<height>60</height>
-			<texturefocus border="5">button-focus2.png</texturefocus>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<font>font13</font>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-		</control>
 		<control type="image" id="11">
 			<description>Default Seperator</description>
 			<height>3</height>
@@ -151,6 +142,15 @@
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="5">button-focus2.png</texturefocus>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		</control>
+		<control type="sliderex" id="13">
+			<description>Default Slider</description>
+			<height>60</height>
+			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="5">button-nofocus.png</texturenofocus>
+			<font>font13</font>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
 		</control>
 	</controls>
 </window>

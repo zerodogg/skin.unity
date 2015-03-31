@@ -162,7 +162,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<onback>50</onback>
-				<itemgap>5</itemgap>
+				<itemgap>0</itemgap>
 				
 				<!--control type="label" id="200">
 					<width>375</width>

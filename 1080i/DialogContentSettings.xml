@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <window>
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">20</defaultcontrol>
 	
 	<controls>
 	
@@ -98,7 +98,7 @@
 				</control>
 				
 				<!--content picker spin control-->
-				<control type="spincontrolex" id="3">
+				<control type="spincontrolex" id="20">
 					<left>590</left>
 					<top>130</top>
 					<width>1120</width>
@@ -109,9 +109,9 @@
 					<label>-</label>
 					<reverse>yes</reverse>
 					<onup>28</onup>
-					<ondown>4</ondown>
-					<onleft>3</onleft>
-					<onright>3</onright>
+					<ondown>21</ondown>
+					<onleft>20</onleft>
+					<onright>20</onright>
 				</control>
 				
 				<!--directory contains label (no focus)-->
@@ -125,7 +125,7 @@
 					<aligny>center</aligny>
 					<textcolor>text.primary</textcolor>
 					<label>$LOCALIZE[20344]</label>
-					<visible>!Control.HasFocus(3)</visible>
+					<visible>!Control.HasFocus(20)</visible>
 				</control>
 				
 				<!--directory contains label (focus)-->
@@ -139,7 +139,7 @@
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[20344]</label>
-					<visible>Control.HasFocus(3)</visible>
+					<visible>Control.HasFocus(20)</visible>
 				</control>
 				
 				<!--spin control value (no focus)-->
@@ -150,11 +150,11 @@
 					<width>420</width>
 					<height>60</height>
 					<font>button</font>
-					<label>$INFO[Control.GetLabel(3)]</label>
+					<label>$INFO[Control.GetLabel(20)]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>text.primary</textcolor>
-					<visible>!Control.HasFocus(3)</visible>
+					<visible>!Control.HasFocus(20)</visible>
 				</control>
 				
 				<!--spin control value (focus)-->
@@ -165,11 +165,11 @@
 					<width>420</width>
 					<height>60</height>
 					<font>button</font>
-					<label>$INFO[Control.GetLabel(3)]</label>
+					<label>$INFO[Control.GetLabel(20)]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<visible>Control.HasFocus(3)</visible>
+					<visible>Control.HasFocus(20)</visible>
 				</control>
 				
 				<!--current scraper logo, etc-->
@@ -254,15 +254,15 @@
 				</control>
 				
 				<!--scraper list-->
-				<control type="list" id="4">
+				<control type="list" id="21">
 					<left>600</left>
 					<top>310</top>
 					<width>1110</width>
 					<height>280</height>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<onup>3</onup>
-					<onleft>4</onleft>
+					<onup>20</onup>
+					<onleft>21</onleft>
 					<onright>60</onright>
 					<ondown>5</ondown>
 					
@@ -314,7 +314,7 @@
 							<width>1110</width>
 							<height>60</height>
 							<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-							<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(4)">Conditional</animation>
+							<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(21)">Conditional</animation>
 						</control>
 						
 						<!--icon (fallback)-->
@@ -365,8 +365,8 @@
 					<showonepage>false</showonepage>
 					<texturesliderbackground colordiffuse="scroll.secondary">backgrounds/white.png</texturesliderbackground>
 					<texturesliderbar colordiffuse="secondary">backgrounds/white.png</texturesliderbar>
-					<onleft>4</onleft>
-					<onright>4</onright>
+					<onleft>21</onleft>
+					<onright>21</onright>
 				</control>
 				
 				<!--title background-->
@@ -419,7 +419,7 @@
 					<width>1110</width>
 					<height>330</height>
 					<itemgap>5</itemgap>
-					<onup>4</onup>
+					<onup>21</onup>
 					<ondown>28</ondown>
 					<onleft>5</onleft>
 					<onright>5</onright>
@@ -511,10 +511,10 @@
 						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 						<label>186</label>
-						<onleft>6</onleft>
+						<onleft>22</onleft>
 						<onright>29</onright>
-						<onup>30</onup>
-						<ondown>3</ondown>
+						<onup>5</onup>
+						<ondown>20</ondown>
 					</control>
 		
 					<!--cancel circle border-->
@@ -555,9 +555,9 @@
 						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 						<label>222</label>
 						<onleft>28</onleft>
-						<onright>6</onright>
-						<onup>30</onup>
-						<ondown>3</ondown>
+						<onright>22</onright>
+						<onup>5</onup>
+						<ondown>20</ondown>
 					</control>
 		
 					<!--settings circle border-->
@@ -567,7 +567,7 @@
 						<width>60</width>
 						<height>60</height>
 						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(6)</visible>
+						<visible>Control.HasFocus(22)</visible>
 					</control>
 					
 					<!--settings circle animation-->
@@ -577,12 +577,12 @@
 						<width>62</width>
 						<height>62</height>
 						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(6)</visible>
+						<visible>Control.HasFocus(22)</visible>
 						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
 					</control>
 					
 					<!--settings button-->
-					<control type="button" id="6">
+					<control type="button" id="22">
 						<left>295</left>
 						<top>0</top>
 						<width>130</width>
@@ -599,8 +599,8 @@
 						<label>5</label>
 						<onleft>29</onleft>
 						<onright>28</onright>
-						<onup>30</onup>
-						<ondown>3</ondown>
+						<onup>5</onup>
+						<ondown>20</ondown>
 					</control>
 					
 				</control>

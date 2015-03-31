@@ -84,9 +84,9 @@
 						<texture border="5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>375</left>
+						<left>10</left>
 						<top>0</top>
-						<width>570</width>
+						<width>370</width>
 						<height>82</height>
 						<font>font24_title</font>
 						<textcolor>grey3</textcolor>
@@ -105,9 +105,9 @@
 						<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<left>375</left>
+						<left>10</left>
 						<top>0</top>
-						<width>570</width>
+						<width>370</width>
 						<height>82</height>
 						<font>font24_title</font>
 						<textcolor>white</textcolor>
@@ -319,9 +319,9 @@
 							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>141</left>
+							<left>10</left>
 							<top>218</top>
-							<width>267</width>
+							<width>265</width>
 							<height>38</height>
 							<font>font11</font>
 							<textcolor>grey2</textcolor>
@@ -342,9 +342,9 @@
 							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>141</left>
+							<left>10</left>
 							<top>218</top>
-							<width>267</width>
+							<width>265</width>
 							<height>38</height>
 							<font>font11</font>
 							<textcolor>white</textcolor>

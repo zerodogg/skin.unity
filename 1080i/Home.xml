@@ -46,7 +46,7 @@
 				<control type="label">
 					<width min="0" max="90">auto</width>
 					<include>WindowTitleCommons</include>
-					<label>XBMC</label>
+					<label>Kodi</label>
 				</control>
 				
 				<control type="label">
@@ -58,7 +58,7 @@
 				
 			</control>
 					
-			<!--sort method bg-->
+			<!--user profile bg-->
 			<control type="image">
 				<left>64</left>
 				<top>110</top>
@@ -67,7 +67,7 @@
 				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
 		
-			<!--sort method strip-->
+			<!--user profile strip-->
 			<control type="image">
 				<left>60</left>
 				<top>110</top>
@@ -76,7 +76,7 @@
 				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 			</control>
 		
-			<!--sort method label-->
+			<!--user profile label-->
 			<control type="label">
 				<left>73</left>
 				<top>110</top>
@@ -162,12 +162,12 @@
 		
 		<!--Now playing LiveTV Info-->
 		<control type="group">
-			<left>735r</left>
-			<top>155</top>
+			<left>795r</left>
+			<top>200</top>
 			<visible>Container(9000).HasFocus(12) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 			
 			<control type="group">
-				<animation effect="slide" start="0,0" end="0,150" time="0" condition="PVR.IsRecording">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,140" time="0" condition="PVR.IsRecording">conditional</animation>
 				<visible>PVR.HasNonRecordingTimer</visible>
 			
 				<control type="image">
@@ -620,6 +620,7 @@
 			
 			<!--search-->
 			<control type="group">
+				<visible>System.HasAddon(script.globalsearch)</visible>
 				
 				<!--search background-->
 				<control type="image">
@@ -629,6 +630,15 @@
 					<height>45</height>
 					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 					<animation effect="zoom" start="60,0,776,45" end="608,0,228,45" time="500" condition="!Player.HasMedia">conditional</animation>
+				</control>
+				
+				<!--background strip-->
+				<control type="image">
+					<left>64r</left>
+					<top>0</top>
+					<width>4</width>
+					<height>45</height>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 				</control>
 				
 				<!--global search button-->
@@ -659,7 +669,6 @@
 					<onright>601</onright>
 					<onup>9003</onup>
 					<ondown>9000</ondown>
-					<visible>System.HasAddon(script.globalsearch)</visible>
 					<radiowidth>24</radiowidth>
 					<radioheight>24</radioheight>
 					<radioposx>188</radioposx>
@@ -926,15 +935,6 @@
 				</control>
 				
 			</control>
-		
-			<!--background strip-->
-			<control type="image">
-				<left>64r</left>
-				<top>0</top>
-				<width>4</width>
-				<height>45</height>
-				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-			</control>
 			
 		</control>
 		
@@ -1016,14 +1016,23 @@
 					<onleft>9014</onleft>
 					<onright>9014</onright>
 					<visible>Container(9000).HasFocus(12)</visible>
-					<include>HomeSubMenuLiveTV</include>
+					<include>HomeSubMenuTV</include>
 					<!-- Buttons for the grouplist -->
 				</control>
 				
 				<control type="grouplist" id="9015">
 					<include>HomeSubMenuCommonValues</include>
-					<onleft>9013</onleft>
-					<onright>9013</onright>
+					<onleft>9015</onleft>
+					<onright>9015</onright>
+					<visible>Container(9000).HasFocus(13)</visible>
+					<include>HomeSubMenuRadio</include>
+					<!-- Buttons for the grouplist -->
+				</control>
+				
+				<control type="grouplist" id="9016">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9016</onleft>
+					<onright>9016</onright>
 					<visible>Container(9000).HasFocus(4)</visible>
 					<include>HomeSubMenuPictures</include>
 					<!-- Buttons for the grouplist -->
@@ -1070,15 +1079,24 @@
 					
 					<!--label-->
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>text.primary</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					<!--seperator-->
+					<control type="image">
+						<left>360</left>
+						<top>15</top>
+						<width>1</width>
+						<height>62</height>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					
 				</itemlayout>
@@ -1094,9 +1112,9 @@
 					</control>
 					
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>text.primary</textcolor>
@@ -1108,9 +1126,9 @@
 					</control>
 					
 					<control type="label">
-						<left>180</left>
+						<left>10</left>
 						<top>0</top>
-						<width>335</width>
+						<width>340</width>
 						<height>90</height>
 						<font>main.menu</font>
 						<textcolor>$VAR[Colour.500]</textcolor>
@@ -1119,6 +1137,15 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(9000)</visible>
 						<include>VisibleFadeEffect</include>
+					</control>
+					
+					<!--seperator-->
+					<control type="image">
+						<left>360</left>
+						<top>15</top>
+						<width>1</width>
+						<height>62</height>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					
 				</focusedlayout>
@@ -1141,12 +1168,20 @@
 						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>
 					
-					<item id="12">
-						<label>31952</label>
-						<onclick>ActivateWindow(PVR)</onclick>
+					<item id="13">
+						<label>31960</label>
+						<onclick>ActivateWindow(RadioChannels)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<visible>PVR.HasRadioChannels</visible>
+					</item>
+					
+					<item id="12">
+						<label>31952</label>
+						<onclick>ActivateWindow(TVChannels)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>PVR.HasTVChannels</visible>
 					</item>
 					
 					<item id="2">

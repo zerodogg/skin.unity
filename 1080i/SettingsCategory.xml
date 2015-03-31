@@ -246,7 +246,7 @@
 			</control>
 			
 			<!--setting description-->
-			<control type="label" id="6">
+			<control type="textbox" id="6">
 				<left>935</left>
 				<top>735</top>
 				<width>960</width>
@@ -297,6 +297,20 @@
 			<left>0</left>
 			<top>0</top>
 			<reverse>yes</reverse>
+		</control>
+		
+		<!--slider control-->
+		<control type="sliderex" id="13">
+			<left>0</left>
+			<top>0</top>
+		</control>
+		
+		<control type="image" id="11">
+			<left>0</left>
+			<top>0</top>
+			<height>1</height>
+			<aspectratio>stretch</aspectratio>
+			<texture colordiffuse="disabled">backgrounds/white.png</texture>
 		</control>
 		
 		<control type="label" id="2">

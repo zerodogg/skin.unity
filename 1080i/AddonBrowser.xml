@@ -153,7 +153,7 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onback>50</onback>
-					<itemgap>5</itemgap>
+					<itemgap>0</itemgap>
 					
 					<!--control type="label" id="200">
 						<width>375</width>
@@ -197,7 +197,7 @@
 					</control-->
 					
 					<!--enable auto updates-->
-					<control type="radiobutton" id="5">
+					<control type="button" id="5">
 						<include>ButtonCommonValues</include>
 						<label>24063</label>
 					</control>
@@ -212,6 +212,12 @@
 					<control type="radiobutton" id="7">
 						<include>ButtonCommonValues</include>
 						<label>25001</label>
+					</control>
+					
+					<!--hide broken-->
+					<control type="radiobutton" id="8">
+						<include>ButtonCommonValues</include>
+						<label>24999</label>
 					</control>
 					
 					<include>CommonNowPlaying_Controls</include>

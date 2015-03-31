@@ -50,7 +50,7 @@
 					
 					<!--secondary label-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -102,7 +102,7 @@
 					
 					<!--secondary label-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -723,7 +723,7 @@
 					</control>
 					
 					<control type="label">
-						<left>1095</left>
+						<left>45</left>
 						<top>0</top>
 						<width>1050</width>
 						<height>60</height>
@@ -790,7 +790,7 @@
 					</control>
 					
 					<control type="label">
-						<left>1095</left>
+						<left>45</left>
 						<top>0</top>
 						<width>1050</width>
 						<height>60</height>
@@ -1215,7 +1215,7 @@
 					
 					<!--secondary label-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>
@@ -1267,7 +1267,7 @@
 					
 					<!--secondary label-->
 					<control type="label">
-						<left>985</left>
+						<left>385</left>
 						<top>0</top>
 						<width>600</width>
 						<height>60</height>

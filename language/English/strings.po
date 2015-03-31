@@ -86,7 +86,9 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr ""
 
-#empty string with id 31030
+msgctxt "#31030"
+msgid "Reset Skin"
+msgstr ""
 
 msgctxt "#31031"
 msgid "Pic Thumbs"
@@ -183,19 +185,6 @@ msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-#empty strings from id 31062 to 31100
 #Skin Settings labels
 
 msgctxt "#31062"
@@ -250,16 +239,11 @@ msgctxt "#31074"
 msgid "Hide debug information"
 msgstr ""
 
+msgctxt "#31075"
+msgid "Reset all Skin Settings"
+msgstr ""
 
-
-
-
-
-
-
-
-
-
+#empty strings from id 31076 to 31100
 
 msgctxt "#31101"
 msgid "Home screen options"
@@ -767,4 +751,8 @@ msgstr ""
 
 msgctxt "#31959"
 msgid "SYSTEM"
+msgstr ""
+
+msgctxt "#31960"
+msgid "RADIO"
 msgstr ""

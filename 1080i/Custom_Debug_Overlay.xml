@@ -8,7 +8,6 @@
 		<!-- Global debug grid -->
 
 		<control type="image">
-			<include>Dimensions_Fullscreen</include>
 			<texture>special://skin/debug/debuggrid1080.png</texture>
 			<visible>Skin.HasSetting(DebugGrid)</visible>
 		</control>
@@ -16,12 +15,12 @@
 		<!-- Window/Dialog debug -->
 
 		<control type="grouplist">
-			<left>20</left>
-			<top>60</top>
+			<left>5</left>
+			<top>30</top>
 			<width>780</width>
 			<height>450</height>
 			<itemgap>40</itemgap>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
 
 			<!-- Window labels -->
 
@@ -446,23 +445,23 @@
 		<!-- Control label -->
 
 		<control type="label">
-			<left>20</left>
-			<top>20</top>
+			<left>5</left>
+			<top>5</top>
 			<textcolor>green</textcolor>
 			<label>$INFO[System.CurrentControl]</label>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
 
 		<!-- Path label -->
 
 		<control type="label">
-			<right>20</right>
-			<top>20</top>
+			<right>5</right>
+			<top>5</top>
 		    <width>1920</width>
 			<textcolor>red</textcolor>
 			<align>right</align>
 			<label>$INFO[Container.FolderPath]</label>
-			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
+			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
 
 	</controls>

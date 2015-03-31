@@ -115,25 +115,14 @@
 					<visible>Window.IsVisible(124)</visible>
 				</control>
 				
-				<!--no settings label-->
-				<control type="label" id="3">
-					<description>No Settings Label</description>
-					<left>30</left>
-					<top>270</top>
-					<width>1140</width>
-					<align>center</align>
-					<label>13390</label>
-					<font>font13</font>
-				</control>
-				
 				<!--options-->
 				<control type="grouplist" id="5">
 					<description>control area</description>
 					<left>555</left>
 					<top>100</top>
 					<width>800</width>
-					<height>580</height>
-					<itemgap>5</itemgap>
+					<height>960</height>
+					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>60</onleft>
 					<onright>60</onright>
@@ -143,21 +132,15 @@
 				
 				<!--scrollbar-->
 				<control type="scrollbar" id="60">
-					<left>1525</left>
-					<top>380</top>
-					<height>600</height>
+					<left>1355</left>
+					<top>90</top>
+					<height>980</height>
 					<onleft>5</onleft>
 					<onright>3</onright>
 				</control>
 				
 			</control>
 			
-		</control>
-		
-		<!--slider-->
-		<control type="sliderex" id="10">
-			<left>0</left>
-			<top>0</top>
 		</control>
 		
 		<!--button-->
@@ -177,6 +160,12 @@
 			<left>0</left>
 			<top>0</top>
 			<reverse>yes</reverse>
+		</control>
+		
+		<!--slider-->
+		<control type="sliderex" id="13">
+			<left>0</left>
+			<top>0</top>
 		</control>
 		
 	</controls>

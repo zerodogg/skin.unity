@@ -74,7 +74,7 @@
 				<onright>9000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<itemgap>5</itemgap>
+				<itemgap>0</itemgap>
 				<align>left</align>
 				
 				<control type="button" id="2">

@@ -486,7 +486,7 @@
 						<texturenofocus colordiffuse="white">trailerbutton.png</texturenofocus>	
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>20410</label>
-						<visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(WindowedTrailer)</visible>
+						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(HideWindowedTrailer)</visible>
 					</control>
 					
 					<!--windowed trailer-->
@@ -502,7 +502,7 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>20410</label>
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
+						<visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(HideWindowedTrailer)</visible>
 					</control>					
 					
 					<!--refresh-->
