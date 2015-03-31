@@ -15,6 +15,17 @@
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 		</control>
 		
+		<control type="slider" id="87">
+			<description>Seek Slider</description>
+			<left>415</left>
+			<top>150r</top>
+			<width>1090</width>
+			<height>7</height>
+			<action>seek</action>
+			<animation effect="fade" time="200">VisibleChange</animation>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)] + Window.IsVisible(Seekbar)</visible>
+		</control>
+		
 		<!-- !LiveTV -->
 		<control type="group" id="100">
 			<left>420</left>
