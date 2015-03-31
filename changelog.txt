@@ -1,3 +1,15 @@
+[B]31/03/2015 - 0.2.1 [ALPHA] [/B]
+[CHANGED] Debug info hidden by default
+[CHANGED] Windowed trailer viewer used by default
+[CODED] Dialog Favourites
+[CHANGED] Skin reset option added
+[FIXED] Item gap for side blade reduced to 0, was interfering with mouse control
+[FIXED] Hide global search box if addon is not present
+[FIXED] Weather info box on homescreen moved and formatted
+
+[B]29/03/2015 - 0.2.0 [ALPHA] [/B]
+[CODED] All necessary changes for Helix skin engine
+
 [B]13/09/2014 - 0.1.2 [ALPHA] [/B]
 [CHANGED] Added support for Advanced Launcher to Addon Info views
 [CHANGED] Created colour themes
