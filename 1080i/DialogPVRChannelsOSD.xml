@@ -249,9 +249,9 @@
 							<!--progress-->
 							<control type="progress">
 								<description>Progressbar</description>
-								<left>135</left>
+								<left>165</left>
 								<top>78</top>
-								<width>380</width>
+								<width>325</width>
 								<height>7</height>
 								<info>ListItem.Progress</info>
 								<visible>ListItem.HasEpg</visible>
@@ -259,7 +259,7 @@
 							
 							<!--finish time-->
 							<control type="label">
-								<left>532</left>
+								<left>507</left>
 								<top>66</top>
 								<width>90</width>
 								<height>30</height>
@@ -272,10 +272,12 @@
 							
 							<!--channel icon-->
 							<control type="image">
-								<left>540</left>
+								<left>507</left>
 								<top>6</top>
-								<width>60</width>
+								<width>75</width>
 								<height>60</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
 								<texture>$INFO[ListItem.Icon]</texture>
 							</control>
 						
@@ -383,9 +385,9 @@
 							<!--progress-->
 							<control type="progress">
 								<description>Progressbar</description>
-								<left>135</left>
+								<left>165</left>
 								<top>78</top>
-								<width>380</width>
+								<width>325</width>
 								<height>7</height>
 								<midtexture colordiffuse="$VAR[Colour.Alt]">backgrounds/white.png</midtexture>
 								<info>ListItem.Progress</info>
@@ -394,7 +396,7 @@
 							
 							<!--finish time-->
 							<control type="label">
-								<left>532</left>
+								<left>507</left>
 								<top>66</top>
 								<width>90</width>
 								<height>30</height>
@@ -408,10 +410,12 @@
 							
 							<!--channel icon-->
 							<control type="image">
-								<left>540</left>
+								<left>507</left>
 								<top>6</top>
-								<width>60</width>
+								<width>75</width>
 								<height>60</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
 								<texture>$INFO[ListItem.Icon]</texture>
 							</control>
 						
