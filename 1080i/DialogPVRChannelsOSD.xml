@@ -3,14 +3,13 @@
 <window>
 
 	<defaultcontrol always="true">11</defaultcontrol>
-	<zorder>9</zorder>
 	
 	<controls>
 	
 		<!--all content-->
 		<control type="group">
 			<left>575</left>
-			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(ShutdownMenu)</visible>
+			<visible>!Window.IsActive(ShutdownMenu)</visible>
 			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="1650,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			
@@ -187,6 +186,7 @@
 								<width>45</width>
 								<height>30</height>
 								<texture>PVR-IsRecording.png</texture>
+								<aspectratio>keep</aspectratio>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							
@@ -321,6 +321,7 @@
 								<width>45</width>
 								<height>30</height>
 								<texture>PVR-IsRecording.png</texture>
+								<aspectratio>keep</aspectratio>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							
