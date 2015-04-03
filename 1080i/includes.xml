@@ -224,7 +224,7 @@
 			Window.IsVisible(YesNoDialog) | 
 			Window.IsVisible(ProgressDialog) | 
 			Window.IsVisible(MediaSource) | 
-			Window.IsVisible(700)
+			Window.IsVisible(1100)
 			</visible>
 		</control>
 		

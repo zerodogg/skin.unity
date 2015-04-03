@@ -205,7 +205,7 @@
 					<label>Choose colour</label>
 					<include>ButtonCommonValues</include>
 					<onclick>SetFocus(50)</onclick>
-					<onclick>ActivateWindow(700)</onclick>
+					<onclick>ActivateWindow(1100)</onclick>
 				</control>
 				
 				<!--<control type="label" id="201">
