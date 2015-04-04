@@ -634,9 +634,9 @@
 					<width>995</width>
 					<height>580</height>
 					<itemgap>5</itemgap>
-					<pagecontrol>61</pagecontrol>
+					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
-					<onright>61</onright>
+					<onright>60</onright>
 					<onup>9004</onup>
 					<ondown>9004</ondown>
 					
@@ -854,12 +854,12 @@
 				</control>
 									
 				<!--scrollbar-->
-				<control type="scrollbar" id="61">
+				<control type="scrollbar" id="60">
 					<left>1935</left>
 					<top>115</top>
 					<height>668</height>
-					<onleft>5</onleft>
-					<onright>3</onright>
+					<onleft>9004</onleft>
+					<onright>9004</onright>
 					<visible>Container(9000).Hasfocus(4)</visible>
 				</control>
 				
