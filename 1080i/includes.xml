@@ -1093,23 +1093,12 @@
 	</include>
 	
 	<include name="CommonNowPlaying_Controls">
-		<control type="label" id="202">
-			<width>375</width>
-			<height>52</height>
-			<font>font12</font>
-			<label>31023</label>
-			<textcolor>blue</textcolor>
-			<align>center</align>
-			<aligny>center</aligny>
-			<visible>Player.HasMedia</visible>
-			<include>VisibleFadeEffect</include>
-		</control>
 		<control type="button" id="610">
 			<description>Fake Button to fix Player Controls Navigation</description>
 			<visible>false</visible>
 		</control>
 		<control type="group" id="9006">
-			<width>375</width>
+			<width>355</width>
 			<height>68</height>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 			<include>VisibleFadeEffect</include>
@@ -1119,8 +1108,8 @@
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDChannelUPFO.png</texturefocus>
-				<texturenofocus>OSDChannelUPNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDChannelUPNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDChannelUPNF.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>601</onright>
 				<onup>610</onup>
@@ -1133,8 +1122,8 @@
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDChannelDownFO.png</texturefocus>
-				<texturenofocus>OSDChannelDownNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDChannelDownNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDChannelDownNF.png</texturenofocus>
 				<onleft>600</onleft>
 				<onright>603</onright>
 				<onup>610</onup>
@@ -1147,8 +1136,8 @@
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDStopFO.png</texturefocus>
-				<texturenofocus>OSDStopNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDStopNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDStopNF.png</texturenofocus>
 				<onleft>601</onleft>
 				<onright>604</onright>
 				<onup>610</onup>
@@ -1162,11 +1151,11 @@
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDPauseFO.png</texturefocus>
-				<texturenofocus>OSDPauseNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDPauseNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDPauseNF.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="$VAR[Colour.500]">OSDPlayNF.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="text.primary">OSDPlayNF.png</alttexturenofocus>
 				<onleft>603</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
@@ -1182,8 +1171,8 @@
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDRecordOffFO.png</texturefocus>
-				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDRecordOffNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDRecordOffNF.png</texturenofocus>
 				<onleft>604</onleft>
 				<onright>50</onright>
 				<onup>610</onup>
@@ -1197,17 +1186,17 @@
 			<visible>Player.HasMedia</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<include>VisibleFadeEffect</include>
-			<width>375</width>
+			<width>355</width>
 			<height>68</height>
 			<defaultcontrol always="true">603</defaultcontrol>
 			<control type="button" id="600">
-				<left>8</left>
+				<left>0</left>
 				<top>3</top>
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDPrevTrackFO.png</texturefocus>
-				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDPrevTrackNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDPrevTrackNF.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>606</onright>
 				<onup>610</onup>
@@ -1216,13 +1205,13 @@
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
 			</control>
 			<control type="button" id="606">
-				<left>68</left>
+				<left>58</left>
 				<top>3</top>
 				<width>58</width>
 				<height>58</height>
 				<label>-</label>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDRewindNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDRewindNF.png</texturenofocus>
 				<onleft>600</onleft>
 				<onright>603</onright>
 				<onup>610</onup>
@@ -1232,18 +1221,18 @@
 				<visible>Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo</visible>
 			</control>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="60,0" time="0" condition="Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo">Conditional</animation>
+				<animation effect="slide" start="0,0" end="58,0" time="0" condition="Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo">Conditional</animation>
 				<control type="togglebutton" id="603">
-					<left>68</left>
+					<left>58</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
 					<label>-</label>
-					<texturefocus>OSDPauseFO.png</texturefocus>
-					<texturenofocus>OSDPauseNF.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[Colour.500]">OSDPauseNF.png</texturefocus>
+					<texturenofocus colordiffuse="text.primary">OSDPauseNF.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-					<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+					<alttexturefocus colordiffuse="$VAR[Colour.500]">OSDPlayNF.png</alttexturefocus>
+					<alttexturenofocus colordiffuse="text.primary">OSDPlayNF.png</alttexturenofocus>
 					<onleft>606</onleft>
 					<onright>601</onright>
 					<onup>610</onup>
@@ -1252,13 +1241,13 @@
 					<onclick>XBMC.PlayerControl(Play)</onclick>
 				</control>
 				<control type="button" id="601">
-					<left>128</left>
+					<left>116</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
 					<label>-</label>
-					<texturefocus>OSDStopFO.png</texturefocus>
-					<texturenofocus>OSDStopNF.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[Colour.500]">OSDStopNF.png</texturefocus>
+					<texturenofocus colordiffuse="text.primary">OSDStopNF.png</texturenofocus>
 					<onleft>603</onleft>
 					<onright>607</onright>
 					<onup>610</onup>
@@ -1268,13 +1257,13 @@
 					<onclick>XBMC.PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="607">
-					<left>188</left>
+					<left>174</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
 					<label>-</label>
-					<texturefocus>OSDForwardFO.png</texturefocus>
-					<texturenofocus>OSDForwardNF.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[Colour.500]">OSDForwardNF.png</texturefocus>
+					<texturenofocus colordiffuse="text.primary">OSDForwardNF.png</texturenofocus>
 					<onleft>601</onleft>
 					<onright>602</onright>
 					<onup>610</onup>
@@ -1284,26 +1273,26 @@
 					<visible>Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo</visible>
 				</control>
 				<control type="button" id="602">
-					<left>188</left>
+					<left>174</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
 					<label>-</label>
-					<texturefocus>OSDNextTrackFO.png</texturefocus>
-					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[Colour.500]">OSDNextTrackNF.png</texturefocus>
+					<texturenofocus colordiffuse="text.primary">OSDNextTrackNF.png</texturenofocus>
 					<onleft>607</onleft>
 					<onright>604</onright>
 					<onup>610</onup>
 					<ondown>611</ondown>
 					<onback>50</onback>
 					<onclick>XBMC.PlayerControl(Next)</onclick>
-					<animation effect="slide" start="0,0" end="60,0" time="0" condition="Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo">Conditional</animation>
+					<animation effect="slide" start="0,0" end="58,0" time="0" condition="Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
 				<control type="button" id="604">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
@@ -1318,70 +1307,70 @@
 					<onback>50</onback>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatNF.png</texture>
+					<texture colordiffuse="text.primary">OSDRepeatNF.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatFO.png</texture>
+					<texture colordiffuse="$VAR[Colour.500]">OSDRepeatNF.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatOneNF.png</texture>
+					<texture colordiffuse="text.primary">OSDRepeatOneNF.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatOneFO.png</texture>
+					<texture colordiffuse="$VAR[Colour.500]">OSDRepeatOneNF.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatAllNF.png</texture>
+					<texture colordiffuse="text.primary">OSDRepeatAllNF.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>!Control.HasFocus(604)</visible>
 				</control>
 				<control type="image">
-					<left>248</left>
+					<left>232</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
-					<texture>OSDRepeatAllFO.png</texture>
+					<texture colordiffuse="$VAR[Colour.500]">OSDRepeatAllNF.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>Control.HasFocus(604)</visible>
 				</control>
 				<control type="togglebutton" id="605">
-					<left>308</left>
+					<left>290</left>
 					<top>3</top>
 					<width>58</width>
 					<height>58</height>
 					<label>-</label>
-					<texturefocus>OSDRandomOffFO.png</texturefocus>
-					<texturenofocus>OSDRandomOffNF.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[Colour.500]">OSDRandomOffNF.png</texturefocus>
+					<texturenofocus colordiffuse="text.primary">OSDRandomOffNF.png</texturenofocus>
 					<usealttexture>Playlist.IsRandom</usealttexture>
-					<alttexturefocus>OSDRandomOnFO.png</alttexturefocus>
-					<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
+					<alttexturefocus colordiffuse="$VAR[Colour.500]">OSDRandomOnNF.png</alttexturefocus>
+					<alttexturenofocus colordiffuse="text.primary">OSDRandomOnNF.png</alttexturenofocus>
 					<onclick>XBMC.PlayerControl(Random)</onclick>
 					<onleft>604</onleft>
 					<onright>50</onright>
@@ -1396,10 +1385,10 @@
 			<include>ButtonCommonValues</include>
 			<label>31008</label>
 			<onclick>fullscreen</onclick>
-			<textureradioonfocus>GoFullscreen.png</textureradioonfocus>
-			<textureradioonnofocus>GoFullscreen.png</textureradioonnofocus>
-			<textureradioofffocus>GoFullscreen.png</textureradioofffocus>
-			<textureradiooffnofocus>GoFullscreen.png</textureradiooffnofocus>
+			<textureradioonfocus colordiffuse="white">GoFullscreen.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="text.primary">GoFullscreen.png</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="white">GoFullscreen.png</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="text.primary">GoFullscreen.png</textureradiooffnofocus>
 			<visible>Player.HasMedia</visible>
 		</control>
 		<control type="button" id="612">
