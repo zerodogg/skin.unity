@@ -76,6 +76,7 @@
 		<value condition="StringCompare(Skin.String(Colour.Theme),Brown)">FF795548</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Blue Grey)">FF587482</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Grey)">FF908e8e</value>
+		<value>FFe51c23</value>
 	</variable>
 	
 	<variable name="Colour.900">
@@ -98,6 +99,7 @@
 		<value condition="StringCompare(Skin.String(Colour.Theme),Brown)">FF55322c</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Blue Grey)">FF3a4b5c</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Grey)">FF5d5c5c</value>
+		<value>FF850a04</value>
 	</variable>
 	
 	<variable name="Colour.400">
@@ -120,6 +122,7 @@
 		<value condition="StringCompare(Skin.String(Colour.Theme),Brown)">FF8d6e63</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Blue Grey)">FF78909c</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Grey)">FFbdbdbd</value>
+		<value>FFe84e40</value>
 	</variable>
 	
 	<variable name="Colour.Alt">
@@ -142,6 +145,7 @@
 		<value condition="StringCompare(Skin.String(Colour.Theme),Brown)">FFffeb3b</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Blue Grey)">FFffeb3b</value>
 		<value condition="StringCompare(Skin.String(Colour.Theme),Grey)">FFffeb3b</value>
+		<value>FFffeb3b</value>
 	</variable>
 	
 	<variable name="Addon.Description">
