@@ -166,6 +166,7 @@
 		<!--visible>!Player.ShowInfo</visible-->
 			<animation effect="slide" start="0,0" end="0,100" time="200" condition="!Player.ShowInfo + !VideoPlayer.Content(Files)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,100" time="200" condition="VideoPlayer.Content(Files)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-372,0" time="200" delay="100" condition="Skin.HasSetting(SubtitleSection)">Conditional</animation>
 		
 			<!--background-->
 			<control type="image" id="1">
@@ -540,6 +541,7 @@
 		</control>
 		
 		<control type="group" id="1">
+			<animation effect="slide" start="0,0" end="-372,0" time="200" delay="100" condition="Skin.HasSetting(SubtitleSection)">Conditional</animation>
 			<top>377r</top>
 					
 			<!--plot-->

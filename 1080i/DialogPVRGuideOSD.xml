@@ -1,254 +1,321 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <window>
+
 	<defaultcontrol always="true">11</defaultcontrol>
-	<coordinates>
-		<system>1</system>
-		<left>1170</left>
-		<top>45</top>
-	</coordinates>
-	<include>dialogeffect</include>
+	
 	<controls>
+	
+		<!--all content-->
 		<control type="group">
+			<left>575</left>
+			<visible>!Window.IsActive(ShutdownMenu)</visible>
+			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="1650,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+			
+			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+			<animation effect="slide" start="0,0" end="1650,0" time="400" tween="quadratic" easing="out">Hidden</animation>
+		
+			<!--background-->
 			<control type="image">
-				<description>background image</description>
-				<left>0</left>
+				<left>715</left>
 				<top>0</top>
-				<width>720</width>
-				<height>990</height>
-				<texture border="40">DialogBack2.png</texture>
+				<width>1210</width>
+				<height>1080</height>
+				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				<animation effect="fade" start="100" end="85" time="0" condition="true">Conditional</animation>
 			</control>
+			
+			<!--shadow-->
+			<control type="image">
+				<left>685</left>
+				<top>0</top>
+				<width>30</width>
+				<height>1080</height>
+				<texture flipx="true">sidebarshadow.png</texture>
+			</control>
+			
+			<!--right shadow-->
+			<control type="image">
+				<left>1925</left>
+				<top>0</top>
+				<width>30</width>
+				<height>1080</height>
+				<texture>sidebarshadow.png</texture>
+			</control>
+				
+			<!--title background-->
+			<control type="image">
+				<left>715</left>
+				<top>0</top>
+				<width>1210</width>
+				<height>90</height>
+				<texture background="true" colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+			</control>
+				
+			<!--sub title background-->
+			<control type="image">
+				<left>715</left>
+				<top>90</top>
+				<width>1210</width>
+				<height>50</height>
+				<texture background="true" colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
+			</control>
+		
+			<!--title shadow-->
+			<control type="image">
+				<left>715</left>
+				<top>90</top>
+				<width>1210</width>
+				<height>20</height>
+				<texture>homeshadow.png</texture>
+				<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+			</control>
+		
+			<!--sub title shadow-->
+			<control type="image">
+				<left>715</left>
+				<top>140</top>
+				<width>1210</width>
+				<height>10</height>
+				<texture>homeshadow.png</texture>
+				<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+			</control>
+			
+			<!--close window button-->
 			<control type="button">
-				<description>Close Window button</description>
-				<left>585</left>
-				<top>22</top>
-				<width>96</width>
-				<height>48</height>
+				<left>720</left>
+				<top>0</top>
+				<width>50</width>
+				<height>25</height>
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>2</onup>
-				<ondown>2</ondown>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
 				<visible>system.getbool(input.enablemouse)</visible>
 			</control>
-			<control type="image">
-				<description>Dialog Header image</description>
-				<left>60</left>
-				<top>24</top>
-				<width>600</width>
-				<height>60</height>
-				<texture>dialogheader.png</texture>
+			
+			<!--main content-->
+			<control type="group">
+				<left>170</left>
+				<top>-5</top>
+			
+				<!--title tv-->
+				<control type="label">
+					<left>350</left>
+					<top>15</top>
+					<width>800</width>
+					<height>60</height>
+					<font>menu.title</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
+					<visible>!pvr.IsPlayingRadio</visible>
+				</control>
+				
+				<!--secondary title-->
+				<control type="label">
+					<left>350</left>
+					<top>90</top>
+					<width>800</width>
+					<height>60</height>
+					<font>kai.secondary</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<label>$INFO[Container(11).ListItem.StartDate] • $INFO[Container(11).NumItems] $LOCALIZE[31025] ($LOCALIZE[31024] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
+				</control>
+			
+				<control type="list" id="11">
+					<left>555</left>
+					<top>155</top>
+					<width>600</width>
+					<height>930</height>
+					<onleft>60</onleft>
+					<onright>60</onright>
+					<onup>11</onup>
+					<ondown>11</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime>200</scrolltime>
+					
+					<itemlayout height="52" width="615">
+						
+						<control type="label">
+							<left>15</left>
+							<top>0</top>
+							<width>150</width>
+							<height>45</height>
+							<font>label</font>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.StartTime]</label>
+						</control>
+						
+						<control type="image">
+							<left>180</left>
+							<top>8</top>
+							<width>45</width>
+							<height>30</height>
+							<texture>PVR-IsRecording.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						
+						<control type="image">
+							<left>180</left>
+							<top>8</top>
+							<width>30</width>
+							<height>30</height>
+							<texture>PVR-HasTimer.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						</control>
+						
+						<control type="image">
+							<left>90</left>
+							<top>10</top>
+							<width>24</width>
+							<height>24</height>
+							<texture>PVR-HasRecording.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+						</control>
+						
+						<control type="label">
+							<left>150</left>
+							<top>0</top>
+							<width>435</width>
+							<height>45</height>
+							<font>label</font>
+							<selectedcolor>selected</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+						</control>
+						
+						<control type="label">
+							<left>225</left>
+							<top>0</top>
+							<width>360</width>
+							<height>45</height>
+							<font>label</font>
+							<selectedcolor>selected</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+						</control>
+						
+					</itemlayout>
+					
+					<focusedlayout height="52" width="615">
+						
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>615</width>
+							<height>45</height>
+							<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+						</control>
+						
+						<control type="label">
+							<left>15</left>
+							<top>0</top>
+							<width>150</width>
+							<height>45</height>
+							<font>label</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.StartTime]</label>
+						</control>
+						
+						<control type="image">
+							<left>180</left>
+							<top>8</top>
+							<width>45</width>
+							<height>30</height>
+							<texture>PVR-IsRecording.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						
+						<control type="image">
+							<left>180</left>
+							<top>8</top>
+							<width>30</width>
+							<height>30</height>
+							<texture>PVR-HasTimer.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						</control>
+						
+						<control type="image">
+							<left>90</left>
+							<top>10</top>
+							<width>24</width>
+							<height>24</height>
+							<texture>PVR-HasRecording.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+						</control>
+						
+						<control type="label">
+							<left>150</left>
+							<top>0</top>
+							<width>435</width>
+							<height>45</height>
+							<font>label</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+						</control>
+						
+						<control type="label">
+							<left>225</left>
+							<top>0</top>
+							<width>360</width>
+							<height>45</height>
+							<font>label</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+						</control>
+						
+					</focusedlayout>
+					
+				</control>
+			
+				<control type="scrollbar" id="60">
+					<left>1160</left>
+					<top>155</top>
+					<height>917</height>
+					<texturesliderbackground colordiffuse="scroll.secondary">backgrounds/white.png</texturesliderbackground>
+					<texturesliderbar colordiffuse="secondary">backgrounds/white.png</texturesliderbar>
+					<onleft>11</onleft>
+					<onright>11</onright>
+				</control>
+
 			</control>
-			<control type="label">
-				<description>header label</description>
-				<left>60</left>
-				<top>24</top>
-				<width>645</width>
-				<height>60</height>
-				<font>font12_title</font>
-				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Selected item's date</description>
-				<left>60</left>
-				<top>90</top>
-				<width>645</width>
-				<height>45</height>
-				<font>font11</font>
-				<textcolor>grey2</textcolor>
-				<label>$INFO[Container(11).ListItem.StartDate]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-			</control>
-			<control type="list" id="11">
-				<left>45</left>
-				<top>150</top>
-				<width>615</width>
-				<height>735</height>
-				<onleft>60</onleft>
-				<onright>60</onright>
-				<onup>11</onup>
-				<ondown>11</ondown>
-				<viewtype label="535">list</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout height="52" width="615">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>615</width>
-						<height>45</height>
-						<texture border="5">button-nofocus.png</texture>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="label">
-						<left>15</left>
-						<top>0</top>
-						<width>150</width>
-						<height>45</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-					</control>
-					<control type="image">
-						<left>180</left>
-						<top>8</top>
-						<width>45</width>
-						<height>30</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image">
-						<left>180</left>
-						<top>8</top>
-						<width>30</width>
-						<height>30</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label">
-						<left>150</left>
-						<top>0</top>
-						<width>450</width>
-						<height>45</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="label">
-						<left>225</left>
-						<top>0</top>
-						<width>375</width>
-						<height>45</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="52" width="615">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>615</width>
-						<height>45</height>
-						<texture border="5">button-nofocus.png</texture>
-						<visible>!Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>615</width>
-						<height>45</height>
-						<texture border="5">button-focus2.png</texture>
-						<visible>Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="label">
-						<left>15</left>
-						<top>0</top>
-						<width>150</width>
-						<height>45</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-					</control>
-					<control type="image">
-						<left>180</left>
-						<top>8</top>
-						<width>45</width>
-						<height>30</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image">
-						<left>180</left>
-						<top>8</top>
-						<width>30</width>
-						<height>30</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label">
-						<left>150</left>
-						<top>0</top>
-						<width>450</width>
-						<height>45</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="label">
-						<left>225</left>
-						<top>0</top>
-						<width>375</width>
-						<height>45</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</focusedlayout>
-			</control>
-			<control type="scrollbar" id="60">
-				<left>660</left>
-				<top>150</top>
-				<width>38</width>
-				<height>735</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-				<onleft>11</onleft>
-				<onright>11</onright>
-				<ondown>61</ondown>
-				<onup>61</onup>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="label">
-				<description>Page Count Label</description>
-				<left>75</left>
-				<top>915</top>
-				<width>600</width>
-				<height>30</height>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>([COLOR=blue]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
-				<include>Window_OpenClose_Animation</include>
-			</control>
+				
 		</control>
+		
 	</controls>
+	
 </window>

@@ -53,7 +53,7 @@
 					<width min="0" max="385">auto</width>
 					<textcolor>$VAR[Colour.500]</textcolor>
 					<include>WindowTitleCommons</include>
-					<label>[LOWERCASE]home[/LOWERCASE]</label>
+					<label>[LOWERCASE]$LOCALIZE[10000][/LOWERCASE]</label>
 				</control>
 				
 			</control>

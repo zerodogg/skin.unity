@@ -2,7 +2,7 @@
 
 <window type="buttonMenu">
 
-	<defaultcontrol>9001</defaultcontrol>
+	<defaultcontrol>9000</defaultcontrol>
 	
 	<coordinates>
 		<system>1</system>
@@ -15,23 +15,6 @@
 		<!--all content-->
 		<control type="group">
 			<include>SideBladeRight</include>
-	
-			<!--Make sure we hit the first button in the group list and not the close window button-->
-			<control type="button" id="9001">
-				<left>-24</left>
-				<top>-24</top>
-				<width>6</width>
-				<height>6</height>
-				<label>-</label>
-				<font>-</font>
-				<onfocus>down</onfocus>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>2</ondown>
-			</control>
 					
 			<!--close window button-->
 			<control type="button" id="20">

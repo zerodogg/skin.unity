@@ -40,7 +40,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			<include>Window_OpenClose_Animation</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Window.IsVisible(DialogVideoInfo.xml) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Window.IsVisible(MovieInformation) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
 		</control>
 		
 		<control type="multiimage">
@@ -74,7 +74,7 @@
 			<height>1080</height>
 			<texture colordiffuse="black">backgrounds/white.png</texture>
 			<visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
-			<visible>![Window.IsVisible(DialogVideoInfo.xml) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
+			<visible>![Window.IsVisible(MovieInformation) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
 		</control>
 		
 		<control type="videowindow">
@@ -83,7 +83,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
-			<visible>![Window.IsVisible(DialogVideoInfo.xml) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
+			<visible>![Window.IsVisible(MovieInformation) + !Skin.HasSetting(HideWindowedTrailer)]</visible>
 		</control>
 		
 		<control type="image">

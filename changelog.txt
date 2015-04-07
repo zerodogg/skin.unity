@@ -1,3 +1,12 @@
+[B]06/04/2015 - 0.2.2 [ALPHA] [/B]
+[CODED] Pictures (incomplete on views)
+[CODED] Profiles
+[CODED] System Settings
+[CODED] Guide OSD
+[FIXED] Subtitle hover menu while video playing
+[FIXED] Channel OSD alignment
+[CHANGED] Sideblade now playing controls
+
 [B]31/03/2015 - 0.2.1 [ALPHA] [/B]
 [CHANGED] Debug info hidden by default
 [CHANGED] Windowed trailer viewer used by default
