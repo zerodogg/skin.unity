@@ -237,9 +237,8 @@
 						<width>285</width>
 						<height>60</height>
 						<label>1024</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
+						<focusedcolor>text.primary</focusedcolor>
+						<selectedcolor>text.primary</selectedcolor>
 						<textoffsetx>60</textoffsetx>
 						<textwidth>210</textwidth>
 						<texturefocus colordiffuse="white">browsebuttonf.png</texturefocus>
@@ -278,9 +277,8 @@
 						<width>285</width>
 						<height>60</height>
 						<label>15019</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
+						<focusedcolor>text.primary</focusedcolor>
+						<selectedcolor>text.primary</selectedcolor>
 						<textoffsetx>60</textoffsetx>
 						<textwidth>210</textwidth>
 						<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
@@ -319,9 +317,8 @@
 						<width>285</width>
 						<height>60</height>
 						<label>1210</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
+						<focusedcolor>text.primary</focusedcolor>
+						<selectedcolor>text.primary</selectedcolor>
 						<textoffsetx>60</textoffsetx>
 						<textwidth>210</textwidth>
 						<texturefocus colordiffuse="white">removebuttonf.png</texturefocus>
