@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
 	<include name="PictureWrapView">
 		<control type="group">
 			<visible>Control.IsVisible(510)</visible>
@@ -86,14 +87,19 @@
 			</control>
 		</control>
 	</include>
+	
 	<include name="PictureThumbView">
+	
+		<!--all content-->
 		<control type="group">
 			<visible>Control.IsVisible(514)</visible>
+			
+			<!--content list-->
 			<control type="panel" id="514">
 				<left>90</left>
-				<top>112</top>
+				<top>162</top>
 				<width>648</width>
-				<height>864</height>
+				<height>800</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>514</onup>
@@ -102,119 +108,249 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<preloaditems>2</preloaditems>
-				<itemlayout height="216" width="216">
+				
+				<itemlayout height="200" width="200">
+				
+					<!--background (fallback)-->
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>216</width>
-						<height>216</height>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="10">ThumbShadow.png</bordertexture>
-						<bordersize>8</bordersize>
-						<fadetime>200</fadetime>
-						<texture border="2">ThumbBG.png</texture>
+						<width>200</width>
+						<height>200</height>
+						<texture background="true" colordiffuse="tertiary">backgrounds/white.png</texture>
+						<bordersize>5</bordersize>
+						<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/square shadow small.png</bordertexture>
+						<visible>SubString(ListItem.Icon,Default)</visible>
 					</control>
+
+					<!--background (no fallback)-->
 					<control type="image">
-						<left>15</left>
-						<top>15</top>
-						<width>186</width>
-						<height>186</height>
-						<aspectratio>keep</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>200</width>
+						<height>200</height>
+						<texture background="true" colordiffuse="button.nf">backgrounds/white.png</texture>
+						<bordersize>5</bordersize>
+						<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/square shadow small.png</bordertexture>
+						<visible>!SubString(ListItem.Icon,Default)</visible>
 					</control>
+					
+					<!--icon (fallback)-->
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>190</width>
+						<height>190</height>
+						<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[Listitem.Icon]</texture>
+						<visible>SubString(ListItem.Icon,Default)</visible>
+					</control>
+				
+					<!--icon (no fallback)-->
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>190</width>
+						<height>190</height>
+						<aspectratio>keep</aspectratio>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<visible>!SubString(ListItem.Icon,Default)</visible>
+					</control>
+					
 				</itemlayout>
-				<focusedlayout height="216" width="216">
+				
+				<focusedlayout height="200" width="200">
+				
+					<!--background (fallback)-->
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>216</width>
-						<height>216</height>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="10">folder-Focus.png</bordertexture>
-						<bordersize>8</bordersize>
-						<fadetime>200</fadetime>
-						<texture border="2">ThumbBG.png</texture>
+						<width>200</width>
+						<height>200</height>
+						<texture background="true" colordiffuse="tertiary2">backgrounds/white.png</texture>
+						<bordersize>5</bordersize>
+						<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</bordertexture>
+						<visible>SubString(ListItem.Icon,Default)</visible>
 					</control>
+
+					<!--background (no fallback)-->
 					<control type="image">
-						<left>15</left>
-						<top>15</top>
-						<width>186</width>
-						<height>186</height>
-						<aspectratio>keep</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>200</width>
+						<height>200</height>
+						<texture background="true" colordiffuse="button.nf">backgrounds/white.png</texture>
+						<bordersize>5</bordersize>
+						<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</bordertexture>
+						<visible>!SubString(ListItem.Icon,Default)</visible>
 					</control>
+				
+					<!--icon (fallback)-->
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>190</width>
+						<height>190</height>
+						<texture colordiffuse="$VAR[Colour.500]" background="true">$INFO[Listitem.Icon]</texture>
+						<visible>SubString(ListItem.Icon,Default)</visible>
+					</control>
+				
+					<!--icon (no fallback)-->
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>190</width>
+						<height>190</height>
+						<aspectratio>keep</aspectratio>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<visible>!SubString(ListItem.Icon,Default)</visible>
+					</control>
+					
 				</focusedlayout>
+				
 			</control>
+			
+			<!--scrollbar-->
 			<control type="scrollbar" id="60">
 				<left>750</left>
-				<top>105</top>
-				<width>38</width>
-				<height>864</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<top>162</top>
+				<height>800</height>
 				<onleft>514</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>514</onright>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(514)</visible>
 			</control>
+			
+			<!--picture info-->
 			<control type="group">
-				<left>855</left>
-				<top>120</top>
-				<control type="label">
-					<description>Title txt</description>
-					<left>0</left>
-					<top>0</top>
-					<width>960</width>
-					<height>22</height>
-					<label>$INFO[ListItem.Label]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font24_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
+				<left>875</left>
+				<top>170</top>
+				
+				<!--background-->
 				<control type="image">
 					<left>0</left>
-					<top>45</top>
-					<width>960</width>
-					<height>705</height>
+					<top>0</top>
+					<width>920</width>
+					<height>640</height>
+					<texture background="true" colordiffuse="button.nf">backgrounds/white.png</texture>
+				</control>
+				
+				<!--picture-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>920</width>
+					<height>640</height>
 					<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
 					<fadetime>600</fadetime>
 					<aspectratio>keep</aspectratio>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
-					<bordersize>9</bordersize>
 				</control>
-				<control type="label">
-					<description>Date time txt</description>
+				
+				<!--info strip background-->
+				<control type="image">
 					<left>0</left>
-					<top>765</top>
-					<width>960</width>
-					<height>22</height>
-					<label>$INFO[ListItem.PictureDateTime,[COLOR=blue]$LOCALIZE[31326][/COLOR] - ]</label>
+					<top>640</top>
+					<width>920</width>
+					<height>60</height>
+					<texture background="true" colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+				</control>
+			
+				<!--fanart shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>640</top>
+					<width>920</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+				</control>
+					
+				<!--secondary label-->
+				<control type="label">
+					<left>15</left>
+					<top>640</top>
+					<width>890</width>
+					<height>60</height>
+					<font>secondary.info.big</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>white</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
-				<control type="label">
-					<description>Resolution txt</description>
+				
+				<!--background-->
+				<control type="image">
 					<left>0</left>
-					<top>802</top>
-					<width>960</width>
-					<height>22</height>
-					<label>$INFO[ListItem.PictureResolution,[COLOR=blue]$LOCALIZE[31327][/COLOR] - ]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<top>700</top>
+					<width>920</width>
+					<height>85</height>
+					<texture background="true" colordiffuse="tertiary">backgrounds/white.png</texture>
 				</control>
+			
+				<!--info strip shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>700</top>
+					<width>920</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+				</control>
+				
 			</control>
+
+			<control type="grouplist">
+				<left>875</left>
+				<top>880</top>
+				<usecontrolcoords>true</usecontrolcoords>
+				<itemgap>0</itemgap>
+				
+				<control type="label">
+					<left>15</left>
+					<top>0</top>
+					<width>160</width>
+					<height>35</height>
+					<font>secondary.info</font>
+					<textcolor>$VAR[Colour.500]</textcolor>
+					<label>$LOCALIZE[31326]</label>
+					<visible>!IsEmpty(ListItem.PictureDateTime)</visible>
+				</control>
+				
+				<control type="label">
+					<left>155</left>
+					<top>-35</top>
+					<width>730</width>
+					<height>35</height>
+					<font>secondary.info</font>
+					<textcolor>text.primary</textcolor>
+					<label>$INFO[ListItem.PictureDateTime]</label>
+				</control>
+				
+				<control type="label">
+					<left>15</left>
+					<top>0</top>
+					<width>160</width>
+					<height>35</height>
+					<font>secondary.info</font>
+					<textcolor>$VAR[Colour.500]</textcolor>
+					<label>$LOCALIZE[31327]</label>
+					<visible>!IsEmpty(ListItem.PictureResolution)</visible>
+				</control>
+				
+				<control type="label">
+					<left>155</left>
+					<top>-35</top>
+					<width>730</width>
+					<height>35</height>
+					<font>secondary.info</font>
+					<textcolor>text.primary</textcolor>
+					<label>$INFO[ListItem.PictureResolution]</label>
+				</control>
+				
+			</control>
+			
 		</control>
+		
 	</include>
+	
 </includes>
