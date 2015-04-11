@@ -134,9 +134,9 @@
 				<!--content list-->
 				<control type="list" id="5">
 					<left>555</left>
-					<top>155</top>
+					<top>165</top>
 					<width>600</width>
-					<height>930</height>
+					<height>920</height>
 					<onleft>PreviousChannelGroup</onleft>
 					<onright>60</onright>
 					<onup>5</onup>
@@ -150,7 +150,7 @@
 						<control type="label">
 							<left>15</left>
 							<top>0</top>
-							<width>165</width>
+							<width>175</width>
 							<height>60</height>
 							<font>button</font>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
@@ -160,9 +160,9 @@
 						</control>
 						
 						<control type="label">
-							<left>175</left>
+							<left>200</left>
 							<top>0</top>
-							<width>410</width>
+							<width>385</width>
 							<height>60</height>
 							<font>button</font>
 							<aligny>center</aligny>
@@ -187,7 +187,7 @@
 						<control type="label">
 							<left>15</left>
 							<top>0</top>
-							<width>165</width>
+							<width>175</width>
 							<height>60</height>
 							<font>button</font>
 							<aligny>center</aligny>
@@ -197,9 +197,9 @@
 						</control>
 						
 						<control type="label">
-							<left>175</left>
+							<left>200</left>
 							<top>0</top>
-							<width>410</width>
+							<width>385</width>
 							<height>60</height>
 							<font>button</font>
 							<aligny>center</aligny>
