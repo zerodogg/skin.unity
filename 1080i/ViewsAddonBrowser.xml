@@ -193,7 +193,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>60</top>
-						<width>510</width>
+						<width>460</width>
 						<height>10</height>
 						<texture>homeshadow.png</texture>
 						<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
