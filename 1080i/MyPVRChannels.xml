@@ -315,6 +315,7 @@
 							<top>70</top>
 							<width>420</width>
 							<height>7</height>
+							<midtexture colordiffuse="tertiary">backgrounds/white.png</midtexture>
 							<info>ListItem.Progress</info>
 							<visible>ListItem.HasEpg</visible>
 						</control>
