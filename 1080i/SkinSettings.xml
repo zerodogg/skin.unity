@@ -750,7 +750,7 @@
 					<control type="button" id="425">
 						<width>995</width>
 						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label2>
+						<label2>$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label2>
 						<onclick>Skin.SetAddon(HomeMusicButton5,xbmc.addon.audio,xbmc.addon.executable)</onclick>
 					</control>
 					
