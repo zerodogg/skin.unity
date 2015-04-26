@@ -25,10 +25,10 @@
 			
 				<!--fake button to view fanart-->
 				<control type="button" id="9003">
-					<left>0</left>
-					<top>0</top>
-					<width>375</width>
-					<height>1080</height>
+					<left>1850</left>
+					<top>80</top>
+					<width>60</width>
+					<height>60</height>
 					<label>-</label>
 					<font>-</font>
 					<ondown>9000</ondown>
@@ -432,7 +432,7 @@
 					<top>160</top>
 					<width>1545</width>
 					<height>60</height>
-					<itemgap>-90</itemgap>
+					<itemgap>0</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
@@ -444,7 +444,7 @@
 					
 					<!--play/browse to show-->
 					<control type="togglebutton" id="8">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -462,7 +462,7 @@
 					
 					<!--cast-->
 					<control type="button" id="5">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -476,7 +476,7 @@
 					
 					<!--trailer-->
 					<control type="button" id="11">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -491,7 +491,7 @@
 					
 					<!--windowed trailer-->
 					<control type="button" id="15">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -507,7 +507,7 @@
 					
 					<!--refresh-->
 					<control type="button" id="6">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -521,7 +521,7 @@
 					
 					<!--get art-->
 					<control type="button" id="10">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
@@ -535,7 +535,7 @@
 					
 					<!--get tv tune-->
 					<control type="button" id="100">
-						<width>285</width>
+						<width>195</width>
 						<textoffsetx>60</textoffsetx>
 						<align>left</align>
 						<textwidth>410</textwidth>
