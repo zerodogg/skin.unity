@@ -1,3 +1,11 @@
+[B]25/04/2015 - 0.2.3 [ALPHA] [/B]
+[CODED] Pictures Views
+[CODED] File Manager
+[CODED] PVR Section (incomplete on dialogs)
+[FIXED] Various typo/spacing errors
+[FIXED] Dialog video info mouse controls
+[UPDATED] Roboto font files
+
 [B]06/04/2015 - 0.2.2 [ALPHA] [/B]
 [CODED] Pictures (incomplete on views)
 [CODED] Profiles

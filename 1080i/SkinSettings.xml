@@ -65,7 +65,7 @@
 			<animation effect="slide" start="0,950" end="0,0" time="400" tween="quadratic" easing="out" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end=",950" time="400" tween="quadratic" easing="out" condition="!Window.Next(Settings.xml)">WindowClose</animation>
 			
-			<animation effect="slide" start="1700,0" end=",0" time="400" tween="quadratic" easing="out" condition="Window.Previous(Settings.xml)">WindowOpen</animation>
+			<animation effect="slide" start="1700,0" end="0,0" time="400" tween="quadratic" easing="out" condition="Window.Previous(Settings.xml)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="1700,0" time="400" tween="quadratic" easing="out" condition="Window.Next(Settings.xml)">WindowClose</animation>
 			
 			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
@@ -750,7 +750,7 @@
 					<control type="button" id="425">
 						<width>995</width>
 						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label2>
+						<label2>$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label2>
 						<onclick>Skin.SetAddon(HomeMusicButton5,xbmc.addon.audio,xbmc.addon.executable)</onclick>
 					</control>
 					
