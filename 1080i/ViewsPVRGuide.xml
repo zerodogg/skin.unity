@@ -619,7 +619,7 @@
 							<font>label</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<info>ListItem.ChannelName</info>
 						</control>
@@ -640,10 +640,10 @@
 						<control type="textbox">
 							<description>Plot Value for TVShow</description>
 							<left>75</left>
-							<top>65</top>
+							<top>60</top>
 							<width>1500</width>
-							<height>75</height>
-							<font>kai.primary</font>
+							<height>82</height>
+							<font>secondary.info</font>
 							<align>justify</align>
 							<textcolor>text.primary</textcolor>
 							<pagecontrol>-</pagecontrol>
@@ -668,7 +668,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>19043</label>
 							<visible>ListItem.IsRecording</visible>
@@ -692,7 +692,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>31510</label>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
@@ -1017,7 +1017,7 @@
 							<font>label</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<info>ListItem.ChannelName</info>
 						</control>
@@ -1038,10 +1038,10 @@
 						<control type="textbox">
 							<description>Plot Value for TVShow</description>
 							<left>75</left>
-							<top>65</top>
+							<top>60</top>
 							<width>1500</width>
-							<height>75</height>
-							<font>kai.primary</font>
+							<height>82</height>
+							<font>secondary.info</font>
 							<align>justify</align>
 							<textcolor>text.primary</textcolor>
 							<pagecontrol>-</pagecontrol>
@@ -1066,7 +1066,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>19043</label>
 							<visible>ListItem.IsRecording</visible>
@@ -1090,7 +1090,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>31510</label>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
@@ -1415,7 +1415,7 @@
 							<font>label</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<info>ListItem.ChannelName</info>
 						</control>
@@ -1436,10 +1436,10 @@
 						<control type="textbox">
 							<description>Plot Value for TVShow</description>
 							<left>75</left>
-							<top>65</top>
+							<top>60</top>
 							<width>1500</width>
-							<height>75</height>
-							<font>kai.primary</font>
+							<height>82</height>
+							<font>secondary.info</font>
 							<align>justify</align>
 							<textcolor>text.primary</textcolor>
 							<pagecontrol>-</pagecontrol>
@@ -1464,7 +1464,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>19043</label>
 							<visible>ListItem.IsRecording</visible>
@@ -1488,7 +1488,7 @@
 							<font>secondary.info.light</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>text.primary</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<label>31510</label>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
