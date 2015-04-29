@@ -11,6 +11,42 @@
 		<include>CommonBackground</include>
 		<include>MainWindowMouseButtons</include>
 		<include>PVRHeader</include>
+		<include>Clock</include>
+		
+		<control type="group">
+				
+			<control type="image">
+				<left>64</left>
+				<top>94r</top>
+				<width>280</width>
+				<height>34</height>
+				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+			</control>
+		
+			<control type="image">
+				<left>60</left>
+				<top>94r</top>
+				<width>4</width>
+				<height>34</height>
+				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+			</control>
+			
+			<control type="label">
+				<description>Page Count Label</description>
+				<left>73</left>
+				<top>94r</top>
+				<width>750</width>
+				<height>34</height>
+				<font>breadcrumb.secondary</font>
+				<textcolor>text.primary</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container.NumItems] $LOCALIZE[31025] [COLOR=$VAR[Colour.500]]$INFO[Container.CurrentPage, $LOCALIZE[31024] ]$INFO[Container.NumPages,/,][/COLOR]</label>
+				<include>Window_OpenClose_Animation</include>
+			</control>
+			
+		</control>
 		
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -485,43 +521,7 @@
 			<visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
 		</control>
 		
-		<control type="group">
-				
-			<control type="image">
-				<left>64</left>
-				<top>94r</top>
-				<width>280</width>
-				<height>34</height>
-				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-			</control>
-		
-			<control type="image">
-				<left>60</left>
-				<top>94r</top>
-				<width>4</width>
-				<height>34</height>
-				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-			</control>
-			
-			<control type="label">
-				<description>Page Count Label</description>
-				<left>73</left>
-				<top>94r</top>
-				<width>750</width>
-				<height>34</height>
-				<font>breadcrumb.secondary</font>
-				<textcolor>text.primary</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems] $LOCALIZE[31025] [COLOR=$VAR[Colour.500]]$INFO[Container.CurrentPage, $LOCALIZE[31024] ]$INFO[Container.NumPages,/,][/COLOR]</label>
-				<include>Window_OpenClose_Animation</include>
-			</control>
-			
-		</control>
-		
 		<include>PVRSideBlade</include>
-		<include>Clock</include>
 		
 	</controls>
 	

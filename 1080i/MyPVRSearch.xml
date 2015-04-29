@@ -11,6 +11,7 @@
 		<include>CommonBackground</include>
 		<include>MainWindowMouseButtons</include>
 		<include>PVRHeader</include>
+		<include>Clock</include>
 		
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -467,7 +468,6 @@
 		</control>
 		
 		<include>PVRSideBlade</include>
-		<include>Clock</include>
 		
 	</controls>
 	
