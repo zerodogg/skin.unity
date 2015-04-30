@@ -78,13 +78,13 @@
 	<default type="spincontrol">
 		<left>495</left>
 		<top>189</top>
-		<textureup>scroll-up-2.png</textureup>
-		<texturedown>scroll-down-2.png</texturedown>
-		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+		<textureup colordiffuse="text.primary">scroll-up-2.png</textureup>
+		<texturedown colordiffuse="text.primary">scroll-down-2.png</texturedown>
+		<textureupfocus colordiffuse="white">scroll-up-2.png</textureupfocus>
+		<texturedownfocus colordiffuse="white">scroll-down-2.png</texturedownfocus>
 		<align>right</align>
-		<width>50</width>
-		<height>60</height>
+		<width>32</width>
+		<height>36</height>
 		<font>button</font>
 		<reverse>yes</reverse>
 		<textcolor>text.primary</textcolor>
