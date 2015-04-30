@@ -10,6 +10,8 @@
 	
 		<include>CommonBackground</include>
 		<include>Clock</include>
+		<include>CommonNowPlaying</include>
+		<include>MainWindowMouseButtons</include>
 			
 		<!--breadcrumbs-->
 		<control type="group">
@@ -325,8 +327,6 @@
 			
 		</control>
 		
-		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>
 		
 	</controls>

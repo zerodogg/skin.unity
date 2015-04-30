@@ -10,6 +10,8 @@
 	
 		<include>CommonBackground</include>
 		<include>Clock</include>
+		<include>CommonNowPlaying</include>
+		<include>MainWindowMouseButtons</include>
 			
 		<!--breadcrumbs-->
 		<control type="group">
@@ -335,11 +337,10 @@
 					<height>24</height>
 					<info>system.memory(used)</info>
 				</control>
+				
 			</control>
+			
 		</control>
-		
-		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
 		
 	</controls>
 	
