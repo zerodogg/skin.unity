@@ -3,7 +3,6 @@
 <window>
 
 	<defaultcontrol always="true">2</defaultcontrol>
-	<zorder>10</zorder>
 	
 	<controls>
 	

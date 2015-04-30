@@ -2,7 +2,6 @@
 
 <window type="dialog">
 
-	<zorder>1</zorder>
 	<defaultcontrol always="true">3</defaultcontrol>
 	
 	<controls>
