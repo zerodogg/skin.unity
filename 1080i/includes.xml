@@ -20,6 +20,15 @@
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	
+	<variable name="WeatherView">
+		<value condition="IsEmpty(Window.Property(Weather.CurrentView))">$LOCALIZE[31904]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),36hour)">$LOCALIZE[31901]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),weekend)">$LOCALIZE[31903]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),hourly)">$LOCALIZE[31902]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),map)">$LOCALIZE[31910]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),alerts)">$LOCALIZE[33050]</value>
+	</variable>
+	
 	<variable name="BannerThumb">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value condition="IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Icon]</value>
