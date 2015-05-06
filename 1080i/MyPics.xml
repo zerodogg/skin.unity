@@ -49,7 +49,6 @@
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
 		<include>MainWindowMouseButtons</include>
-		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		
 		<!--breadcrumbs-->
@@ -131,6 +130,8 @@
 			</control>
 			
 		</control>
+		
+		<include>BehindDialogFadeOut</include>
 		
 		<!--view options-->
 		<control type="group">
