@@ -171,15 +171,7 @@
 				<scrolltime>300</scrolltime>
 				
 				<itemlayout height="65" width="355">
-				
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>355</width>
-						<height>60</height>
-						<texture colordiffuse="$VAR[Colour.500]">button-border-355s.png</texture>
-					</control>
-					
+
 					<control type="label">
 						<left>15</left>
 						<top>0</top>
