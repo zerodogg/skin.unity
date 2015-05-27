@@ -250,11 +250,12 @@
 			<!--setting description-->
 			<control type="textbox" id="6">
 				<left>935</left>
-				<top>735</top>
+				<top>725</top>
 				<width>960</width>
-				<height>128</height>
+				<height>48</height>
 				<font>secondary.info.small</font>
 				<align>left</align>
+				<aligny>center</aligny>
 				<textcolor>text.primary</textcolor>
 				<scroll>true</scroll>
 			</control>
