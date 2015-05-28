@@ -80,8 +80,8 @@
 		<top>189</top>
 		<textureup colordiffuse="text.primary">scroll-up-2.png</textureup>
 		<texturedown colordiffuse="text.primary">scroll-down-2.png</texturedown>
-		<textureupfocus colordiffuse="white">scroll-up-2.png</textureupfocus>
-		<texturedownfocus colordiffuse="white">scroll-down-2.png</texturedownfocus>
+		<textureupfocus colordiffuse="tertiary">scroll-up-2.png</textureupfocus>
+		<texturedownfocus colordiffuse="tertiary">scroll-down-2.png</texturedownfocus>
 		<align>right</align>
 		<width>32</width>
 		<height>36</height>
@@ -107,8 +107,8 @@
 		<texturenofocus>-</texturenofocus>
 		<textureup colordiffuse="text.primary">scroll-up-2.png</textureup>
 		<texturedown colordiffuse="text.primary">scroll-down-2.png</texturedown>
-		<textureupfocus colordiffuse="white">scroll-up-2.png</textureupfocus>
-		<texturedownfocus colordiffuse="white">scroll-down-2.png</texturedownfocus>
+		<textureupfocus colordiffuse="tertiary">scroll-up-2.png</textureupfocus>
+		<texturedownfocus colordiffuse="tertiary">scroll-down-2.png</texturedownfocus>
 		<font>button</font>
 		<textcolor>text.primary</textcolor>
 		<focusedcolor>white</focusedcolor>
