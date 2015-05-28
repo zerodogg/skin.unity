@@ -1644,11 +1644,11 @@
 	<include name="KeyboardButton">
 		<width>75</width>
 		<height>75</height>
-		<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-		<texturefocus border="5">KeyboardKey.png</texturefocus>
+		<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+		<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font13</font>
+		<font>button</font>
 		<focusedcolor>black</focusedcolor>
 	</include>
 	
