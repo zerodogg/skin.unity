@@ -1468,8 +1468,8 @@
 				<width>38</width>
 				<height>38</height>
 				<label>-</label>
-				<texturefocus colordiffuse="$VAR[Colour.500]">osdplaynf.png</texturefocus>
-				<texturenofocus>osdplaynf.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDPlayNF.png</texturefocus>
+				<texturenofocus>OSDPlayNF.png</texturenofocus>
 				<onleft>991</onleft>
 				<onright>9000</onright>
 				<onclick>Control.Move(53,1)</onclick>
@@ -1481,8 +1481,8 @@
 				<width>38</width>
 				<height>38</height>
 				<label>-</label>
-				<texturefocus flipx="true" colordiffuse="$VAR[Colour.500]">osdplaynf.png</texturefocus>
-				<texturenofocus flipx="true">osdplaynf.png</texturenofocus>
+				<texturefocus flipx="true" colordiffuse="$VAR[Colour.500]">OSDPlayNF.png</texturefocus>
+				<texturenofocus flipx="true">OSDPlayNF.png</texturenofocus>
 				<onleft>9000</onleft>
 				<onright>992</onright>
 				<onclick>Control.Move(53,-1)</onclick>

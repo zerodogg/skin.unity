@@ -132,7 +132,7 @@
 				<top>582</top>
 				<width>38</width>
 				<height>38</height>
-				<texture flipx="true" colordiffuse="text.primary">osdplaynf.png</texture>
+				<texture flipx="true" colordiffuse="text.primary">OSDPlayNF.png</texture>
 				<visible>Container(450).HasPrevious</visible>
 			</control>
 			
@@ -141,7 +141,7 @@
 				<top>582</top>
 				<width>38</width>
 				<height>38</height>
-				<texture colordiffuse="text.primary">osdplaynf.png</texture>
+				<texture colordiffuse="text.primary">OSDPlayNF.png</texture>
 				<visible>Container(450).HasNext</visible>
 			</control>
 			
