@@ -119,13 +119,14 @@
 			</control>
 
 			<control type="group">
-				<left>360</left>
+				<right>685</right>
 				<top>735</top>
+
 				<!-- 2nd row -->
-				
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
+					<align>right</align>
 					<onright>106</onright>
 					
 					<control type="button" id="120">
@@ -250,6 +251,7 @@
 					<top>80</top>
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
+					<align>right</align>
 					<onright>103</onright>
 					
 					<control type="button" id="140">
@@ -337,7 +339,7 @@
 					</control>
 
 					<control type="group" id="352">
-						<width>75</width>
+						<width>155</width>
 						
 						<control type="button" id="300">
 							<description>DONE button</description>
@@ -378,6 +380,7 @@
 					<top>160</top>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
+					<align>right</align>
 					<onright>100</onright>
 					
 					<control type="radiobutton" id="302">
@@ -523,6 +526,7 @@
 					<top>240</top>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
+					<align>right</align>
 					<onright>109</onright>
 					
 					<control type="group" id="353">
