@@ -1,3 +1,16 @@
+[B]25/04/2015 - 0.2.4 [ALPHA] [/B]
+[CODED] PVR Timers Dialog
+[CODED] PVR Guide Info Dialog
+[CODED] PVR Recording Info Dialog
+[CODED] File Stacking Dialog
+[CODED] Keyboard Dialog
+[CODED] Numeric Keyboard Dialog
+[CODED] Lock Settings
+[FIXED] Images no longer disappear
+[FIXED] Dialog video info mouse controls
+[UPDATED] Language files
+[UPDATED] Missing icons added
+
 [B]25/04/2015 - 0.2.3 [ALPHA] [/B]
 [CODED] Pictures Views
 [CODED] File Manager

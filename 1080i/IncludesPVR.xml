@@ -40,6 +40,7 @@
 					<label>$LOCALIZE[19020]</label>
 					<visible>IsEmpty(Window.Property(IsRadio))</visible>
 				</control>
+				
 				<control type="label">
 					<include>WindowTitleCommons</include>
 					<label>$LOCALIZE[19021]</label>

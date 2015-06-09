@@ -3008,7 +3008,7 @@
 					<width>267</width>
 					<height>400</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$VAR[Colour.500]" background="true">defaultfolder.png</texture>
+					<texture colordiffuse="$VAR[Colour.500]" background="true">DefaultFolder.png</texture>
 					<visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				

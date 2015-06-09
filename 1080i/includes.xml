@@ -20,6 +20,15 @@
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	
+	<variable name="WeatherView">
+		<value condition="IsEmpty(Window.Property(Weather.CurrentView))">$LOCALIZE[31904]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),36hour)">$LOCALIZE[31901]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),weekend)">$LOCALIZE[31903]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),hourly)">$LOCALIZE[31902]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),map)">$LOCALIZE[31910]</value>
+		<value condition="StringCompare(Window.Property(Weather.CurrentView),alerts)">$LOCALIZE[33050]</value>
+	</variable>
+	
 	<variable name="BannerThumb">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value condition="IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Icon]</value>
@@ -284,9 +293,9 @@
 		<aligny>center</aligny>
 		<font>button</font>
 		<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
-		<texturenofocus colordiffuse="$VAR[Colour.500]">button-border-355s.png</texturenofocus>
+		<texturenofocus>-</texturenofocus>
 		<alttexturefocus colordiffuse="white">backgrounds/white.png</alttexturefocus>
-		<alttexturenofocus colordiffuse="$VAR[Colour.500]">button-border-355s.png</alttexturenofocus>
+		<alttexturenofocus>-</alttexturenofocus>
 		<pulseonselect>false</pulseonselect>
 		<textcolor>white</textcolor>
 		<selectedcolor>$VAR[Colour.900]</selectedcolor>
@@ -353,7 +362,7 @@
 		<animation effect="slide" start="0,0" end="-450,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
 		<animation effect="slide" start="0,0" end="-75,0" time="300" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
 		<animation effect="slide" start="-75,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-375,0" time="300" tween="quadratic" easing="out" condition="Window.IsActive(ShutdownMenu) + Control.IsVisible(73)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-375,0" time="300" tween="quadratic" easing="out" condition="Window.IsActive(ShutdownMenu)">Conditional</animation>
 		
 		<!--fake button for mouse control-->
 		<control type="button" id="8999">
@@ -1635,12 +1644,13 @@
 	<include name="KeyboardButton">
 		<width>75</width>
 		<height>75</height>
-		<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-		<texturefocus border="5">KeyboardKey.png</texturefocus>
+		<texturenofocus colordiffuse="text.primary">backgrounds/white.png</texturenofocus>
+		<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font13</font>
-		<focusedcolor>black</focusedcolor>
+		<font>button</font>
+		<textcolor>tertiary</textcolor>
+		<focusedcolor>white</focusedcolor>
 	</include>
 	
 	<include name="TVNextAiredListCommonLayout">

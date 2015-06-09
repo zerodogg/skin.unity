@@ -10,6 +10,8 @@
 	
 		<include>CommonBackground</include>
 		<include>Clock</include>
+		<include>CommonNowPlaying</include>
+		<include>MainWindowMouseButtons</include>
 			
 		<!--breadcrumbs-->
 		<control type="group">
@@ -82,7 +84,7 @@
 					<top>0</top>
 					<width>1390</width>
 					<height>783</height>
-					<texture colordiffuse="tertiary2">backgrounds/white.png</texture>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 				</control>
 					
 				<!--title background-->
@@ -533,9 +535,7 @@
 			</control>
 			
 		</control>
-		
-		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+
 		<include>BehindDialogFadeOut</include>
 		
 	</controls>

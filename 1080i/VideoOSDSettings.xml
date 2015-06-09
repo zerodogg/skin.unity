@@ -3,8 +3,7 @@
 <window>
 
 	<defaultcontrol>5</defaultcontrol>
-	<zorder>10</zorder>
-		
+
 	<controls>
 	
 		<!--all content-->
