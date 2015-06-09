@@ -3,20 +3,18 @@
 <window>
 
 	<defaultcontrol always="true">300</defaultcontrol>
-	
-	<animation type="WindowOpen">
-		<effect type="slide" start="0,665" end="0,0" time="300" tween="quadratic" easing="out" />
-	</animation>
-	
-	<animation type="WindowClose">
-		<effect type="slide" start="0,0" end="0,665" time="300" tween="quadratic" easing="out" />
-	</animation>
 
 	<controls>
 
 		<control type="group">
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<top>-10</top>
+			
+			<animation effect="slide" start="0,665" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,665" time="300" tween="quadratic" easing="out">WindowClose</animation>
+			
+			<animation effect="slide" start="0,665" end="0,0" time="300" tween="quadratic" easing="out">Visible</animation>
+			<animation effect="slide" start="0,0" end="0,665" time="300" tween="quadratic" easing="out">Hidden</animation>
 
 			<!--background-->
 			<control type="image">
@@ -36,7 +34,7 @@
 				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 			</control>
 
-			<!--buttons bg-->
+			<!--text entry bg-->
 			<control type="image">
 				<left>0</left>
 				<top>630</top>
@@ -55,7 +53,7 @@
 				<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 			</control>
 
-			<!--buttons shadow-->
+			<!--text entry shadow-->
 			<control type="image">
 				<left>0</left>
 				<top>700</top>
