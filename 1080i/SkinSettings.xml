@@ -6,6 +6,8 @@
 	
 	<onload condition="IsEmpty(Skin.String(Colour.Theme))">Skin.SetString(Colour.Theme,Red)</onload>
 	
+	<onunload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000)</onunload>
+	
 	<controls>
 	
 		<include>CommonBackground</include>
@@ -461,73 +463,32 @@
 						<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedAlbums)</onclick>
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 					</control>
-					
-					<control type="label" id="220">
+
+					<control type="label" id="230">
 						<width>995</width>
 						<height>60</height>
 						<font>button.bold</font>
 						<textcolor>$VAR[Colour.500]</textcolor>
 						<textoffsetx>5</textoffsetx>
 						<aligny>center</aligny>
-						<label>31108</label>
+						<label>$ADDON[script.skinshortcuts 32071]</label>
+						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
 					
-					<!--hide videos button-->
-					<control type="radiobutton" id="221">
+					<!--customize skin shortcuts menu-->
+					<control type="button" id="231">
 						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
+						<label>$ADDON[script.skinshortcuts 32035]</label>
+						<onclick>RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</onclick>
+						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
 					
-					<!--hide movies button-->
-					<control type="radiobutton" id="222">
+					<!--reset skin shortcuts menu-->
+					<control type="button" id="232">
 						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20342] ($LOCALIZE[20314])</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoMovieButton)</selected>
-						<enable>Library.HasContent(Movies)</enable>
-					</control>
-					
-					<!--hide tv shows button-->
-					<control type="radiobutton" id="223">
-						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20343] ($LOCALIZE[20314])</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
-						<enable>Library.HasContent(TVShows)</enable>
-					</control>
-					
-					<!--hide music button-->
-					<control type="radiobutton" id="224">
-						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
-					</control>
-					
-					<!--hide pictures button-->
-					<control type="radiobutton" id="225">
-						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
-					</control>
-					
-					<!--hide programs button-->
-					<control type="radiobutton" id="226">
-						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[0]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
-					</control>
-					
-					<!--hide weather button-->
-					<control type="radiobutton" id="228">
-						<width>995</width>
-						<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
+						<label>$ADDON[script.skinshortcuts 32037]</label>
+						<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
 					
 				</control>

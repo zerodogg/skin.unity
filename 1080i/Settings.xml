@@ -276,7 +276,7 @@
 					</item>
 					
 					<item id="10">
-						<label>Skin</label>
+						<label>166</label>
 						<label2>31406</label2>
 						<onclick>ActivateWindow(SkinSettings)</onclick>
 						<icon>-</icon>
