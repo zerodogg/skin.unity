@@ -4,8 +4,7 @@
 
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	
-	<onload>ClearProperty(MainMenuItem)</onload>
+
 	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000)</onload>
 	
 	<controls>
@@ -950,163 +949,97 @@
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			
-			<!--sub menu background-->
-			<control type="group" id="9001">
-				<left>150</left>
-				<top>10</top>
+			<control type="group">
+				<include>HomeSubMenu</include>
 
-				<control type="image">
-					<left>675</left>
-					<top>0</top>
-					<height>60</height>
-					<width>270</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" easing="out" reversible="false">Hidden</animation>
-					<visible>StringCompare(Container(9901).NumItems,1)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
-				</control>
-				
-				<control type="image">
-					<left>540</left>
-					<top>0</top>
-					<height>60</height>
-					<width>540</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" easing="out" reversible="false">Hidden</animation>
-					<visible>StringCompare(Container(9901).NumItems,2)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
-				</control>
-				
-				<control type="image">
-					<left>405</left>
-					<top>0</top>
-					<height>60</height>
-					<width>810</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" easing="out" reversible="false">Hidden</animation>
-					<visible>StringCompare(Container(9901).NumItems,3)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
-				</control>
-				
-				<control type="image">
-					<left>270</left>
-					<top>0</top>
-					<height>60</height>
-					<width>1080</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" easing="out" reversible="false">Hidden</animation>
-					<visible>StringCompare(Container(9901).NumItems,4)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
-				</control>
-				
-				<control type="image">
-					<left>135</left>
-					<top>0</top>
-					<height>60</height>
-					<width>1350</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" easing="out" reversible="false">Hidden</animation>
-					<visible>StringCompare(Container(9901).NumItems,5)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
-				</control>
-				
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<height>60</height>
+				<!--sub menus-->
+				<control type="fixedlist" id="9901">
+					<visible allowhiddenfocus="true">Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904)</visible>
+					<left>150</left>
+					<top>38</top>
 					<width>1620</width>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
-					<animation effect="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" reversible="false">Visible</animation>
-					<animation effect="slide" start="0,97" end="0,0" time="200" tween="quadratic" reversible="false">Hidden</animation>
-					<visible>IntegerGreaterThan(Container(9901).NumItems,5)</visible>
-					<visible>Skin.HasSetting(MainMenuChange)</visible>
+					<height>60</height>
+					<onup>9000</onup>
+					<ondown>9002</ondown>
+					<itemgap>0</itemgap>
+					<focusposition>2</focusposition>
+					<movement>3</movement>
+					<orientation>Horizontal</orientation>
+					<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,1)">conditional</animation>
+					<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,5)">conditional</animation>
+					<animation effect="fade" time="200" delay="200">Hidden</animation>
+
+					<itemlayout width="270" height="60">
+					
+						<control type="image">
+							<height>60</height>
+							<width>270</width>
+							<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+						</control>
+					
+						<control type="label">
+							<height>60</height>
+							<width>270</width>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>button</font>
+							<textcolor>text.primary</textcolor>
+							<info>ListItem.Label</info>
+						</control>
+					
+					</itemlayout>
+					
+					<focusedlayout width="270" height="60">
+					
+						<control type="image">
+							<height>60</height>
+							<width>270</width>
+							<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+							<visible>Control.HasFocus(9901)</visible>
+						</control>
+						
+						<control type="label">
+							<height>60</height>
+							<width>270</width>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>button</font>
+							<textcolor>white</textcolor>
+							<info>ListItem.Label</info>
+							<visible>Control.HasFocus(9901)</visible>
+						</control>
+						
+						<control type="image">
+							<height>60</height>
+							<width>270</width>
+							<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+							<visible>!Control.HasFocus(9901)</visible>
+						</control>
+						
+						<control type="label">
+							<height>60</height>
+							<width>270</width>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>button</font>
+							<textcolor>text.primary</textcolor>
+							<info>ListItem.Label</info>
+							<visible>!Control.HasFocus(9901)</visible>
+						</control>
+					
+					</focusedlayout>
+					
+					<content>
+					
+						<include>skinshortcuts-submenu</include>
+						
+					</content>
+					
 				</control>
-					
-			</control>
-
-			<!--sub menus-->
-			<control type="list" id="9901">
-				<visible>Skin.HasSetting(MainMenuChange)</visible>
-				<left>150</left>
-				<top>10</top>
-				<width>1620</width>
-				<height>60</height>
-				<onup>9000</onup>
-				<ondown>9002</ondown>
-				<itemgap>0</itemgap>
-				<orientation>Horizontal</orientation>
-				<animation effect="slide" start="0,0" end="0,-60" time="0" condition="StringCompare(Container(9901).NumItems,0)">conditional</animation>
-				<animation effect="slide" start="0,0" end="675,0" time="0" condition="StringCompare(Container(9901).NumItems,1)">conditional</animation>
-				<animation effect="slide" start="0,0" end="540,0" time="0" condition="StringCompare(Container(9901).NumItems,2)">conditional</animation>
-				<animation effect="slide" start="0,0" end="405,0" time="0" condition="StringCompare(Container(9901).NumItems,3)">conditional</animation>
-				<animation effect="slide" start="0,0" end="270,0" time="0" condition="StringCompare(Container(9901).NumItems,4)">conditional</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,5)">conditional</animation>
-				<animation type="Visible" reversible="false">
-					<effect type="slide" start="0,0" end="0,97" delay="200" time="200" tween="quadratic" />
-					<effect type="fade" start="0" end="100" delay="400" time="200" />
-				</animation>
-
-				
-				<itemlayout width="270" height="60">
-				
-					<control type="label">
-						<height>60</height>
-						<width>270</width>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>button</font>
-						<textcolor>text.primary</textcolor>
-						<info>ListItem.Label</info>
-					</control>
-				
-				</itemlayout>
-				
-				<focusedlayout width="270" height="60">
-				
-					<control type="image">
-						<height>60</height>
-						<width>270</width>
-						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-						<visible>Control.HasFocus(9901)</visible>
-					</control>
-					
-					<control type="label">
-						<height>60</height>
-						<width>270</width>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>button</font>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label</info>
-						<visible>Control.HasFocus(9901)</visible>
-					</control>
-					
-					<control type="label">
-						<height>60</height>
-						<width>270</width>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>button</font>
-						<textcolor>text.primary</textcolor>
-						<info>ListItem.Label</info>
-						<visible>!Control.HasFocus(9901)</visible>
-					</control>
-				
-				</focusedlayout>
-				
-				<content>
-				
-					<include>skinshortcuts-submenu</include>
-					
-				</content>
-				
-			</control>
 			
+			</control>
+				
 			<!--main menu background-->
 			<control type="image">
 				<left>60</left>
@@ -1169,16 +1102,7 @@
 				</itemlayout>
 				
 				<focusedlayout height="90" width="360">
-				
-					<control type="button">
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
-						<onfocus condition="!StringCompare(Window.Property(MainMenuItem),Container(9000).ListItem.Label)">Skin.Reset(MainMenuChange)</onfocus>
-						<onfocus condition="!StringCompare(Window.Property(MainMenuItem),Container(9000).ListItem.Label)">AlarmClock(ChangeInMainMenu,Skin.SetBool(MainMenuChange),00:00,silent)</onfocus>
-						<onfocus>ClearProperty(MainMenuItem)</onfocus>
-						<onfocus>SetProperty(MainMenuItem,$INFO[Container(9000).ListItem.Label])</onfocus>
-					</control>
-					
+
 					<control type="image">
 						<left>0</left>
 						<top>15</top>
@@ -1276,12 +1200,12 @@
 		<control type="group" id="9002">
 			<onup>9901</onup>
 			<ondown>20</ondown>
-			<animation effect="slide" start="0,0" end="0,-20" time="0" condition="system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-10" time="0" condition="system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
 			
 			<control type="fixedlist" id="700">
 				<animation effect="slide" start="0,0" end="-136,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(defaultID),videos) | StringCompare(Container(9000).ListItem.Property(defaultID),movies) | StringCompare(Container(9000).ListItem.Property(defaultID),tvshows)</visible>
-				<bottom>0</bottom>
+				<bottom>60</bottom>
 				<onleft>700</onleft>
 				<onright>700</onright>
 				<onup>9901</onup>
