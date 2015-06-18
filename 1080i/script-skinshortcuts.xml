@@ -162,16 +162,16 @@
 						<width>585</width>
 						<height>780</height>
 						<itemgap>0</itemgap>
-						<onleft>300</onleft>
-						<onright>303</onright>
+						<onleft>304</onleft>
+						<onright>300</onright>
 						<onup>211</onup>
 						<ondown>308</ondown>
 						
 						<itemlayout width="585" height="60">
 						
 							<control type="label">
-								<left>20</left>
-								<width>390</width>
+								<left>120</left>
+								<width>455</width>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
@@ -189,8 +189,8 @@
 							</control>
 
 							<control type="label">
-								<left>20</left>
-								<width>390</width>
+								<left>120</left>
+								<width>455</width>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 								<textcolor>$VAR[Colour.900]</textcolor>
@@ -202,7 +202,6 @@
 					
 					<!--inline controls-->
 					<control type="group" id="1000">
-						<left>420</left>
 						<animation effect="slide" end="0,60" time="0" condition="Container(211).Row(1)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="0" condition="Container(211).Row(2)">Conditional</animation>
 						<animation effect="slide" end="0,180" time="0" condition="Container(211).Row(3)">Conditional</animation>
@@ -232,41 +231,41 @@
 							<top>12</top>
 							<label>-</label>
 							<onup>211</onup>
-							<onleft>211</onleft>
+							<onleft>302</onleft>
 							<onright>304</onright>
 							<ondown>211</ondown>
-							<texturefocus colordiffuse="$VAR[Colour.400]">scroll-up-2.png</texturefocus>
-							<texturenofocus colordiffuse="$VAR[Colour.900]">scroll-up-2.png</texturenofocus>
+							<texturefocus colordiffuse="$VAR[Colour.900]">scroll-up-2.png</texturefocus>
+							<texturenofocus colordiffuse="grey2">scroll-up-2.png</texturenofocus>
 						</control>
 						
 						<!--move down-->
 						<control type="button" id="304">
 							<width>32</width>
 							<height>36</height>
-							<left>70</left>
+							<left>72</left>
 							<top>12</top>
 							<label>-</label>
 							<onup>211</onup>
 							<onleft>303</onleft>
-							<onright>302</onright>
+							<onright>211</onright>
 							<ondown>211</ondown>
-							<texturefocus colordiffuse="$VAR[Colour.400]">scroll-down-2.png</texturefocus>
-							<texturenofocus colordiffuse="$VAR[Colour.900]">scroll-down-2.png</texturenofocus>
+							<texturefocus colordiffuse="$VAR[Colour.900]">scroll-down-2.png</texturefocus>
+							<texturenofocus colordiffuse="grey2">scroll-down-2.png</texturenofocus>
 						</control>
 						
 						<!--remove-->
 						<control type="button" id="302">
-							<width>45</width>
-							<height>45</height>
-							<left>110</left>
-							<top>7</top>
+							<width>32</width>
+							<height>36</height>
+							<left>5</left>
+							<top>12</top>
 							<label>-</label>
 							<onup>211</onup>
-							<onleft>304</onleft>
-							<onright>300</onright>
+							<onleft>300</onleft>
+							<onright>303</onright>
 							<ondown>211</ondown>
-							<texturefocus colordiffuse="$VAR[Colour.400]">keyboarddelete.png</texturefocus>
-							<texturenofocus colordiffuse="$VAR[Colour.900]">keyboarddelete.png</texturenofocus>
+							<texturefocus colordiffuse="$VAR[Colour.900]">discardbutton.png</texturefocus>
+							<texturenofocus colordiffuse="grey2">discardbutton.png</texturenofocus>
 						</control>
 						
 					</control>
@@ -276,7 +275,7 @@
 						<left>610</left>
 						<width>760</width>
 						<height>780</height>
-						<onleft>302</onleft>
+						<onleft>211</onleft>
 						<onright>211</onright>
 						<onup>300</onup>
 						<ondown>10</ondown>
@@ -420,7 +419,7 @@
 					<control type="button" id="308">
 						<left>100</left>
 						<top>0</top>
-						<width>130</width>
+						<width>195</width>
 						<height>60</height>
 						<font>button</font>
 						<align>left</align>
@@ -429,8 +428,8 @@
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
 						<align>center</align>
-						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
+						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
+						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
 						<label>$ADDON[script.skinshortcuts 32028]</label>
 						<onup>211</onup>
 						<ondown>211</ondown>
