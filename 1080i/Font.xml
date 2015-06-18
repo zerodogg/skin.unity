@@ -16,6 +16,7 @@
 			<filename>Roboto-Light.ttf</filename>
 			<size>40</size>
 			<linespacing>0.9</linespacing>
+			<style>uppercase</style>
 		</font>
 		
 		<font>

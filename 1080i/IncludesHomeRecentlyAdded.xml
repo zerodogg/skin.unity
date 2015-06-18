@@ -18,7 +18,7 @@
 				<left>0</left>
 				<top>75</top>
 				<visible>Library.HasContent(Movies)</visible>
-				<visible>Container(9000).Hasfocus(10) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(defaultID),movies) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
 				<include>VisibleFadeEffect</include>
 				
 				<!--title label-->
@@ -301,7 +301,7 @@
 				<left>0</left>
 				<top>75</top>
 				<visible>Library.HasContent(TVShows)</visible>
-				<visible>Container(9000).Hasfocus(11) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(defaultID),tvshows) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
 				<include>VisibleFadeEffect</include>
 				
 				<!--title-->
@@ -616,7 +616,7 @@
 				<left>0</left>
 				<top>75</top>
 				<visible>Library.HasContent(Music)</visible>
-				<visible>Container(9000).Hasfocus(3) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(defaultID),music) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
 				
 				<!--title-->
