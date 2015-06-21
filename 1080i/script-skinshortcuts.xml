@@ -160,8 +160,9 @@
 					<!--shortcuts-->
 					<control type="list" id="211">
 						<width>585</width>
-						<height>780</height>
-						<itemgap>0</itemgap>
+						<height>840</height>
+						<itemgap>5</itemgap>
+						<pagecontrol>31</pagecontrol>
 						<onleft>304</onleft>
 						<onright>300</onright>
 						<onup>211</onup>
@@ -261,13 +262,24 @@
 							<top>12</top>
 							<label>-</label>
 							<onup>211</onup>
-							<onleft>300</onleft>
+							<onleft>31</onleft>
 							<onright>303</onright>
 							<ondown>211</ondown>
 							<texturefocus colordiffuse="$VAR[Colour.900]">discardbutton.png</texturefocus>
 							<texturenofocus colordiffuse="grey2">discardbutton.png</texturenofocus>
 						</control>
 						
+					</control>
+					
+					<!--scrollbar-->
+					<control type="scrollbar" id="31">
+						<left>-22</left>
+						<top>0</top>
+						<height>880</height>
+						<texturesliderbackground colordiffuse="scroll.secondary">backgrounds/white.png</texturesliderbackground>
+						<texturesliderbar colordiffuse="secondary">backgrounds/white.png</texturesliderbar>
+						<onleft>300</onleft>
+						<onright>302</onright>
 					</control>
 					
 					<!---control area-->
