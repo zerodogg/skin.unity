@@ -332,8 +332,6 @@
 							<left>825</left>
 							<top>292</top>
 							<height>335</height>
-							<orientation>vertical</orientation>
-							<showonepage>false</showonepage>
 							<texturesliderbackground colordiffuse="scroll.secondary">backgrounds/white.png</texturesliderbackground>
 							<texturesliderbar colordiffuse="secondary">backgrounds/white.png</texturesliderbar>
 							<onleft>9000</onleft>
