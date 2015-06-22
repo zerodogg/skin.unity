@@ -9,12 +9,10 @@
 		<!--all content-->
 		<control type="group">
 			<left>-355</left>
-
 			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-1650,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			
-			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
-			<animation effect="slide" start="0,0" end="-1650,0" time="400" tween="quadratic" easing="out">Hidden</animation>
+			<animation effect="slide" start="0,0" end="-125,0" time="300" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">Conditional</animation>
 			
 			<!--background-->
 			<control type="image">
