@@ -257,6 +257,7 @@
 					<height>300</height>
 					<texture>$INFO[Listitem.Icon]</texture>
 					<visible>!IsEmpty(Container(2).Listitem.Icon)</visible>
+					<aspectratio>keep</aspectratio>
 				</control>
 				
 				<!--icon (fallback)-->
@@ -267,6 +268,7 @@
 					<height>300</height>
 					<texture colordiffuse="$VAR[Colour.500]">unknown-user.png</texture>
 					<visible>IsEmpty(Container(2).Listitem.Icon)</visible>
+					<aspectratio>keep</aspectratio>
 				</control>
 				
 				<control type="label">
@@ -426,6 +428,7 @@
 							<height>180</height>
 							<texture>$INFO[Listitem.Icon]</texture>
 							<visible>!IsEmpty(ListItem.Icon)</visible>
+							<aspectratio>keep</aspectratio>
 						</control>
 						
 						<!--icon (fallback)-->
@@ -436,6 +439,7 @@
 							<height>180</height>
 							<texture colordiffuse="$VAR[Colour.500]">unknown-user.png</texture>
 							<visible>IsEmpty(ListItem.Icon)</visible>
+							<aspectratio>keep</aspectratio>
 						</control>
 						
 						<!--label background-->
@@ -485,6 +489,7 @@
 							<height>180</height>
 							<texture>$INFO[Listitem.Icon]</texture>
 							<visible>!IsEmpty(ListItem.Icon)</visible>
+							<aspectratio>keep</aspectratio>
 						</control>
 						
 						<!--icon (fallback)-->
@@ -495,6 +500,7 @@
 							<height>180</height>
 							<texture colordiffuse="$VAR[Colour.500]">unknown-user.png</texture>
 							<visible>IsEmpty(ListItem.Icon)</visible>
+							<aspectratio>keep</aspectratio>
 						</control>
 						
 						<!--label background-->
