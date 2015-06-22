@@ -255,7 +255,6 @@
 				<height>48</height>
 				<font>secondary.info.small</font>
 				<align>left</align>
-				<aligny>center</aligny>
 				<textcolor>text.primary</textcolor>
 				<scroll>true</scroll>
 			</control>
