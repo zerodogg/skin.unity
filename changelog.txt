@@ -1,4 +1,18 @@
-[B]25/04/2015 - 0.2.4 [ALPHA] [/B]
+[B]07/07/2015 - 0.2.5 [ALPHA] [/B]
+[CHANGED] Main menu now uses script.skinshortcuts
+[CODED] Slider Dialog
+[CODED] Busy Dialog
+[CODED] Media Filter Dialog
+[CODED] Addon Info Dialog
+[CODED] Addon Settings Dialog
+[CODED] Skin Shortcuts Dialog
+[CODED] Album Info Dialog
+[CODED] Gamepad Dialog
+[CODED] Network Setup Dialog
+[CODED] Karaoke Dialogs
+[CODED]Peripheral Dialogs
+
+[B]09/06/2015 - 0.2.4 [ALPHA] [/B]
 [CODED] PVR Timers Dialog
 [CODED] PVR Guide Info Dialog
 [CODED] PVR Recording Info Dialog
