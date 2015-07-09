@@ -1,81 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <window type="dialog">
-	<include>dialogeffect</include>
-	<coordinates>
-		<system>1</system>
-		<left>622</left>
-		<top>412</top>
-	</coordinates>
+
+	<animation type="WindowOpen">
+		<effect type="slide" start="0,665" end="0,0" time="300" tween="quadratic" easing="out" />
+	</animation>
+	
+	<animation type="WindowClose">
+		<effect type="slide" start="0,0" end="0,-765" time="300" tween="quadratic" easing="out" />
+	</animation>
+	
 	<controls>
+	
+		<!--all content-->
 		<control type="group">
+			<top>-10</top>
+		
+			<!--background-->
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
-				<width>675</width>
-				<height>255</height>
-				<texture border="40">DialogBack.png</texture>
+				<top>415</top>
+				<width>1920</width>
+				<height>240</height>
+				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
+			
+			<!--title bg-->
 			<control type="image">
-				<description>Dialog Header image</description>
-				<left>60</left>
-				<top>24</top>
-				<width>555</width>
-				<height>60</height>
-				<texture>dialogheader.png</texture>
+				<left>0</left>
+				<top>415</top>
+				<width>1920</width>
+				<height>90</height>
+				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 			</control>
-			<control type="label" id="1">
-				<description>header label</description>
-				<left>60</left>
-				<top>30</top>
-				<width>555</width>
-				<height>45</height>
-				<font>font13_title</font>
-				<label>$LOCALIZE[31321]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>selected</textcolor>
-				<shadowcolor>black</shadowcolor>
+			
+			<!--title shadow-->
+			<control type="image">
+				<left>0</left>
+				<top>505</top>
+				<width>1920</width>
+				<height>10</height>
+				<texture>homeshadow.png</texture>
+				<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 			</control>
+			
+			<!--top shadow-->
+			<control type="image">
+				<left>0</left>
+				<top>385</top>
+				<width>1920</width>
+				<height>30</height>
+				<texture flipy="true">homeshadow.png</texture>
+			</control>
+			
+			<!--bottom shadow-->
+			<control type="image">
+				<left>0</left>
+				<top>655</top>
+				<width>1920</width>
+				<height>30</height>
+				<texture>homeshadow.png</texture>
+			</control>
+			
+			<!--close button-->
 			<control type="button">
 				<description>Close Window button</description>
-				<left>540</left>
-				<top>22</top>
-				<width>96</width>
-				<height>48</height>
+				<left>5</left>
+				<top>415</top>
+				<width>50</width>
+				<height>25</height>
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
+				<onleft>13</onleft>
+				<onright>13</onright>
+				<onup>13</onup>
+				<ondown>13</ondown>
 				<visible>system.getbool(input.enablemouse)</visible>
 			</control>
-			<control type="label" id="401">
-				<description>Song Number Label</description>
-				<left>45</left>
-				<top>105</top>
-				<width>585</width>
-				<height>45</height>
-				<font>font28_title</font>
-				<textcolor>white</textcolor>
+			
+			<!--title-->
+			<control type="label" id="1">
+				<left>60</left>
+				<top>425</top>
+				<width>1800</width>
+				<height>60</height>
+				<font>menu.title</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<label>$LOCALIZE[31321]</label>
 			</control>
+			
+			<control type="label" id="401">
+				<left>60</left>
+				<top>525</top>
+				<width>1800</width>
+				<height>45</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>label</font>
+				<textcolor>text.primary</textcolor>
+			</control>
+			
 			<control type="label" id="402">
 				<description>Song Name Label</description>
-				<left>45</left>
-				<top>180</top>
-				<width>585</width>
-				<height>30</height>
-				<font>font24</font>
+				<left>60</left>
+				<top>585</top>
+				<width>1800</width>
+				<height>45</height>
+				<font>secondary.info.big</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>text.primary</textcolor>
 				<scroll>true</scroll>
 			</control>
+			
 		</control>
+		
 	</controls>
+	
 </window>

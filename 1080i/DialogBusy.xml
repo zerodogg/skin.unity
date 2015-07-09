@@ -1,52 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <window>
-	<animation effect="fade" time="100">WindowOpen</animation>
-	<animation effect="fade" time="200">WindowClose</animation>
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
+
+	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+
 	<controls>
+
 		<control type="group">
-			<left>1605</left>
-			<top>960</top>
+
+			<!--glow-->
 			<control type="image">
-				<description>background image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>300</width>
-				<height>105</height>
-				<texture border="20">OverlayDialogBackground.png</texture>
+				<left>344r</left>
+				<top>143r</top>
+				<width>294</width>
+				<height>93</height>
+				<texture border="12" colordiffuse="tertiary">backgrounds/kai.png</texture>
 			</control>
+
+			<!--background-->
+			<control type="image">
+				<left>334r</left>
+				<top>133r</top>
+				<width>270</width>
+				<height>73</height>
+				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+			</control>
+
+			<!--background strip-->
+			<control type="image">
+				<left>64r</left>
+				<top>133r</top>
+				<width>4</width>
+				<height>73</height>
+				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+			</control>
+
 			<control type="image">
 				<description>Busy animation</description>
-				<left>30</left>
-				<top>30</top>
+				<left>124r</left>
+				<top>120r</top>
 				<width>48</width>
 				<height>48</height>
-				<texture>busy.png</texture>
+				<texture colordiffuse="$VAR[Colour.500]">busy.png</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" start="0" end="360" center="54,54" time="1200" loop="true" condition="true">conditional</animation>
+				<animation effect="rotate" start="0" end="360" center="1820,984" time="1200" loop="true" condition="true">conditional</animation>
 			</control>
+
 			<control type="label">
 				<description>Busy label</description>
-				<left>90</left>
-				<top>30</top>
-				<width>180</width>
-				<height>48</height>
-				<align>left</align>
+				<left>1595</left>
+				<top>133r</top>
+				<width>182</width>
+				<height>73</height>
+				<align>right</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31004]</label>
-				<font>font12</font>
+				<font>kai.primary</font>
+				<textcolor>text.primary</textcolor>
 			</control>
+
 			<control type="progress" id="10">
 				<description>Progressbar</description>
-				<left>30</left>
-				<top>80</top>
+				<left>134r</left>
+				<top>80r</top>
 				<width>240</width>
 				<height>12</height>
 			</control>
+
 		</control>
+
 	</controls>
+
 </window>

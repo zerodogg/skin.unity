@@ -3,6 +3,7 @@
 <includes>
 
 	<include file="defaults.xml" />
+	<include file="script-skinshortcuts-includes.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -1541,8 +1542,7 @@
 			<effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
 			<effect type="fade" start="100" end="0" time="300" />
 		</animation>
-		
-		<hitrect x="0" y="795" w="1920" h="180" />
+
 		<centerleft>50%</centerleft>
 		<top>215r</top>
 		<width>1120</width>
