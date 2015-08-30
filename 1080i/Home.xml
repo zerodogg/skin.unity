@@ -95,7 +95,7 @@
 		<control type="group">
 			<left>0</left>
 			<top>140</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			
 			<!--cover-->
 			<control type="image">
@@ -327,7 +327,7 @@
 		<control type="group">
 			<left>0</left>
 			<top>140</top>
-			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			
 			<!--videos-->
 			<control type="group">
@@ -587,7 +587,7 @@
 		<control type="group">
 			<left>900r</left>
 			<top>610</top>
-			
+			<visible>IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="300" />

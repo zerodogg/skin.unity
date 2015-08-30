@@ -9,7 +9,7 @@
 	
 		<control type="group">
 			<animation effect="slide" end="0,-120" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-78" time="200" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-78" time="200" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 			
 			<!--glow-->
 			<control type="image">
