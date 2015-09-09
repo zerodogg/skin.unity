@@ -272,7 +272,7 @@
 		<height>60</height>
 		<width>355</width>
 		<textoffsetx>15</textoffsetx>
-		<textwidth>280</textwidth>
+		<textwidth>325</textwidth>
 		<aligny>center</aligny>
 		<font>button</font>
 		<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
@@ -290,7 +290,7 @@
 		<height>60</height>
 		<width>355</width>
 		<textoffsetx>15</textoffsetx>
-		<textwidth>280</textwidth>
+		<textwidth>325</textwidth>
 		<aligny>center</aligny>
 		<font>button</font>
 		<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
