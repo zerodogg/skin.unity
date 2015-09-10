@@ -38,7 +38,7 @@
 		<control type="slider" id="87">
 			<description>Seek Slider</description>
 			<left>415</left>
-			<top>150r</top>
+			<top>155r</top>
 			<width>1090</width>
 			<height>7</height>
 			<onup>702</onup>
