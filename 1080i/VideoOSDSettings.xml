@@ -87,7 +87,7 @@
 				<top>0</top>
 				
 				<!--title-->
-				<control type="label">
+				<control type="label" id="2">
 					<left>550</left>
 					<top>15</top>
 					<width>800</width>
@@ -96,22 +96,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[3] - $LOCALIZE[5]</label>
-					<visible>Window.IsVisible(123)</visible>
-				</control>
-				
-				<!--title-->
-				<control type="label">
-					<left>550</left>
-					<top>15</top>
-					<width>800</width>
-					<height>60</height>
-					<font>menu.title</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<label>$LOCALIZE[292] - $LOCALIZE[5]</label>
-					<visible>Window.IsVisible(124)</visible>
+					<label>-</label>
 				</control>
 				
 				<!--options-->

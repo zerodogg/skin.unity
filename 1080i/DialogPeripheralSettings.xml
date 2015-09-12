@@ -101,7 +101,7 @@
 				<top>0</top>
 				
 				<!--title-->
-				<control type="label">
+				<control type="label" id="2">
 					<left>590</left>
 					<top>25</top>
 					<width>1545</width>
@@ -110,7 +110,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[5]</label>
+					<label>-</label>
 				</control>
 				
 				<control type="grouplist" id="5">
