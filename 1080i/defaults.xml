@@ -57,9 +57,9 @@
 	
 	<default type="textbox">
 		<left>330</left>
-		<top>330</top>
+		<top>332</top>
 		<width>615</width>
-		<height>322</height>
+		<height>320</height>
 		<align>left</align>
 		<textcolor>text.primary</textcolor>
 		<font>label</font>

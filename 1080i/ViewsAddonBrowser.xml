@@ -218,9 +218,9 @@
 				<!--addon description-->
 				<control type="textbox">
 					<left>15</left>
-					<top>530</top>
+					<top>532</top>
 					<width>430</width>
-					<height>140</height>
+					<height>138</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -429,9 +429,9 @@
 					<!--main label-->
 					<control type="textbox">
 						<left>20</left>
-						<top>153</top>
+						<top>155</top>
 						<width>167</width>
-						<height>65</height>
+						<height>63</height>
 						<font>secondary.info.big</font>
 						<textcolor>text.primary</textcolor>
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
@@ -556,9 +556,9 @@
 					<!--plot-->
 					<control type="textbox">
 						<left>15</left>
-						<top>138</top>
+						<top>140</top>
 						<width>430</width>
-						<height>535</height>
+						<height>533</height>
 						<font>label</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>

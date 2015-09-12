@@ -1696,9 +1696,9 @@
 				
 				<control type="textbox">
 					<left>20</left>
-					<top>80</top>
+					<top>82</top>
 					<width>890</width>
-					<height>600</height>
+					<height>598</height>
 					<font>secondary.info</font>
 					<textcolor>text.primary</textcolor>
 					<selectedcolor>selected</selectedcolor>

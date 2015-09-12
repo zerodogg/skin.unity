@@ -146,9 +146,9 @@
 				<!--main label-->
 				<control type="textbox">
 					<left>20</left>
-					<top>418</top>
+					<top>420</top>
 					<width>250</width>
-					<height>80</height>
+					<height>78</height>
 					<font>breadcrumb</font>
 					<textcolor>text.primary</textcolor>
 					<selectedcolor>$VAR[Colour.500]</selectedcolor>
@@ -1025,9 +1025,9 @@
 			<!--plot-->
 			<control type="textbox">
 				<left>500</left>
-				<top>83</top>
+				<top>85</top>
 				<width>665</width>
-				<height>340</height>
+				<height>338</height>
 				<font>label</font>
 				<align>left</align>
 				<textcolor>text.primary</textcolor>
@@ -1399,9 +1399,9 @@
 				<!--plot (movies)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>352</top>
+					<top>354</top>
 					<width>480</width>
-					<height>270</height>
+					<height>268</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -1413,9 +1413,9 @@
 				<!--plot (tv shows)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>340</top>
+					<top>342</top>
 					<width>480</width>
-					<height>340</height>
+					<height>338</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -1427,9 +1427,9 @@
 				<!--plot (tv shows)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>340</top>
+					<top>342</top>
 					<width>480</width>
-					<height>340</height>
+					<height>338</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -1546,9 +1546,9 @@
 				<!--plot-->
 				<control type="textbox">
 					<left>15</left>
-					<top>352</top>
+					<top>354</top>
 					<width>480</width>
-					<height>270</height>
+					<height>268</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -1941,9 +1941,9 @@
 					<!--plot-->
 					<control type="textbox">
 						<left>485</left>
-						<top>137</top>
+						<top>139</top>
 						<width>430</width>
-						<height>535</height>
+						<height>533</height>
 						<font>label</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>
@@ -2078,9 +2078,9 @@
 					<!--plot-->
 					<control type="textbox">
 						<left>485</left>
-						<top>132</top>
+						<top>134</top>
 						<width>430</width>
-						<height>500</height>
+						<height>498</height>
 						<font>label</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>
@@ -2187,9 +2187,9 @@
 					<!--plot-->
 					<control type="textbox">
 						<left>485</left>
-						<top>70</top>
+						<top>72</top>
 						<width>430</width>
-						<height>595</height>
+						<height>593</height>
 						<font>label</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>
@@ -2324,9 +2324,9 @@
 					<!--plot (movies)-->
 					<control type="textbox">
 						<left>485</left>
-						<top>132</top>
+						<top>134</top>
 						<width>430</width>
-						<height>500</height>
+						<height>498</height>
 						<font>label</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>
@@ -2700,9 +2700,9 @@
 				<!--plot (movies)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>463</top>
+					<top>465</top>
 					<width>954</width>
-					<height>170</height>
+					<height>168</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -2825,9 +2825,9 @@
 				<!--plot (tv shows)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>470</top>
+					<top>472</top>
 					<width>954</width>
-					<height>205</height>
+					<height>203</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -2942,9 +2942,9 @@
 				<!--plot (seasons)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>470</top>
+					<top>472</top>
 					<width>954</width>
-					<height>205</height>
+					<height>203</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -3060,9 +3060,9 @@
 				<!--plot (movies)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>463</top>
+					<top>465</top>
 					<width>954</width>
-					<height>170</height>
+					<height>168</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>

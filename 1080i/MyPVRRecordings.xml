@@ -319,9 +319,9 @@
 				<!--plot-->
 				<control type="textbox">
 					<left>15</left>
-					<top>352</top>
+					<top>354</top>
 					<width>480</width>
-					<height>270</height>
+					<height>268</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>

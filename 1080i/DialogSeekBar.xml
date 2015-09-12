@@ -547,9 +547,9 @@
 			<!--plot-->
 			<control type="textbox" id="1">
 				<left>415</left>
-				<top>108</top>
+				<top>110</top>
 				<width>1090</width>
-				<height>110</height>
+				<height>108</height>
 				<font>label</font>
 				<align>left</align>
 				<textcolor>text.primary</textcolor>

@@ -254,9 +254,9 @@
 			<!--setting description-->
 			<control type="textbox" id="6">
 				<left>935</left>
-				<top>725</top>
+				<top>727</top>
 				<width>960</width>
-				<height>48</height>
+				<height>46</height>
 				<font>secondary.info.small</font>
 				<align>left</align>
 				<textcolor>text.primary</textcolor>

@@ -1311,9 +1311,9 @@
 				<!--plot-->
 				<control type="textbox" id="400">
 					<left>1135</left>
-					<top>675</top>
+					<top>677</top>
 					<width>750</width>
-					<height>370</height>
+					<height>368</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>

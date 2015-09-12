@@ -160,9 +160,9 @@
 				<control type="textbox">
 					<description>Search help</description>
 					<left>555</left>
-					<top>190</top>
+					<top>192</top>
 					<width>1190</width>
-					<height>105</height>
+					<height>103</height>
 					<align>left</align>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>

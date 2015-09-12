@@ -160,9 +160,9 @@
 					
 					<control type="textbox">
 						<left>38</left>
-						<top>30</top>
+						<top>32</top>
 						<width>435</width>
-						<height>75</height>
+						<height>73</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>

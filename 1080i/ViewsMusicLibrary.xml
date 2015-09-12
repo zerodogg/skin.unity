@@ -659,9 +659,9 @@
 			<!--plot-->
 			<control type="textbox">
 				<left>500</left>
-				<top>145</top>
+				<top>147</top>
 				<width>665</width>
-				<height>270</height>
+				<height>268</height>
 				<font>label</font>
 				<align>justify</align>
 				<textcolor>text.primary</textcolor>
@@ -1139,9 +1139,9 @@
 				<!--artist review-->
 				<control type="textbox">
 					<left>15</left>
-					<top>438</top>
+					<top>440</top>
 					<width>480</width>
-					<height>230</height>
+					<height>228</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
@@ -1332,9 +1332,9 @@
 				<!--album review-->
 				<control type="textbox">
 					<left>15</left>
-					<top>510</top>
+					<top>512</top>
 					<width>480</width>
-					<height>175</height>
+					<height>173</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>

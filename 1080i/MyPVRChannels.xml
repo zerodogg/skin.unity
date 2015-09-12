@@ -175,9 +175,9 @@
 				<!--plot (movies)-->
 				<control type="textbox">
 					<left>15</left>
-					<top>463</top>
+					<top>465</top>
 					<width>954</width>
-					<height>170</height>
+					<height>168</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>
