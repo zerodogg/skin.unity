@@ -187,7 +187,7 @@
 							<textcolor>text.primary</textcolor>
 							<selectedcolor>$VAR[Colour.500]</selectedcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 						</control>
 						
 					</focusedlayout>
