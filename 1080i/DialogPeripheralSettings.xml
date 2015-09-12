@@ -172,6 +172,17 @@
 					<top>0</top>
 				</control>
 				
+				<!--label-->
+				<control type="label" id="14">
+					<left>0</left>
+					<top>0</top>
+					<height>60</height>
+					<font>button.bold</font>
+					<textcolor>$VAR[Colour.500]</textcolor>
+					<textoffsetx>5</textoffsetx>
+					<aligny>center</aligny>
+				</control>
+				
 				<!--bottom buttons-->
 				<control type="group" id="9000">
 					<left>80</left>
