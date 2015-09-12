@@ -389,6 +389,12 @@
 							<label>$LOCALIZE[31026]</label>
 						</control>
 						
+						<control type="button" id="31">
+							<description>New channel Button</description>
+							<width>870</width>
+							<label>19204</label>
+						</control>
+						
 						<control type="button" id="30">
 							<description>Group Manager Button</description>
 							<width>870</width>
