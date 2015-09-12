@@ -192,7 +192,7 @@
 				<top>660</top>
 				<width>1800</width>
 				<height>60</height>
-				<font>kai.secondary.info</font>
+				<font>kai.secondary</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>Container(450).ListItem.Label</info>

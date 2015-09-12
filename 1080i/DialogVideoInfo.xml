@@ -98,7 +98,6 @@
 					<width>1390</width>
 					<height>782</height>
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<timeperimage>5000</timeperimage>
 					<include>backgroundfade</include>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<animation effect="slide" start="0,0" end="0,782" time="400" tween="quadratic" easing="out" condition="Control.HasFocus(9003)">Conditional</animation>	

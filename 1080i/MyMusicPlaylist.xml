@@ -110,7 +110,7 @@
 				
 				<!--choose colour-->
 				<control type="button" id="33">
-					<label>Choose colour</label>
+					<label>$LOCALIZE[31919]</label>
 					<include>ButtonCommonValues</include>
 					<onclick>SetFocus(50)</onclick>
 					<onclick>ActivateWindow(1100)</onclick>

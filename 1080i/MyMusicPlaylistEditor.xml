@@ -214,7 +214,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="$VAR[Colour.500]">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</itemlayout>
@@ -260,7 +260,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="white">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</focusedlayout>
@@ -401,7 +401,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="$VAR[Colour.500]">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</itemlayout>
@@ -447,7 +447,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="white">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</focusedlayout>
@@ -515,7 +515,7 @@
 				
 				<!--choose colour-->
 				<control type="button" id="33">
-					<label>Choose colour</label>
+					<label>$LOCALIZE[31919]</label>
 					<include>ButtonCommonValues</include>
 					<onclick>SetFocus(50)</onclick>
 					<onclick>ActivateWindow(1100)</onclick>

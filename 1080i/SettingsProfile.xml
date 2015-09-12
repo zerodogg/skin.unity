@@ -45,7 +45,7 @@
 				<itemgap>8</itemgap>
 				
 				<control type="label">
-				  <width min="0" max="385">auto</width>
+					<width min="0" max="385">auto</width>
 					<include>WindowTitleCommons</include>
 					<label>$LOCALIZE[13200]</label>
 				</control>

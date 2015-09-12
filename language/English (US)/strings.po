@@ -568,6 +568,98 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr "Maps"
 
+#empty strings from id 31911 to 31918
+
+msgctxt "#31919"
+msgid "Choose colour"
+msgstr "Choose color"
+
+msgctxt "#31920"
+msgid "Colour Picker"
+msgstr "Color Picker"
+
+msgctxt "#31921"
+msgid "Red"
+msgstr "Red"
+
+msgctxt "#31922"
+msgid "Pink"
+msgstr "Pink"
+
+msgctxt "#31923"
+msgid "Purple"
+msgstr "Purple"
+
+msgctxt "#31924"
+msgid "Deep Purple"
+msgstr "Deep Purple"
+
+msgctxt "#31925"
+msgid "Indigo"
+msgstr "Indigo"
+
+msgctxt "#31926"
+msgid "Blue"
+msgstr "Blue"
+
+msgctxt "#31927"
+msgid "Light Blue"
+msgstr "Light Blue"
+
+msgctxt "#31928"
+msgid "Cyan"
+msgstr "Cyan"
+
+msgctxt "#31929"
+msgid "Teal"
+msgstr "Teal"
+
+msgctxt "#31930"
+msgid "Green"
+msgstr "Green"
+
+msgctxt "#31931"
+msgid "Light Green"
+msgstr "Light Green"
+
+msgctxt "#31932"
+msgid "Lime"
+msgstr "Lime"
+
+msgctxt "#31933"
+msgid "Yellow"
+msgstr "Yellow"
+
+msgctxt "#31934"
+msgid "Amber"
+msgstr "Amber"
+
+msgctxt "#31935"
+msgid "Orange"
+msgstr "Orange"
+
+msgctxt "#31936"
+msgid "Deep Orange"
+msgstr "Deep Orange"
+
+msgctxt "#31937"
+msgid "Brown"
+msgstr "Brown"
+
+msgctxt "#31938"
+msgid "Blue Grey"
+msgstr "Blue Grey"
+
+msgctxt "#31939"
+msgid "Grey"
+msgstr "Grey"
+
+msgctxt "#31940"
+msgid "Welcome"
+msgstr "Welcome"
+
+#empty strings from id 31941 to 31949
+
 msgctxt "#31950"
 msgid "WEATHER"
 msgstr "WEATHER"

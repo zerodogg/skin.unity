@@ -119,7 +119,7 @@
 				<top>0</top>
 
 				<!--title-->
-				<control type="label"  id="2">
+				<control type="label" id="2">
 					<left>60</left>
 					<top>25</top>
 					<width>1022</width>
@@ -263,7 +263,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 					<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 					<label>186</label>
@@ -306,7 +305,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
 					<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 					<label>222</label>

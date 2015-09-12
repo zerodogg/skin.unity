@@ -342,7 +342,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<texturefocus colordiffuse="white">switchbuttonf.png</texturefocus>
 					<texturenofocus colordiffuse="text.primary">switchbutton.png</texturenofocus>	
 					<label>19165</label>
@@ -385,7 +384,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<texturefocus colordiffuse="white">recordbuttonf.png</texturefocus>
 					<texturenofocus colordiffuse="text.primary">recordbutton.png</texturenofocus>	
 					<label>-</label>
@@ -428,7 +426,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 					<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 					<label>186</label>

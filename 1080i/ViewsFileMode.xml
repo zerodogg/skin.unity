@@ -757,7 +757,7 @@
 						<width>610</width>
 						<height>117</height>
 						<aspectratio>stretch</aspectratio>
-						<texture colordiffuse="tertiary"  background="true">backgrounds/white.png</texture>
+						<texture colordiffuse="tertiary" background="true">backgrounds/white.png</texture>
 						<visible>SubString(ListItem.Icon,Default)</visible>
 						<bordersize>5</bordersize>
 						<bordertexture>backgrounds/banner shadow.png</bordertexture>
@@ -770,7 +770,7 @@
 						<width>604</width>
 						<height>111</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[Colour.500]"  background="true">$VAR[PosterThumb]</texture>
+						<texture colordiffuse="$VAR[Colour.500]" background="true">$VAR[PosterThumb]</texture>
 						<visible>SubString(ListItem.Icon,Default)</visible>
 						<bordersize>2</bordersize>
 						<bordertexture colordiffuse="tertiary">backgrounds/white.png</bordertexture>
@@ -820,7 +820,7 @@
 						<width>610</width>
 						<height>117</height>
 						<aspectratio>stretch</aspectratio>
-						<texture colordiffuse="tertiary"  background="true">backgrounds/white.png</texture>
+						<texture colordiffuse="tertiary" background="true">backgrounds/white.png</texture>
 						<visible>SubString(ListItem.Icon,Default)</visible>
 						<bordersize>5</bordersize>
 						<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</bordertexture>
@@ -833,7 +833,7 @@
 						<width>604</width>
 						<height>111</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[Colour.500]"  background="true">$VAR[PosterThumb]</texture>
+						<texture colordiffuse="$VAR[Colour.500]" background="true">$VAR[PosterThumb]</texture>
 						<visible>SubString(ListItem.Icon,Default)</visible>
 						<bordersize>2</bordersize>
 						<bordertexture colordiffuse="tertiary">backgrounds/white.png</bordertexture>
@@ -929,7 +929,7 @@
 						<width>46</width>
 						<height>46</height>
 						<texture colordiffuse="white">$INFO[ListItem.Icon,default small/,]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,default)</visible>
 					</control>
 				
@@ -940,7 +940,7 @@
 						<width>56</width>
 						<height>56</height>
 						<texture>$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					
@@ -1062,7 +1062,7 @@
 						<width>46</width>
 						<height>46</height>
 						<texture colordiffuse="text.primary">$INFO[ListItem.Icon,default small/,]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,Default)</visible>
 					</control>
 				
@@ -1073,7 +1073,7 @@
 						<width>56</width>
 						<height>56</height>
 						<texture>$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					

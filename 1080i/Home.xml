@@ -86,7 +86,7 @@
 				<aligny>center</aligny>
 				<font>breadcrumb.secondary</font>
 				<textcolor>text.primary</textcolor>
-				<label>Welcome, [COLOR=$VAR[Colour.500]]$INFO[System.ProfileName][/COLOR]</label>
+				<label>$LOCALIZE[31940] [COLOR=$VAR[Colour.500]]$INFO[System.ProfileName][/COLOR]</label>
 			</control>
 			
 		</control>

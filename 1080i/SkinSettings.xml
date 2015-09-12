@@ -472,7 +472,6 @@
 						<textoffsetx>5</textoffsetx>
 						<aligny>center</aligny>
 						<label>$ADDON[script.skinshortcuts 32071]</label>
-						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
 					
 					<!--customize skin shortcuts menu-->

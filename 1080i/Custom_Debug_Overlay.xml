@@ -457,7 +457,7 @@
 		<control type="label">
 			<right>5</right>
 			<top>5</top>
-		    <width>1920</width>
+			<width>1920</width>
 			<textcolor>red</textcolor>
 			<align>right</align>
 			<label>$INFO[Container.FolderPath]</label>

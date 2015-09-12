@@ -187,7 +187,7 @@
 							<top>0</top>
 							<width>825</width>
 							<height>60</height>
-							<texturenofocus border="5" colordiffuse="text.primary">button-nofocus.png</texturenofocus>
+							<texture border="5" colordiffuse="text.primary">button-nofocus.png</texture>
 						</control>
 						
 						<control type="label">
@@ -434,7 +434,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 						<label>186</label>
@@ -477,7 +476,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 						<label>222</label>

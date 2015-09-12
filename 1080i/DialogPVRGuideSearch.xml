@@ -426,7 +426,6 @@
 						<textwidth>220</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
 						<label>10035</label>
@@ -469,7 +468,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 						<label>222</label>
@@ -512,7 +510,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">browsebuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">browsebutton.png</texturenofocus>	
 						<label>137</label>

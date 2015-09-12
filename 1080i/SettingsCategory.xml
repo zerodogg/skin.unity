@@ -197,7 +197,7 @@
 				<height>60</height>
 				<width>345</width>
 				<label>31142</label>
-				<font>Button</font>
+				<font>button</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -211,7 +211,7 @@
 				<height>60</height>
 				<width>345</width>
 				<label>31142</label>
-				<font>Button</font>
+				<font>button</font>
 				<textcolor>$VAR[Colour.900]</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -260,7 +260,6 @@
 				<font>secondary.info.small</font>
 				<align>left</align>
 				<textcolor>text.primary</textcolor>
-				<scroll>true</scroll>
 			</control>
 			
 			<!--title shadow-->
