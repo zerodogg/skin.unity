@@ -63,7 +63,7 @@
 			<animation effect="slide" start="-1700,0" end=",0" time="400" tween="quadratic" easing="out" condition="Window.Previous(SettingsCategory.xml) | Window.Previous(SkinSettings.xml)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-1700,0" time="400" tween="quadratic" easing="out" condition="Window.Next(SettingsCategory.xml) | Window.Next(SkinSettings.xml)">WindowClose</animation>
 			
-			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 						
 			<!--title bars and backgrounds-->
 			<control type="group">

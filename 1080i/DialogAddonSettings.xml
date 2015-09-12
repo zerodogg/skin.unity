@@ -280,7 +280,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 						<label>186</label>
@@ -323,7 +322,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 						<label>222</label>
@@ -366,7 +364,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
 						<label>409</label>
@@ -378,7 +375,6 @@
 					
 				</control>
 				
-			
 			</control>
 		
 		</control>

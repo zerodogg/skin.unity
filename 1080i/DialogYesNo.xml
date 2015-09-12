@@ -123,7 +123,7 @@
 				<width>1800</width>
 				<height>150</height>
 				<align>center</align>
-				<label>line test[CR]line test[CR]line test</label>
+				<label>-</label>
 				<font>label</font>
 				<textcolor>text.primary</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
@@ -168,7 +168,6 @@
 						<textwidth>100</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
 						<label>-</label>
@@ -214,7 +213,6 @@
 					<textwidth>130</textwidth>
 					<textcolor>text.primary</textcolor>
 					<focusedcolor>text.primary</focusedcolor>
-					<align>center</align>
 					<onleft>11</onleft>
 					<onright>11</onright>
 					<onup>10</onup>

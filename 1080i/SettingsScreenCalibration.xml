@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+
 	<defaultcontrol>8</defaultcontrol>
+	
 	<controls>
+	
 		<control type="videowindow" id="20">
 			<description>videowindow</description>
 			<left>0</left>
@@ -10,10 +13,12 @@
 			<height>1080</height>
 			<visible>Player.HasVideo</visible>
 		</control>
+		
 		<control type="group">
 			<visible>!Player.HasVideo</visible>
 			<include>CommonBackground</include>
 		</control>
+		
 		<control type="image">
 			<description>Overlay</description>
 			<left>0</left>
@@ -23,6 +28,7 @@
 			<texture>black-back.png</texture>
 			<include>dialogeffect</include>
 		</control>
+		
 		<control type="button">
 			<description>Close Window button</description>
 			<left>150r</left>
@@ -40,6 +46,7 @@
 			<ondown>1</ondown>
 			<visible>system.getbool(input.enablemouse)</visible>
 		</control>
+		
 		<control type="mover" id="8">
 			<description>top left mover</description>
 			<left>0</left>
@@ -49,6 +56,7 @@
 			<texturefocus>CalibrateTopLeft.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
+		
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
 			<left>1050</left>
@@ -58,6 +66,7 @@
 			<texturefocus>CalibrateBottomRight.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
+		
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
 			<left>300</left>
@@ -67,6 +76,7 @@
 			<texturefocus>CalibrateSubtitles.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
+		
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
 			<left>0</left>
@@ -76,9 +86,11 @@
 			<texturefocus>CalibratePixelRatio.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
+		
 		<control type="group">
 			<left>30</left>
 			<top>120</top>
+			
 			<control type="label" id="2">
 				<description>coordinates label</description>
 				<left>0</left>
@@ -86,8 +98,9 @@
 				<width>1860</width>
 				<label>-</label>
 				<align>center</align>
-				<font>font13</font>
+				<font>label</font>
 			</control>
+			
 			<control type="label" id="3">
 				<description>help information</description>
 				<left>0</left>
@@ -95,8 +108,11 @@
 				<width>1860</width>
 				<label>-</label>
 				<align>center</align>
-				<font>font13</font>
+				<font>label</font>
 			</control>
+			
 		</control>
+		
 	</controls>
+	
 </window>

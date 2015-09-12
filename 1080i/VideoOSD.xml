@@ -592,14 +592,14 @@
 				<left>0</left>
 				<top>0</top>
 				<width>365</width>
-				<height>60</height>
+				<height>70</height>
 				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
 		
 			<control type="togglebutton" id="401">
 				<description>Download with Subtitles script</description>
 				<left>15</left>
-				<top>-60</top>
+				<top>-70</top>
 				<width>335</width>
 				<include>ButtonCommonValues</include>
 				<label>33003</label>

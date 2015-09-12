@@ -73,14 +73,14 @@
 			<control type="grouplist">
 				<left>73</left>
 				<top>60</top>
-				<width>1500</width>
+				<width>482</width>
 				<height>45</height>
 				<orientation>horizontal</orientation>
 				<align>left</align>
 				<itemgap>8</itemgap>
 				
 				<control type="label">
-					<width min="0" max="195">auto</width>
+					<width min="0" max="200">auto</width>
 					<include>WindowTitleCommons</include>
 					<label>$LOCALIZE[10516]</label>
 				</control>
@@ -99,7 +99,7 @@
 			<control type="image">
 				<left>64</left>
 				<top>110</top>
-				<width>225</width>
+				<width>250</width>
 				<height>34</height>
 				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
 			</control>
@@ -117,7 +117,7 @@
 			<control type="label">
 				<left>73</left>
 				<top>110</top>
-				<width>300</width>
+				<width>232</width>
 				<height>34</height>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -257,7 +257,7 @@
 				
 				<!--choose colour-->
 				<control type="button" id="33">
-					<label>Choose colour</label>
+					<label>$LOCALIZE[31919]</label>
 					<include>ButtonCommonValues</include>
 					<onclick>SetFocus(50)</onclick>
 					<onclick>ActivateWindow(1100)</onclick>

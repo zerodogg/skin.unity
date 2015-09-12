@@ -237,8 +237,8 @@
 						<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">addbutton.png</texturenofocus>	
 						<onup>11</onup>
-						<onleft>-</onleft>
-						<onright>-</onright>
+						<onleft>noop</onleft>
+						<onright>noop</onright>
 						<ondown>3</ondown>
 					</control>
 		
@@ -280,8 +280,8 @@
 						<texturefocus colordiffuse="white">removebuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">removebutton.png</texturenofocus>	
 						<onup>2</onup>
-						<onleft>-</onleft>
-						<onright>-</onright>
+						<onleft>noop</onleft>
+						<onright>noop</onright>
 						<ondown>4</ondown>
 					</control>
 		
@@ -325,8 +325,8 @@
 						<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">addbutton.png</texturenofocus>	
 						<onup>3</onup>
-						<onleft>-</onleft>
-						<onright>-</onright>
+						<onleft>noop</onleft>
+						<onright>noop</onright>
 						<ondown>11</ondown>
 						<visible>videoplayer.content(episodes)</visible>
 					</control>

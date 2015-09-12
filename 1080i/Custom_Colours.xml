@@ -91,7 +91,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
-				<label>Colour Picker</label>
+				<label>$LOCALIZE[31920]</label>
 			</control>
 		
 			<!--scrollbar-->
@@ -171,115 +171,115 @@
 					<content>
 
 						<item id="1"> <!--Red-->
-							<label>Red</label>
+							<label>31921</label>
 							<onclick>Skin.SetString(Colour.Theme,Red)</onclick>
 							<thumb>colours/Red.png</thumb>
 						</item>
 
 						<item id="2"> <!--Pink-->
-							<label>Pink</label>
+							<label>31922</label>
 							<onclick>Skin.SetString(Colour.Theme,Pink)</onclick>
 							<thumb>colours/Pink.png</thumb>
 						</item>
 
 						<item id="3"> <!--Purple-->
-							<label>Purple</label>
+							<label>31923</label>
 							<onclick>Skin.SetString(Colour.Theme,Purple)</onclick>
 							<thumb>colours/Purple.png</thumb>
 						</item>
 
 						<item id="4"> <!--Deep Purple-->
-							<label>Deep Purple</label>
+							<label>31924</label>
 							<onclick>Skin.SetString(Colour.Theme,Deep Purple)</onclick>
 							<thumb>colours/Deep Purple.png</thumb>
 						</item>
 
 						<item id="5"> <!--Indigo-->
-							<label>Indigo</label>
+							<label>31925</label>
 							<onclick>Skin.SetString(Colour.Theme,Indigo)</onclick>
 							<thumb>colours/Indigo.png</thumb>
 						</item>
 
 						<item id="6"> <!--Blue-->
-							<label>Blue</label>
+							<label>31926</label>
 							<onclick>Skin.SetString(Colour.Theme,Blue)</onclick>
 							<thumb>colours/Blue.png</thumb>
 						</item>
 
 						<item id="7"> <!--Light Blue-->
-							<label>Light Blue</label>
+							<label>31927</label>
 							<onclick>Skin.SetString(Colour.Theme,Light Blue)</onclick>
 							<thumb>colours/Light Blue.png</thumb>
 						</item>
 
 						<item id="8"> <!--Cyan-->
-							<label>Cyan</label>
+							<label>31928</label>
 							<onclick>Skin.SetString(Colour.Theme,Cyan)</onclick>
 							<thumb>colours/Cyan.png</thumb>
 						</item>
 
 						<item id="9"> <!--Teal-->
-							<label>Teal</label>
+							<label>31929</label>
 							<onclick>Skin.SetString(Colour.Theme,Teal)</onclick>
 							<thumb>colours/Teal.png</thumb>
 						</item>
 
 						<item id="10"> <!--Green-->
-							<label>Green</label>
+							<label>31930</label>
 							<onclick>Skin.SetString(Colour.Theme,Green)</onclick>
 							<thumb>colours/Green.png</thumb>
 						</item>
 
 						<item id="11"> <!--Light Green-->
-							<label>Light Green</label>
+							<label>31931</label>
 							<onclick>Skin.SetString(Colour.Theme,Light Green)</onclick>
 							<thumb>colours/Light Green.png</thumb>
 						</item>
 
 						<item id="12"> <!--Lime-->
-							<label>Lime</label>
+							<label>31932</label>
 							<onclick>Skin.SetString(Colour.Theme,Lime)</onclick>
 							<thumb>colours/Lime.png</thumb>
 						</item>
 
 						<item id="13"> <!--Yellow-->
-							<label>Yellow</label>
+							<label>31933</label>
 							<onclick>Skin.SetString(Colour.Theme,Yellow)</onclick>
 							<thumb>colours/Yellow.png</thumb>
 						</item>
 
 						<item id="14"> <!--Amber-->
-							<label>Amber</label>
+							<label>31934</label>
 							<onclick>Skin.SetString(Colour.Theme,Amber)</onclick>
 							<thumb>colours/Amber.png</thumb>
 						</item>
 
 						<item id="15"> <!--Orange-->
-							<label>Orange</label>
+							<label>31935</label>
 							<onclick>Skin.SetString(Colour.Theme,Orange)</onclick>
 							<thumb>colours/Orange.png</thumb>
 						</item>
 
 						<item id="16"> <!--Deep Orange-->
-							<label>Deep Orange</label>
+							<label>31936</label>
 							<onclick>Skin.SetString(Colour.Theme,Deep Orange)</onclick>
 							<thumb>colours/Deep Orange.png</thumb>
 						</item>
 
 						<item id="17"> <!--Brown-->
-							<label>Brown</label>
+							<label>31937</label>
 							<onclick>Skin.SetString(Colour.Theme,Brown)</onclick>
 							<thumb>colours/Brown.png</thumb>
 						</item>
 
 						<item id="18"> <!--Blue Grey-->
-							<label>Blue Grey</label>
+							<label>31938</label>
 							<onclick>Skin.SetString(Colour.Theme,Blue Grey)</onclick>
 							<thumb>colours/Blue Grey.png</thumb>
 						</item>
 
 						<item id="19"> <!--Grey-->
-							<label>Grey</label>
+							<label>31939</label>
 							<onclick>Skin.SetString(Colour.Theme,Grey)</onclick>
 							<thumb>colours/Grey.png</thumb>
 						</item>
@@ -345,7 +345,6 @@
 						<textwidth>130</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<align>center</align>
 						<onleft>10</onleft>
 						<onright>10</onright>
 						<onup>61</onup>

@@ -61,7 +61,7 @@
 			<animation effect="slide" start="-1200,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-1200,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			
-			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 			
 			<!--background-->
 			<control type="image">
@@ -190,7 +190,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="$VAR[Colour.500]">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</itemlayout>
@@ -236,7 +236,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="white">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</focusedlayout>
@@ -264,7 +264,7 @@
 			<animation effect="slide" start="1200,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="1200,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			
-			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 			
 			<!--background-->
 			<control type="image">
@@ -393,7 +393,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="$VAR[Colour.500]">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</itemlayout>
@@ -439,7 +439,7 @@
 						<width>41</width>
 						<height>41</height>
 						<texture colordiffuse="white">$INFO[ListItem.Icon]</texture>
-						<aspectratio alignx="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					
 				</focusedlayout>

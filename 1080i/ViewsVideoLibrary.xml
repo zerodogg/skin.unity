@@ -33,7 +33,7 @@
 					<width>362</width>
 					<height>538</height>
 					<aspectratio>stretch</aspectratio>
-					<texture colordiffuse="tertiary"  background="true">backgrounds/white.png</texture>
+					<texture colordiffuse="tertiary" background="true">backgrounds/white.png</texture>
 					<visible>SubString(ListItem.Icon,Default)</visible>
 					<bordersize>5</bordersize>
 					<bordertexture colordiffuse="tertiary">backgrounds/poster shadow small.png</bordertexture>
@@ -46,7 +46,7 @@
 					<width>352</width>
 					<height>528</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$VAR[Colour.500]"  background="true">$VAR[PosterThumb]</texture>
+					<texture colordiffuse="$VAR[Colour.500]" background="true">$VAR[PosterThumb]</texture>
 					<visible>SubString(ListItem.Icon,Default)</visible>
 				</control>
 			
@@ -104,7 +104,7 @@
 					<width>362</width>
 					<height>538</height>
 					<aspectratio>stretch</aspectratio>
-					<texture colordiffuse="tertiary2"  background="true">backgrounds/white.png</texture>
+					<texture colordiffuse="tertiary2" background="true">backgrounds/white.png</texture>
 					<visible>SubString(ListItem.Icon,Default)</visible>
 					<bordersize>5</bordersize>
 					<bordertexture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</bordertexture>
@@ -117,7 +117,7 @@
 					<width>352</width>
 					<height>528</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$VAR[Colour.500]"  background="true">$VAR[PosterThumb]</texture>
+					<texture colordiffuse="$VAR[Colour.500]" background="true">$VAR[PosterThumb]</texture>
 					<visible>SubString(ListItem.Icon,Default)</visible>
 				</control>
 			

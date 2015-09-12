@@ -1,3 +1,23 @@
+[B]07/07/2015 - 0.2.6 [ALPHA] [/B]
+[CLEANUP] Skin Coding
+[CODED] Picture Views
+[CODED] Live TV Views
+[CODED] Smart Playlist Editor
+[CODED] Player Controls
+[CODED] My Music Playlist
+[CODED] Music Visualization
+[CODED] Music OSD
+[CODED] Music Karaoke Lyrics
+[UPDATED] Hooks for TvTunes 5.0.0
+[CODED] Login Screen
+[CODED] Subtitle Dialog
+[CODED] Text Viewer Dialog
+[CODED] Song Info Dialog
+[CODED] PVR Guide Search Dialog
+[CODED] PVR Group Manager Dialog
+[CODED] PVR Channel Manager Dialog
+[FIXED] Disabled color for Dark theme
+
 [B]07/07/2015 - 0.2.5 [ALPHA] [/B]
 [CHANGED] Main menu now uses script.skinshortcuts
 [CODED] Slider Dialog
@@ -10,7 +30,7 @@
 [CODED] Gamepad Dialog
 [CODED] Network Setup Dialog
 [CODED] Karaoke Dialogs
-[CODED]Peripheral Dialogs
+[CODED] Peripheral Dialogs
 
 [B]09/06/2015 - 0.2.4 [ALPHA] [/B]
 [CODED] PVR Timers Dialog

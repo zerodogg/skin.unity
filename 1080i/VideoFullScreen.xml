@@ -492,7 +492,6 @@
 				<height>45</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
 				<label>-</label>
 			</control>
 			
@@ -504,7 +503,6 @@
 				<height>45</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
 				<label>-</label>
 			</control>
 			
@@ -516,7 +514,6 @@
 				<height>45</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
 				<label>-</label>
 			</control>
 			
@@ -527,7 +524,6 @@
 			<top>150</top>
 			<width>600</width>
 			<height>150</height>
-			<font>font13caps</font>
 			<description>TV Channel Group Select Button</description>
 			<texturebg border="20">OverlayDialogBackground.png</texturebg>
 			<onleft>503</onleft>
@@ -560,7 +556,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[Colour.500]</textcolor>
 			</control>
 			
 			<control type="label">

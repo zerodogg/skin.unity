@@ -10,7 +10,7 @@
 			<visible>Control.IsVisible(10)</visible>
 			<include>VisibleFadeEffect</include>
 			
-			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 			
 			<!--main content-->
 			<control type="group">

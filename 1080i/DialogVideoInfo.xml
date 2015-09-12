@@ -4,7 +4,6 @@
 
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	
 	<controls>
 	
@@ -99,7 +98,6 @@
 					<width>1390</width>
 					<height>782</height>
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<timeperimage>5000</timeperimage>
 					<include>backgroundfade</include>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<animation effect="slide" start="0,0" end="0,782" time="400" tween="quadratic" easing="out" condition="Control.HasFocus(9003)">Conditional</animation>	
@@ -545,8 +543,8 @@
 						<texturenofocus colordiffuse="white">tunebutton.png</texturenofocus>	
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>31127</label>
-						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-						<visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
+						<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
+						<visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
 					</control>
 					
 				</control>	

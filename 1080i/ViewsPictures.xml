@@ -2,11 +2,14 @@
 <includes>
 
 	<include name="PictureWrapView">
+	
 		<control type="group">
 			<visible>Control.IsVisible(510)</visible>
 			<include>VisibleFadeEffect</include>
+			<animation effect="slide" start="0,0" end="0,-50" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
 			<left>0</left>
 			<top>660</top>
+			
 			<control type="wraplist" id="510">
 				<left>-38</left>
 				<top>8</top>
@@ -22,7 +25,9 @@
 				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
 				<preloaditems>4</preloaditems>
+				
 				<itemlayout height="300" width="285">
+				
 					<control type="image">
 						<left>22</left>
 						<top>60</top>
@@ -34,6 +39,7 @@
 						<fadetime>200</fadetime>
 						<texture border="2">ThumbBG.png</texture>
 					</control>
+					
 					<control type="image">
 						<left>38</left>
 						<top>75</top>
@@ -42,8 +48,11 @@
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
+					
 				</itemlayout>
+				
 				<focusedlayout height="300" width="285">
+				
 					<control type="image">
 						<left>22</left>
 						<top>60</top>
@@ -57,6 +66,7 @@
 						<animation reversible="false" effect="zoom" start="22,60,160,160" end="-15,-8,210,210" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="22,60,160,160" start="-15,-8,210,210" time="200">unfocus</animation>
 					</control>
+					
 					<control type="image">
 						<left>38</left>
 						<top>75</top>
@@ -67,25 +77,25 @@
 						<animation reversible="false" effect="zoom" start="38,75,140,140" end="8,15,180,180" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="38,75,140,140" start="8,15,180,180" time="200">unfocus</animation>
 					</control>
+					
 				</focusedlayout>
+				
 			</control>
+			
 			<control type="scrollbar" id="60">
 				<left>465</left>
-				<top>300</top>
+				<top>320</top>
 				<width>990</width>
-				<height>38</height>
-				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="14,0,14,0">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<height>7</height>
 				<onup>510</onup>
 				<ondown>2</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(510)</visible>
 			</control>
+			
 		</control>
+		
 	</include>
 	
 	<include name="PictureThumbView">

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <includes>
+
 	<include name="LiveTVView1">
+	
+		<!--all content-->
 		<control type="group">
+			<left>25</left>
 			<visible>Control.IsVisible(560)</visible>
 			<include>VisibleFadeEffect</include>
+			
+			<!--content list-->
 			<control type="list" id="560">
-				<left>105</left>
-				<top>112</top>
-				<width>1140</width>
-				<height>842</height>
+				<left>170</left>
+				<top>200</top>
+				<width>1004</width>
+				<height>700</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>560</onup>
@@ -17,149 +24,223 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<visible>Container.Content(LiveTV)</visible>
-				<itemlayout height="60" width="1140">
+				
+				<itemlayout height="70" width="1004">
+				
+					<!--background-->
 					<control type="image">
-						<left>0</left>
+						<left>4</left>
 						<top>0</top>
-						<width>1140</width>
-						<height>62</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
-					</control>
-					<control type="label">
-						<left>15</left>
-						<top>0</top>
-						<width>1095</width>
+						<width>1000</width>
 						<height>60</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+						<texture colordiffuse="button.nf">backgrounds/white.png</texture>
 					</control>
+					
+					<!--main label-->
 					<control type="label">
-						<left>75</left>
+						<left>19</left>
 						<top>0</top>
-						<width>1050</width>
+						<width>990</width>
 						<height>60</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="60" width="1140">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>1140</width>
-						<height>62</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
-						<visible>!Control.HasFocus(560)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>1140</width>
-						<height>62</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
-						<visible>Control.HasFocus(560)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<left>840</left>
-						<top>8</top>
-						<width>300</width>
-						<height>46</height>
-						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
-						<visible>Control.HasFocus(560) + !IsEmpty(ListItem.Label2)</visible>
-					</control>
-					<control type="label">
-						<left>15</left>
-						<top>0</top>
-						<width>1095</width>
-						<height>60</height>
-						<font>font13</font>
+						<font>label</font>
 						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
+					
+					<!--secondary label-->
 					<control type="label">
-						<left>75</left>
+						<left>385</left>
 						<top>0</top>
-						<width>1050</width>
+						<width>600</width>
 						<height>60</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<font>secondary.info</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
+					
+				</itemlayout>
+				
+				<focusedlayout height="70" width="1004">
+				
+					<!--background-->
+					<control type="image">
+						<left>4</left>
+						<top>0</top>
+						<width>1000</width>
+						<height>60</height>
+						<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+						<animation effect="fade" start="100" end="75" time="200" condition="Control.HasFocus(60)">Conditional</animation>
+					</control>
+				
+					<!--background strip-->
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>4</width>
+						<height>60</height>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+						<animation effect="fade" start="100" end="75" time="200" condition="Control.HasFocus(60)">Conditional</animation>
+					</control>
+					
+					<!--main label-->
+					<control type="label">
+						<left>19</left>
+						<top>0</top>
+						<width>990</width>
+						<height>60</height>
+						<font>label</font>
+						<textcolor>text.primary</textcolor>
+						<selectedcolor>$VAR[Colour.500]</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					<!--secondary label-->
+					<control type="label">
+						<left>385</left>
+						<top>0</top>
+						<width>600</width>
+						<height>60</height>
+						<font>secondary.info</font>
+						<textcolor>text.primary</textcolor>
+						<selectedcolor>$VAR[Colour.500]</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					
 				</focusedlayout>
+				
 			</control>
+			
+			<!--scrollbar-->
 			<control type="scrollbar" id="60">
-				<left>1275</left>
-				<top>117</top>
-				<width>38</width>
-				<height>840</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<left>1184</left>
+				<top>200</top>
 				<onleft>560</onleft>
 				<onright>2</onright>
-				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
+				<showonepage>true</showonepage>
 				<visible>Control.IsVisible(560)</visible>
 			</control>
+			
+			<!--info-->
 			<control type="group">
+				<left>1201</left>
+				<top>200</top>
 				<visible>Control.IsVisible(560)</visible>
-				<left>1365</left>
-				<top>120</top>
+				
+				<!--background-->
 				<control type="image">
-					<left>15</left>
+					<left>-20</left>
+					<top>-20</top>
+					<width>550</width>
+					<height>730</height>
+					<texture background="true" colordiffuse="tertiary">backgrounds/info bg.png</texture>
+				</control>
+				
+				<!--fallback-->
+				<control type="image">
+					<left>0</left>
 					<top>0</top>
-					<width>435</width>
-					<height>435</height>
+					<width>510</width>
+					<height>287</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true" colordiffuse="$VAR[Colour.500]">Fanart_Fallback_Small.png</texture>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
+				</control>
+				
+				<!--icon-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>510</width>
+					<height>287</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
-					<bordersize>8</bordersize>
+					<visible>IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
-				<control type="fadelabel">
-					<left>15</left>
-					<top>450</top>
-					<width>435</width>
-					<height>38</height>
-					<label>$INFO[ListItem.Label2]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
-					<pauseatend>1000</pauseatend>
+				
+				<!--fanart-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>510</width>
+					<height>287</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+					<bordertexture background="true" colordiffuse="tertiary">backgrounds/white.png</bordertexture>
+					<bordersize>0</bordersize>
+					<visible>!IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
-				<control type="textbox">
-					<description>Description Value for TV Show</description>
+				
+				<!--info strip background-->
+				<control type="image">
+					<left>0</left>
+					<top>280</top>
+					<width>510</width>
+					<height>60</height>
+					<texture background="true" colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+				</control>
+			
+				<!--fanart shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>280</top>
+					<width>510</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+				</control>
+					
+				<!--secondary label-->
+				<control type="label">
 					<left>15</left>
-					<top>495</top>
-					<width>435</width>
-					<height>330</height>
-					<font>font13</font>
-					<align>justify</align>
+					<top>280</top>
+					<width>480</width>
+					<height>55</height>
+					<font>secondary.info.big</font>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<selectedcolor>white</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
 				</control>
+				
+				<!--plot (tv shows)-->
+				<control type="textbox">
+					<left>15</left>
+					<top>340</top>
+					<width>480</width>
+					<height>340</height>
+					<font>label</font>
+					<align>left</align>
+					<textcolor>text.primary</textcolor>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+			
+				<!--info strip shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>340</top>
+					<width>510</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+				</control>
+				
 			</control>
+			
 		</control>
+		
 	</include>
+	
 </includes>
