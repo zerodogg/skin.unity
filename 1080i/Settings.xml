@@ -308,9 +308,9 @@
 			<!--setting description-->
 			<control type="textbox">
 				<left>930</left>
-				<top>590</top>
+				<top>592</top>
 				<width>965</width>
-				<height>200</height>
+				<height>198</height>
 				<font>label</font>
 				<label>$INFO[Container(9000).ListItem.Label2]</label>
 				<align>justify</align>

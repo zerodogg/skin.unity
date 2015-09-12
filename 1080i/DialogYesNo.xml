@@ -119,9 +119,9 @@
 			<control type="textbox" id="9"> <!--9-->
 				<description>text</description>
 				<left>60</left>
-				<top>525</top>
+				<top>527</top>
 				<width>1800</width>
-				<height>150</height>
+				<height>148</height>
 				<align>center</align>
 				<label>-</label>
 				<font>label</font>

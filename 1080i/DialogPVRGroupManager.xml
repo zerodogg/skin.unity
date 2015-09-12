@@ -191,7 +191,7 @@
 							<width>300</width>
 							<height>60</height>
 							<texture colordiffuse="white">backgrounds/white.png</texture>
-							<visible>Control.HasFocus(13)</visible>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(13)">Conditional</animation>
 						</control>
 
 						<control type="label">
@@ -443,7 +443,7 @@
 				
 				<!--bottom bar-->
 				<control type="group" id="9000">
-					<left>920</left>
+					<left>870</left>
 					<top>1015</top>
 					
 					<!--add circle border-->
@@ -489,7 +489,7 @@
 					
 					<!--rename circle border-->
 					<control type="image">
-						<left>200</left>
+						<left>180</left>
 						<top>0</top>
 						<width>60</width>
 						<height>60</height>
@@ -499,7 +499,7 @@
 					
 					<!--rename circle animation-->
 					<control type="image">
-						<left>199</left>
+						<left>179</left>
 						<top>-1</top>
 						<width>62</width>
 						<height>62</height>
@@ -510,8 +510,8 @@
 					
 					<!--rename button-->
 					<control type="button" id="27">
-						<hitrect x="200" y="0" w="225" h="60" />
-						<left>200</left>
+						<hitrect x="180" y="0" w="225" h="60" />
+						<left>180</left>
 						<top>0</top>
 						<width>195</width>
 						<height>60</height>
@@ -525,6 +525,19 @@
 						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
 						<label>31504</label>
 						<onleft>26</onleft>
+						<onright>25</onright>
+						<onup>9002</onup>
+						<ondown>9002</ondown>
+					</control>
+					
+					<control type="radiobutton" id="25">
+						<description>Hide Group</description>
+						<left>405</left>
+						<top>0</top>
+						<width>170</width>
+						<height>60</height>
+						<label>19289</label>
+						<onleft>27</onleft>
 						<onright>28</onright>
 						<onup>9002</onup>
 						<ondown>9002</ondown>
@@ -532,7 +545,7 @@
 					
 					<!--delete circle border-->
 					<control type="image">
-						<left>445</left>
+						<left>575</left>
 						<top>0</top>
 						<width>60</width>
 						<height>60</height>
@@ -542,7 +555,7 @@
 					
 					<!--delete circle animation-->
 					<control type="image">
-						<left>444</left>
+						<left>574</left>
 						<top>-1</top>
 						<width>62</width>
 						<height>62</height>
@@ -553,8 +566,8 @@
 					
 					<!--delete button-->
 					<control type="button" id="28">
-						<hitrect x="445" y="0" w="200" h="60" />
-						<left>445</left>
+						<hitrect x="575" y="0" w="200" h="60" />
+						<left>575</left>
 						<top>0</top>
 						<width>130</width>
 						<height>60</height>
@@ -567,7 +580,7 @@
 						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
 						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
 						<label>31505</label>
-						<onleft>27</onleft>
+						<onleft>25</onleft>
 						<onright>29</onright>
 						<onup>9002</onup>
 						<ondown>9002</ondown>
@@ -575,7 +588,7 @@
 					
 					<!--ok circle border-->
 					<control type="image">
-						<left>670</left>
+						<left>775</left>
 						<top>0</top>
 						<width>60</width>
 						<height>60</height>
@@ -585,7 +598,7 @@
 					
 					<!--ok circle animation-->
 					<control type="image">
-						<left>669</left>
+						<left>774</left>
 						<top>-1</top>
 						<width>62</width>
 						<height>62</height>
@@ -596,7 +609,7 @@
 					
 					<!--ok button-->
 					<control type="button" id="29">
-						<left>670</left>
+						<left>775</left>
 						<top>0</top>
 						<width>130</width>
 						<height>60</height>

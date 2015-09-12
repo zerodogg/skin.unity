@@ -561,9 +561,9 @@
 				<!--description-->
 				<control type="textbox" id="4">
 					<left>575</left>
-					<top>695</top>
+					<top>697</top>
 					<width>1310</width>
-					<height>370</height>
+					<height>368</height>
 					<font>label</font>
 					<align>left</align>
 					<textcolor>text.primary</textcolor>

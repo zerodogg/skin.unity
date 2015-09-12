@@ -368,9 +368,9 @@
 					<!--setting description-->
 					<control type="textbox">
 						<left>935</left>
-						<top>735</top>
+						<top>737</top>
 						<width>960</width>
-						<height>128</height>
+						<height>126</height>
 						<font>secondary.info.small</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>
@@ -381,9 +381,9 @@
 					
 					<control type="textbox">
 						<left>935</left>
-						<top>735</top>
+						<top>737</top>
 						<width>960</width>
-						<height>128</height>
+						<height>126</height>
 						<font>secondary.info.small</font>
 						<align>left</align>
 						<textcolor>text.primary</textcolor>

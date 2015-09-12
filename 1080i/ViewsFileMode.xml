@@ -506,9 +506,9 @@
 					<!--main label-->
 					<control type="textbox">
 						<left>20</left>
-						<top>153</top>
+						<top>155</top>
 						<width>167</width>
-						<height>65</height>
+						<height>63</height>
 						<font>secondary.info.big</font>
 						<textcolor>text.primary</textcolor>
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
@@ -669,9 +669,9 @@
 					<!--main label-->
 					<control type="textbox">
 						<left>20</left>
-						<top>270</top>
+						<top>272</top>
 						<width>177</width>
-						<height>65</height>
+						<height>63</height>
 						<font>secondary.info.big</font>
 						<textcolor>text.primary</textcolor>
 						<selectedcolor>primary</selectedcolor>

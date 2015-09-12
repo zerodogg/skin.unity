@@ -250,9 +250,9 @@
 						<!--description-->
 						<control type="textbox">
 							<left>133</left>
-							<top>40</top>
+							<top>42</top>
 							<width>1125</width>
-							<height>75</height>
+							<height>73</height>
 							<font>label</font>
 							<align>left</align>
 							<aligny>top</aligny>
@@ -301,9 +301,9 @@
 						<!--description-->
 						<control type="textbox">
 							<left>133</left>
-							<top>40</top>
+							<top>42</top>
 							<width>1125</width>
-							<height>75</height>
+							<height>73</height>
 							<font>label</font>
 							<align>left</align>
 							<aligny>top</aligny>

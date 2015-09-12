@@ -122,9 +122,9 @@
 				<!--changelog content-->
 				<control type="textbox" id="5">
 					<left>120</left>
-					<top>167</top>
+					<top>169</top>
 					<width>1025</width>
-					<height>896</height>
+					<height>894</height>
 					<label>-</label>
 					<font>label</font>
 					<align>justify</align>

@@ -254,9 +254,9 @@
 			<!--setting description-->
 			<control type="textbox" id="6">
 				<left>935</left>
-				<top>725</top>
+				<top>727</top>
 				<width>960</width>
-				<height>48</height>
+				<height>46</height>
 				<font>secondary.info.small</font>
 				<align>left</align>
 				<textcolor>text.primary</textcolor>
@@ -316,6 +316,17 @@
 			<height>1</height>
 			<aspectratio>stretch</aspectratio>
 			<texture colordiffuse="disabled">backgrounds/white.png</texture>
+		</control>
+		
+		<!--label-->
+		<control type="label" id="14">
+			<left>0</left>
+			<top>0</top>
+			<height>60</height>
+			<font>button.bold</font>
+			<textcolor>$VAR[Colour.500]</textcolor>
+			<textoffsetx>5</textoffsetx>
+			<aligny>center</aligny>
 		</control>
 		
 		<control type="label" id="2">
