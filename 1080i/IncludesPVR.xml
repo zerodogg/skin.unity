@@ -299,6 +299,16 @@
 					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
 				</control>
 				
+				<control type="radiobutton" id="7">
+					<description>Show deleted recordings</description>
+					<left>0</left>
+					<right>60</right>
+					<textwidth>352</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>19184</label>
+					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+				</control>
+				
 				<include>CommonNowPlaying_Controls</include>
 				
 			</control>
