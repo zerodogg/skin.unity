@@ -35,4 +35,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Skin debug files
+debug/*
+1080i/Custom_Debug_Overlay.xml
+
+# Skin shortcuts menu
 1080i/script-skinshortcuts-includes.xml
