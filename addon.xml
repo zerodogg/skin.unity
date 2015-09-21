@@ -7,7 +7,7 @@
   provider-name="Eddage, Bumpaneer">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
-		<import addon="script.skinshortcuts" version="0.4.5"/>
+		<import addon="script.skinshortcuts" version="0.5.3"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
