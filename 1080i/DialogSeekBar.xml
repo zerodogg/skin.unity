@@ -234,8 +234,21 @@
 					<align>left</align>
 					<font>font12</font>
 					<textcolor>$VAR[Colour.500]</textcolor>
-					<label fallback="$INFO[VideoPlayer.Genre]">$INFO[VideoPlayer.Tagline]</label>
-					<visible>VideoPlayer.Content(Movies)</visible>
+					<label>$INFO[VideoPlayer.Tagline]</label>
+					<visible>VideoPlayer.Content(Movies) + !IsEmpty(VideoPlayer.Tagline)</visible>
+				</control>
+				
+				<!--genre-->
+				<control type="label" id="1">
+					<left>415</left>
+					<top>75</top>
+					<width>1090</width>
+					<height>38</height>
+					<align>left</align>
+					<font>font12</font>
+					<textcolor>$VAR[Colour.500]</textcolor>
+					<label>$INFO[VideoPlayer.Genre]</label>
+					<visible>VideoPlayer.Content(Movies) + IsEmpty(VideoPlayer.Tagline)</visible>
 				</control>
 				
 				<!--tv show label-->
