@@ -1,3 +1,11 @@
+[B]06/10/2015 - 0.4.1 [/B]
+[CLEANUP] Remove Skin Debug Aids
+[CODED] RSS Editor
+[UPDATED] Use Skinshortcuts Templates for Submenu
+[CODED] CU-LRCLyrics Script
+[CODED] Global Search Script
+[FIXED] Dialog Seek Bar Incorrect Label
+
 [B]12/09/2015  - 0.4.0 [/B]
 [CODED] Initial Isengard Release
 
