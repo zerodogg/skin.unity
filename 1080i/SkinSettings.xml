@@ -6,7 +6,7 @@
 	
 	<onload condition="IsEmpty(Skin.String(Colour.Theme))">Skin.SetString(Colour.Theme,Red)</onload>
 	
-	<onunload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000)</onunload>
+	<onunload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onunload>
 	
 	<controls>
 	
@@ -261,7 +261,7 @@
 					<left>920</left>
 					<top>125</top>
 					<width>995</width>
-					<height>580</height>
+					<height>645</height>
 					<itemgap>5</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -351,24 +351,6 @@
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
 					
-					<control type="label" id="110">
-						<width>995</width>
-						<height>60</height>
-						<font>button.bold</font>
-						<textcolor>$VAR[Colour.500]</textcolor>
-						<textoffsetx>5</textoffsetx>
-						<aligny>center</aligny>
-						<label>31073</label>
-					</control>
-					
-					<!--hide debug info-->
-					<control type="radiobutton" id="111">
-						<width>995</width>
-						<label>31074</label>
-						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
-						<selected>!Skin.HasSetting(DebugInfo)</selected>
-					</control>
-					
 					<control type="label" id="112">
 						<width>995</width>
 						<height>60</height>
@@ -405,7 +387,7 @@
 					<left>920</left>
 					<top>125</top>
 					<width>995</width>
-					<height>580</height>
+					<height>645</height>
 					<itemgap>5</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -474,8 +456,16 @@
 						<label>$ADDON[script.skinshortcuts 32071]</label>
 					</control>
 					
+					<!--auto hide submenu-->
+					<control type="radiobutton" id="231">
+						<width>995</width>
+						<label>31115</label>
+						<onclick>Skin.ToggleSetting(AutoHideHomepageSubmenu)</onclick>
+						<selected>Skin.HasSetting(AutoHideHomepageSubmenu)</selected>
+					</control>
+					
 					<!--customize skin shortcuts menu-->
-					<control type="button" id="231">
+					<control type="button" id="232">
 						<width>995</width>
 						<label>$ADDON[script.skinshortcuts 32035]</label>
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</onclick>
@@ -483,7 +473,7 @@
 					</control>
 					
 					<!--reset skin shortcuts menu-->
-					<control type="button" id="232">
+					<control type="button" id="233">
 						<width>995</width>
 						<label>$ADDON[script.skinshortcuts 32037]</label>
 						<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
@@ -508,7 +498,7 @@
 					<left>920</left>
 					<top>125</top>
 					<width>995</width>
-					<height>580</height>
+					<height>645</height>
 					<itemgap>5</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -594,7 +584,7 @@
 					<left>920</left>
 					<top>125</top>
 					<width>995</width>
-					<height>580</height>
+					<height>645</height>
 					<itemgap>5</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>

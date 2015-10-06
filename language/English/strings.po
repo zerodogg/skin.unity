@@ -291,7 +291,11 @@ msgctxt "#31112"
 msgid "Options"
 msgstr ""
 
-#empty strings from id 31113 to 31115
+#empty strings from id 31113 to 31114
+
+msgctxt "#31115"
+msgid "Auto-hide the Sub-menu"
+msgstr ""
 
 msgctxt "#31116"
 msgid "Show Recently added Albums"
