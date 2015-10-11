@@ -236,7 +236,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<visible>IsEmpty(ListItem.Tagline + [Container.Content(Movies) | Container.Content(TVShows)]</visible>
+					<visible>IsEmpty(ListItem.Tagline + [Container.Content(Movies) | Container.Content(TVShows)])</visible>
 				</control>	
 				
 				<!--tv show/season/episode-->
