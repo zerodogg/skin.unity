@@ -75,7 +75,7 @@
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label></label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="41,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -186,7 +186,7 @@
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label></label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="41,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -984,7 +984,7 @@
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label></label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="41,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -1117,7 +1117,7 @@
 						<selectedcolor>$VAR[Colour.500]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label></label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="41,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
