@@ -720,20 +720,20 @@
 			
 			<!--left arrow-->
 			<control type="image">
-				<left>230</left>
-				<top>112</top>
-				<width>50</width>
-				<height>50</height>
+				<left>240</left>
+				<top>122</top>
+				<width>30</width>
+				<height>30</height>
 				<texture colordiffuse="text.primary">arrow-big-left.png</texture>
 				<visible>Container(9901).HasPrevious + !Control.HasFocus(89001)</visible>
 			</control>
 			
 			<!--left arrow-->
 			<control type="image">
-				<left>230</left>
-				<top>112</top>
-				<width>50</width>
-				<height>50</height>
+				<left>240</left>
+				<top>122</top>
+				<width>30</width>
+				<height>30</height>
 				<texture colordiffuse="white">arrow-big-left.png</texture>
 				<visible>Container(9901).HasPrevious + Control.HasFocus(89001)</visible>
 			</control>
@@ -758,20 +758,20 @@
 			
 			<!--right arrow-->
 			<control type="image">
-				<left>1640</left>
-				<top>112</top>
-				<width>50</width>
-				<height>50</height>
+				<left>1650</left>
+				<top>122</top>
+				<width>30</width>
+				<height>30</height>
 				<texture colordiffuse="text.primary">arrow-big-right.png</texture>
 				<visible>Container(9901).HasNext + !Control.HasFocus(89002)</visible>
 			</control>
 			
 			<!--right arrow-->
 			<control type="image">
-				<left>1640</left>
-				<top>112</top>
-				<width>50</width>
-				<height>50</height>
+				<left>1650</left>
+				<top>122</top>
+				<width>30</width>
+				<height>30</height>
 				<texture colordiffuse="white">arrow-big-right.png</texture>
 				<visible>Container(9901).HasNext + Control.HasFocus(89002)</visible>
 			</control>
