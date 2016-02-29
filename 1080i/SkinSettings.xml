@@ -430,22 +430,6 @@
 						<visible>!IsEmpty(Weather.Plugin)</visible>
 					</control>
 					
-					<!--show recently added video info-->
-					<control type="radiobutton" id="205">
-						<width>995</width>
-						<label>31117</label>
-						<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedVideo)</onclick>
-						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedVideo)</selected>
-					</control>
-					
-					<!--show recently added info-->
-					<control type="radiobutton" id="206">
-						<width>995</width>
-						<label>31116</label>
-						<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedAlbums)</onclick>
-						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
-					</control>
-
 					<control type="label" id="230">
 						<width>995</width>
 						<height>60</height>

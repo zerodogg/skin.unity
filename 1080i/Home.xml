@@ -564,7 +564,7 @@
 		</control>
 		
 		<!--recently added items-->
-		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
+		<include>skinshortcuts-template-widget</include>
 		
 		<!--Hidden Button to pass through navigation when recently added is disabled-->
 		<control type="button" id="9003">
