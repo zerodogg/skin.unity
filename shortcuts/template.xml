@@ -7,21 +7,19 @@
 			<!--sub menus-->
 			<control type="fixedlist" id="9901">
 				<skinshortcuts>visibility</skinshortcuts>
-				<left>150</left>
+				<left>285</left>
 				<top>107</top>
-				<width>1620</width>
+				<width>1350</width>
 				<height>60</height>
 				<onup>9000</onup>
 				<ondown>9002</ondown>
 				<itemgap>0</itemgap>
 				<focusposition>2</focusposition>
-				<movement>3</movement>
+				<movement>2</movement>
 				<orientation>Horizontal</orientation>
 				<animation effect="slide" start="0,0" end="0,-97" time="200" tween="quadratic" easing="out">Hidden</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,1)">conditional</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,3)">conditional</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,5)">conditional</animation>
-				<animation effect="slide" start="0,-97" end="0,00" delay="250" time="200" tween="quadratic">Visible</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="StringCompare(Container(9901).NumItems,2) | StringCompare(Container(9901).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,-97" end="0,0" delay="250" time="200" tween="quadratic">Visible</animation>
 				
 				<itemlayout width="270" height="60">
 				
@@ -89,6 +87,15 @@
 					
 				</content>
 				
+			</control>
+			
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+				<animation effect="slide" start="0,-97" end="0,0" delay="250" time="200" tween="quadratic">Visible</animation>
+				<animation effect="slide" start="0,0" end="0,-97" time="200" tween="quadratic" easing="out">Hidden</animation>
+				
+				<include>HomeSubMenuArrows</include>
+			
 			</control>
 			
 		</controls>

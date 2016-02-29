@@ -10,7 +10,7 @@
 				<animation type="WindowClose" reversible="false">
 					<effect type="fade" start="100" end="0" time="300" />
 				</animation>
-			<animation effect="slide" start="0,0" end="0,69" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,69" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904) | Control.HasFocus(89001) | Control.HasFocus(89002)">Conditional</animation>
 			
 			<control type="group">
 				<visible>!StringCompare(Container(9901).NumItems,0)</visible>
@@ -50,7 +50,7 @@
 					<height>32</height>
 					<texture colordiffuse="black">previous-32.png</texture>
 					<animation effect="rotate" start="0" end="180" center="auto" time="0" condition="true">Conditional</animation>
-					<animation effect="rotate" start="0" end="180" center="auto" time="200" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904)">Conditional</animation>
+					<animation effect="rotate" start="0" end="180" center="auto" time="200" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904) | Control.HasFocus(89001) | Control.HasFocus(89002)">Conditional</animation>
 				</control>
 				
 				<!--side blade tab arrow-->
@@ -61,16 +61,16 @@
 					<height>32</height>
 					<texture colordiffuse="white">previous-32.png</texture>
 					<animation effect="rotate" start="0" end="180" center="auto" time="0" condition="true">Conditional</animation>
-					<animation effect="rotate" start="0" end="180" center="auto" time="200" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904)">Conditional</animation>
+					<animation effect="rotate" start="0" end="180" center="auto" time="200" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904) | Control.HasFocus(89001) | Control.HasFocus(89002)">Conditional</animation>
 				</control>
 				
 			</control>
 			
 			<!--fake button for mouse control-->
 			<control type="button" id="9904">
-				<left>150</left>
+				<left>285</left>
 				<top>38</top>
-				<width>1620</width>
+				<width>1350</width>
 				<height>120</height>
 				<label>-</label>
 				<font>-</font>
@@ -85,20 +85,18 @@
 
 			<!--sub menus-->
 			<control type="fixedlist" id="9901">
-				<visible allowhiddenfocus="true">Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904)</visible>
-				<left>150</left>
+				<visible allowhiddenfocus="true">Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904) | Control.HasFocus(89001) | Control.HasFocus(89002)</visible>
+				<left>285</left>
 				<top>38</top>
-				<width>1620</width>
+				<width>1350</width>
 				<height>60</height>
 				<onup>9000</onup>
 				<ondown>9002</ondown>
 				<itemgap>0</itemgap>
 				<focusposition>2</focusposition>
-				<movement>3</movement>
+				<movement>2</movement>
 				<orientation>Horizontal</orientation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,1)">conditional</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,3)">conditional</animation>
-				<animation effect="slide" start="0,0" end="135,0" time="0" condition="StringCompare(Container(9901).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="StringCompare(Container(9901).NumItems,2) | StringCompare(Container(9901).NumItems,4)">conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 
 				<itemlayout width="270" height="60">
@@ -167,6 +165,13 @@
 					
 				</content>
 				
+			</control>
+		
+			<control type="group">
+				<top>-69</top>
+				
+				<include>HomeSubMenuArrows</include>
+			
 			</control>
 		
 		</control>
@@ -697,4 +702,81 @@
 		</item>
 	</include>
 
+	<include name="HomeSubMenuArrows">
+		<!--left arrow-->
+		<control type="group">
+			<visible>Container(9901).HasPrevious</visible>
+	
+			<!--left arrow bg-->
+			<control type="button" id="89001">
+				<left>230</left>
+				<top>107</top>
+				<width>50</width>
+				<height>60</height>
+				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
+				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<onclick>Control.Move(9901,-1)</onclick>
+			</control>
+			
+			<!--left arrow-->
+			<control type="image">
+				<left>230</left>
+				<top>112</top>
+				<width>50</width>
+				<height>50</height>
+				<texture colordiffuse="text.primary">arrow-big-left.png</texture>
+				<visible>Container(9901).HasPrevious + !Control.HasFocus(89001)</visible>
+			</control>
+			
+			<!--left arrow-->
+			<control type="image">
+				<left>230</left>
+				<top>112</top>
+				<width>50</width>
+				<height>50</height>
+				<texture colordiffuse="white">arrow-big-left.png</texture>
+				<visible>Container(9901).HasPrevious + Control.HasFocus(89001)</visible>
+			</control>
+			
+		</control>
+		
+		<!--right arrow-->
+		<control type="group">
+			<visible>Container(9901).HasNext</visible>
+		
+			<!--right arrow bg-->
+			<control type="button" id="89002">
+				<description>right Arrow</description>
+				<left>1640</left>
+				<top>107</top>
+				<width>50</width>
+				<height>60</height>
+				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
+				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<onclick>Control.Move(9901,1)</onclick>
+			</control>
+			
+			<!--right arrow-->
+			<control type="image">
+				<left>1640</left>
+				<top>112</top>
+				<width>50</width>
+				<height>50</height>
+				<texture colordiffuse="text.primary">arrow-big-right.png</texture>
+				<visible>Container(9901).HasNext + !Control.HasFocus(89002)</visible>
+			</control>
+			
+			<!--right arrow-->
+			<control type="image">
+				<left>1640</left>
+				<top>112</top>
+				<width>50</width>
+				<height>50</height>
+				<texture colordiffuse="white">arrow-big-right.png</texture>
+				<visible>Container(9901).HasNext + Control.HasFocus(89002)</visible>
+			</control>
+			
+		</control>
+	</include>
+	
 </includes>
