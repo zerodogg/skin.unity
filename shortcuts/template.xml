@@ -114,7 +114,7 @@
 		
 		<property name="id" tag="mainmenuid" />
 
-		<property name="artwork">$VAR[PosterThumb]</property>
+		<property name="artwork">$VAR[HomeWidgetPosterVar]</property>
 
 		<controls>
 			
@@ -338,7 +338,7 @@
 		
 		<property name="id" tag="mainmenuid" />
 
-		<property name="artwork">$VAR[PosterThumb]</property>
+		<property name="artwork">$VAR[HomeWidgetBannerVar]</property>
 
 		<controls>
 			
@@ -593,7 +593,7 @@
 		
 		<property name="id" tag="mainmenuid" />
 
-		<property name="artwork">$VAR[PosterThumb]</property>
+		<property name="artwork">$VAR[HomeWidgetPosterVar]</property>
 
 		<controls>
 			

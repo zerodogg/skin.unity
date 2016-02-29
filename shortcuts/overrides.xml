@@ -47,11 +47,10 @@
 	<propertyfallback property="widgetLayout" attribute="widgetType" value="singles">Square</propertyfallback>
 	<propertyfallback property="widgetLayout" attribute="widgetType" value="favourite">Square</propertyfallback>
 	<propertyfallback property="widgetLayout" attribute="widgetType" value="addon">Square</propertyfallback>
-	<propertyfallback property="widgetLayout" attribute="widgetType" value="weather">Square</propertyfallback>
-	<propertyfallback property="widgetLayout" attribute="widgetType" value="system">Square</propertyfallback>
-	<propertyfallback property="widgetLayout" attribute="widgetType" value="custom">Square</propertyfallback>
 	<propertyfallback property="widgetLayout" attribute="widgetType" value="pvr">Square</propertyfallback>
-	<propertyfallback property="widgetLayout" attribute="widgetType" value="episodes">Wide</propertyfallback>
+	<propertyfallback property="widgetLayout" attribute="widgetType" value="weather">Wide</propertyfallback>
+	<propertyfallback property="widgetLayout" attribute="widgetType" value="system">Wide</propertyfallback>
+	<propertyfallback property="widgetLayout" attribute="widgetType" value="custom">Wide</propertyfallback>
 	<propertyfallback property="widgetLayout">Poster</propertyfallback>
 	
 </overrides>
