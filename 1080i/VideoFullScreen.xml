@@ -8,7 +8,7 @@
 	
 		<!-- media infos -->
 		<control type="group" id="1">
-			<visible>[Player.ShowInfo] + ![Window.IsVisible(seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(SliderDialog)]</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(SliderDialog)]</visible>
 		
 			<!--channel-->
 			<control type="group" id="1">
@@ -165,6 +165,7 @@
 			<!--bottom info-->
 			<control type="group" id="1">
 				<animation effect="slide" start="0,0" end="0,100" time="0" condition="IsEmpty(VideoPlayer.Plot)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-372,0" time="200" delay="100" condition="Skin.HasSetting(SubtitleSection)">Conditional</animation>
 		
 				<!--background-->
 				<control type="image" id="1">
@@ -321,15 +322,15 @@
 					<top>150r</top>
 					<visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
 					<animation effect="slide" start="0,0" end="0,-100" time="0" condition="IsEmpty(VideoPlayer.Plot)">Conditional</animation>
-					
+
 					<!--cache-->
 					<control type="progress" id="1">
 						<left>415</left>
 						<top>0</top>
 						<width>1090</width>
-						<height>7</height>
+						<height>8</height>
 						<info>Player.ProgressCache</info>
-						<midtexture colordiffuse="$VAR[Colour.400]">backgrounds/white.png</midtexture>
+						<midtexture colordiffuse="$VAR[Colour.900]">backgrounds/white.png</midtexture>
 					</control>
 					
 					<!--progress-->
@@ -339,6 +340,7 @@
 						<width>1090</width>
 						<height>7</height>
 						<info>Player.Progress</info>
+						<texturebg>-</texturebg>
 					</control>
 							
 					<!--current time-->
