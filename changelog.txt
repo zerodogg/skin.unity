@@ -1,3 +1,12 @@
+[B]29/02/2016 - 0.4.2 [/B]
+[CLEANUP] Correct addon.xml information
+[CODED] Music Video Media Info View
+[UPDATED] Use Skinshortcuts for Widget Management
+[UPDATED] Change Color for Selected Power and Favorites
+[FIXED] Select Dialog Navigation
+[UPDATED] Add HEVC Media Flags
+[CHANGED] Show Seek Bar During Media Playback
+
 [B]06/10/2015 - 0.4.1 [/B]
 [CLEANUP] Remove Skin Debug Aids
 [CODED] RSS Editor
