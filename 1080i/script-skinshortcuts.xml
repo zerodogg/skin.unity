@@ -19,7 +19,7 @@
 		<!--all content-->
 		<control type="group">
 			<left>-265</left>
-			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(SelectDialog) + !Window.IsVisible(YesNoDialog) + IsEmpty(Window.Property(additionalDialog)</visible>
+			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(SelectDialog) + !Window.IsVisible(YesNoDialog) + IsEmpty(Window.Property(additionalDialog))</visible>
 			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-1650,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			
@@ -311,6 +311,14 @@
 							<width>760</width>
 							<label>$ADDON[script.skinshortcuts 32027]</label>
 							<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+						</control>
+						
+						<!--change widget-->
+						<control type="button" id="312">
+							<width>760</width>
+							<label>$ADDON[script.skinshortcuts 32044]</label>
+							<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+							<visible>StringCompare(Window.Property(groupname), mainmenu)</visible>
 						</control>
 						
 						<!--edit sub-menu-->
