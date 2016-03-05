@@ -6,7 +6,7 @@
 	name="Unity"
 	provider-name="Eddage, Bumpaneer">
 	<requires>
-		<import addon="xbmc.gui" version="5.9.0"/>
+		<import addon="xbmc.gui" version="5.10.0"/>
 		<import addon="script.skinshortcuts" version="0.6.5"/>
 	</requires>
 	<extension
