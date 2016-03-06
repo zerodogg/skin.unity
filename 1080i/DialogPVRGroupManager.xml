@@ -205,21 +205,6 @@
 							<textcolor>$VAR[Colour.900]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<info>ListItem.Label</info>
-							<visible>Control.HasFocus(13)</visible>
-						</control>
-						
-						<control type="label">
-							<left>15</left>
-							<top>0</top>
-							<width>270</width>
-							<height>60</height>
-							<font>button</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<info>ListItem.Label</info>
-							<visible>!Control.HasFocus(13)</visible>
 						</control>
 						
 					</focusedlayout>
