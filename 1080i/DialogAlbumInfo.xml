@@ -3,8 +3,7 @@
 <window>
 
 	<defaultcontrol always="true">5</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<controls>
 	
 		<!--all content-->

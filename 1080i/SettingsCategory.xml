@@ -3,8 +3,7 @@
 <window>
 
 	<defaultcontrol>3</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<onload condition="IsEmpty(Skin.String(Colour.Theme))">Skin.SetString(Colour.Theme,Red)</onload>
 		
 	<controls>

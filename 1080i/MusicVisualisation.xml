@@ -2,8 +2,7 @@
 <window>
 
 	<defaultcontrol>-</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<controls>
 	
 		<control type="visualisation" id="2">

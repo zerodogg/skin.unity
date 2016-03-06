@@ -3,8 +3,7 @@
 <window type="dialog" id="1100">
 
 	<defaultcontrol always="true">100</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-
+	
 	<controls>
 			
 		<!--all content-->

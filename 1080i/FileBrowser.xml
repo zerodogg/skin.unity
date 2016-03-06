@@ -2,8 +2,7 @@
 <window>
 
 	<defaultcontrol always="true">450</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<controls>
 	
 		<!--all content-->
