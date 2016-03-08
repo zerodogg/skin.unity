@@ -1134,18 +1134,7 @@
 					<visible>container.content(musicvideos)</visible>
 					<left>600</left>
 					<top>260</top>
-					
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>570</width>
-						<height>540</height>
-						<aspectratio>keep</aspectratio>
-						<bordertexture border="5">button-nofocus.png</bordertexture>
-						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-					</control>
-					
+
 					<control type="list" id="49">
 						<left>505</left>
 						<top>0</top>
@@ -1297,12 +1286,12 @@
 					</control>
 					
 					<control type="image">
-						<left>585</left>
-						<top>555</top>
-						<width>960</width>
-						<height>6</height>
+						<left>535</left>
+						<top>255</top>
+						<width>750</width>
+						<height>1</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
+						<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 					</control>
 					
 				</control>
