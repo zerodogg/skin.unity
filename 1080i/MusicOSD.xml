@@ -4,26 +4,6 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	
 	<controls>
-	
-		<control type="button" id="1000">
-			<description>Close Window button</description>
-			<left>126r</left>
-			<top>0</top>
-			<width>96</width>
-			<height>48</height>
-			<label>-</label>
-			<font>-</font>
-			<onclick>Dialog.Close(MusicOSD,true)</onclick>
-			<onclick>FullScreen</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
-			<texturenofocus>DialogCloseButton.png</texturenofocus>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<onup>100</onup>
-			<ondown>100</ondown>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
-		</control>
 		
 		<!--background-->
 		<control type="image" id="1">
@@ -32,7 +12,7 @@
 			<width>1140</width>
 			<height>85</height>
 			<texture colordiffuse="tertiary">backgrounds/osd bg.png</texture>
-			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 		</control>
 		
 		<control type="slider" id="87">
@@ -45,14 +25,14 @@
 			<ondown>26</ondown>
 			<action>seek</action>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 		</control>
 		
 		<control type="group" id="100">
 			<left>420</left>
 			<top>82r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 			
 			<control type="button" id="600">
 				<left>0</left>
@@ -255,7 +235,24 @@
 			<left>755r</left>
 			<top>82r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
+			
+			<control type="button" id="700">
+				<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
+				<left>-75</left>
+				<top>0</top>
+				<width>40</width>
+				<height>40</height>
+				<label>15047</label>
+				<font>-</font>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDAudioNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDAudioNF.png</texturenofocus>
+				<onleft>607</onleft>
+				<onright>701</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
+			</control>
 			
 			<control type="togglebutton" id="701">
 				<left>0</left>
@@ -268,7 +265,7 @@
 				<texturenofocus colordiffuse="text.primary">OSDLyricsNF.png</texturenofocus>
 				<alttexturefocus colordiffuse="$VAR[Colour.500]">OSDLyricsNF.png</alttexturefocus>
 				<alttexturenofocus colordiffuse="text.primary">OSDLyricsNF.png</alttexturenofocus>
-				<onleft>607</onleft>
+				<onleft>700</onleft>
 				<onright>500</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>

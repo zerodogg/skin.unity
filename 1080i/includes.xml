@@ -218,6 +218,7 @@
 			Control.HasFocus(9001) | 
 			Control.HasFocus(8999) | 
 			Window.IsVisible(AddonInformation) | 
+			Window.IsVisible(AudioDSPManager) |
 			Window.IsVisible(ShutdownMenu) | 
 			Window.IsVisible(ContextMenu) | 
 			Window.IsVisible(MovieInformation) | 
@@ -245,6 +246,7 @@
 			Window.IsVisible(PeripheralSettings) | 
 			Window.IsVisible(script-XBMC_Lyrics-main.xml) | 
 			Window.IsVisible(PVRChannelManager) | 
+			Window.IsVisible(PVRGroupManager) | 
 			Window.IsVisible(MediaFilter) | 
 			Window.IsVisible(OKDialog) | 
 			Window.IsVisible(YesNoDialog) | 
