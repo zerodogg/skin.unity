@@ -12,6 +12,7 @@
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
+	<include file="ViewsEventLog.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
