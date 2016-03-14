@@ -219,7 +219,7 @@
 			Control.HasFocus(9001) | 
 			Control.HasFocus(8999) | 
 			Window.IsVisible(AddonInformation) | 
-			Window.IsVisible(AudioDSPManager) |
+			Window.IsVisible(AudioDSPManager) | 
 			Window.IsVisible(ShutdownMenu) | 
 			Window.IsVisible(ContextMenu) | 
 			Window.IsVisible(MovieInformation) | 
@@ -230,7 +230,6 @@
 			Window.IsVisible(AddonSettings) | 
 			Window.IsVisible(ContentSettings) | 
 			Window.IsVisible(SelectDialog) | 
-			Window.IsVisible(FileStackingDialog) | 
 			Window.IsVisible(MediaSource) | 
 			Window.IsVisible(PictureInfo) | 
 			Window.IsVisible(PlayerControls) | 
