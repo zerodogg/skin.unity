@@ -322,6 +322,8 @@
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onclick>ActivateWindow(122)</onclick>
+				<enable>Visualisation.HasPresets</enable>
+				<animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.HasPresets">Conditional</animation>
 			</control>
 			
 			<control type="button" id="704">
