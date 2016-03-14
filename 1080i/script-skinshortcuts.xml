@@ -437,16 +437,16 @@
 					<control type="button" id="308">
 						<left>100</left>
 						<top>0</top>
-						<width>195</width>
+						<width>270</width>
 						<height>60</height>
 						<font>button</font>
 						<align>left</align>
 						<textoffsetx>60</textoffsetx>
-						<textwidth>170</textwidth>
+						<textwidth>250</textwidth>
 						<textcolor>text.primary</textcolor>
 						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
+						<texturefocus border="60,0,0,0" colordiffuse="white">refreshbuttonf.png</texturefocus>
+						<texturenofocus border="60,0,0,0" colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
 						<label>$ADDON[script.skinshortcuts 32028]</label>
 						<onup>211</onup>
 						<ondown>211</ondown>
