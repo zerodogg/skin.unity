@@ -147,6 +147,14 @@
 					<label>$INFO[Container(6).NumItems] $LOCALIZE[31025] ($LOCALIZE[31024] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages])</label>
 					<visible>Control.IsVisible(6)</visible>
 				</control>
+				
+				<!--no settings-->
+				<control type="label" id="4">
+					<left>575</left>
+					<top>270</top>
+					<width>1155</width>
+					<align>center</align>
+				</control>
 		
 				<!--content list (simple)-->
 				<control type="list" id="3">
