@@ -2,7 +2,7 @@
 
 <window>
 
-	<defaultcontrol always="true">10</defaultcontrol>
+	<defaultcontrol always="true">12</defaultcontrol>
 	
 	<controls>
 	
@@ -160,6 +160,21 @@
 						<param name="button-onright" value="7" />
 					</include>
 					
+					<!--rating button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="7" />
+						<param name="button-width" value="200" />
+						<param name="button-texture" value="ratingbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="38023" />
+						<param name="button-onup" value="49" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="13" />
+						<param name="button-onright" value="12" />
+					</include>
+					
 				</control>	
 							
 				<!--song thumb-->
@@ -182,15 +197,6 @@
 					<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 				</control>
 				
-				<!--audio/video flags-->
-				<control type="group">
-					<left>1135</left>
-					<top>615</top>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.HasFocus(15)</visible>
-					<include>media.flags.small</include>
-					<animation effect="slide" start="0,0" end="0,-75" time="0" condition="Container.Content(Episodes)">Conditonal</animation>
-				</control>
-								
 				<control type="group">
 					<top>220</top>
 					<left>535</left>
@@ -210,8 +216,8 @@
 						<top>30</top>
 						<width>1110</width>
 						<height>495</height>
-						<onleft>15</onleft>
-						<onright>14</onright>
+						<onleft>49</onleft>
+						<onright>49</onright>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
 						<pagecontrol>-</pagecontrol>
@@ -292,41 +298,35 @@
 								<label>$LOCALIZE[557]:</label>
 								<label2>$INFO[ListItem.Artist]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Artist)</visible>
 							</item>
 							
 							<item>
 								<label>$LOCALIZE[558]:</label>
 								<label2>$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Album)</visible>
 							</item>
 							
 							<item>
 								<label>$LOCALIZE[515]:</label>
 								<label2>$INFO[ListItem.Genre]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Genre)</visible>
 							</item>
 							
 							<item>
 								<label>$LOCALIZE[562]:</label>
 								<label2>$INFO[ListItem.Year]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Year)</visible>
 							</item>
 							
 							<item>
 								<label>$LOCALIZE[554]:</label>
 								<label2>$INFO[ListItem.TrackNumber]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.TrackNumber)</visible>
 							</item>
 							
 							<item>
 								<label>$LOCALIZE[563]:</label>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Rating)</visible>
 							</item>
 							
 						</content>
@@ -345,36 +345,6 @@
 							<height>48</height>
 							<aspectratio align="left">keep</aspectratio>
 							<texture colordiffuse="$VAR[Colour.900]">LeftRating/$INFO[ListItem.StarRating]</texture>
-						</control>
-						
-						<control type="button" id="14">
-							<description>Decrease Rating</description>
-							<left>200</left>
-							<top>5</top>
-							<width>32</width>
-							<height>36</height>
-							<onclick>DecreaseRating</onclick>
-							<texturefocus colordiffuse="$VAR[Colour.500]">scroll-down-2.png</texturefocus>
-							<texturenofocus colordiffuse="text.primary">scroll-down-2.png</texturenofocus>
-							<onleft>49</onleft>
-							<onright>15</onright>
-							<ondown>9000</ondown>
-							<onup>9000</onup>
-						</control>
-						
-						<control type="button" id="15">
-							<description>Increase Rating</description>
-							<left>235</left>
-							<top>5</top>
-							<width>32</width>
-							<height>36</height>
-							<onclick>IncreaseRating</onclick>
-							<texturefocus colordiffuse="$VAR[Colour.500]">scroll-up-2.png</texturefocus>
-							<texturenofocus colordiffuse="text.primary">scroll-up-2.png</texturenofocus>
-							<onleft>14</onleft>
-							<onright>49</onright>
-							<ondown>9000</ondown>
-							<onup>9000</onup>
 						</control>
 						
 					</control>

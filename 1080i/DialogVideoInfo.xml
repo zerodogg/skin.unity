@@ -394,6 +394,21 @@
 						<param name="button-onright" value="7" />
 					</include>
 					
+					<!--rating button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="7" />
+						<param name="button-width" value="200" />
+						<param name="button-texture" value="ratingbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="38023" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="10" />
+						<param name="button-onright" value="100" />
+					</include>
+					
 					<!--tv tune button-->
 					<include name="AnimatedCircleButtonGroup">
 						<param name="button-id" value="100" />
@@ -496,21 +511,20 @@
 					<top>615</top>
 					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.HasFocus(15)</visible>
 					<include>media.flags.small</include>
-					<animation effect="slide" start="0,0" end="0,-75" time="0" condition="Container.Content(Episodes)">Conditonal</animation>
 				</control>
 								
 				<!--movies info-->
 				<control type="group">
 					<visible>[!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)]</visible>
 					<left>600</left>
-					<top>260</top>
+					<top>240</top>
 					
 					<!--info list-->
 					<control type="list" id="49">
 						<left>505</left>
 						<top>0</top>
 						<width>1110</width>
-						<height>495</height>
+						<height>350</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -611,6 +625,13 @@
 							</item>
 							
 							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							
+							<item>
 								<label>$LOCALIZE[563]</label>
 								<label2>$INFO[ListItem.RatingAndVotes]</label2>
 								<onclick>noop</onclick>
@@ -658,7 +679,7 @@
 					
 					<control type="image">
 						<left>535</left>
-						<top>335</top>
+						<top>360</top>
 						<width>750</width>
 						<height>1</height>
 						<aspectratio>stretch</aspectratio>
@@ -671,13 +692,13 @@
 				<control type="group">
 					<visible>Container.Content(TVShows)</visible>
 					<left>600</left>
-					<top>260</top>
+					<top>240</top>
 					
 					<control type="list" id="49">
 						<left>505</left>
 						<top>0</top>
 						<width>1110</width>
-						<height>495</height>
+						<height>350</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -778,10 +799,17 @@
 							</item>
 							
 							<item>
-								<label>$LOCALIZE[563]</label>
-								<label2>$INFO[ListItem.Rating]</label2>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Rating)</visible>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							
+							<item>
+								<label>$LOCALIZE[563]</label>
+								<label2>$INFO[ListItem.RatingAndVotes]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
 							</item>
 							
 							<item>
@@ -825,7 +853,7 @@
 					
 					<control type="image">
 						<left>535</left>
-						<top>330</top>
+						<top>360</top>
 						<width>750</width>
 						<height>1</height>
 						<aspectratio>stretch</aspectratio>
@@ -838,13 +866,13 @@
 				<control type="group">
 					<visible>container.content(episodes)</visible>
 					<left>600</left>
-					<top>260</top>
+					<top>240</top>
 					
 					<control type="list" id="49">
 						<left>505</left>
 						<top>0</top>
 						<width>1110</width>
-						<height>495</height>
+						<height>350</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -945,10 +973,17 @@
 							</item>
 							
 							<item>
-								<label>$LOCALIZE[563]</label>
-								<label2>$INFO[ListItem.Rating]</label2>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Rating)</visible>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							
+							<item>
+								<label>$LOCALIZE[563]</label>
+								<label2>$INFO[ListItem.RatingAndVotes]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
 							</item>
 							
 							<item>
@@ -985,7 +1020,7 @@
 					
 					<control type="image">
 						<left>535</left>
-						<top>255</top>
+						<top>360</top>
 						<width>750</width>
 						<height>1</height>
 						<aspectratio>stretch</aspectratio>
@@ -998,13 +1033,13 @@
 				<control type="group">
 					<visible>container.content(musicvideos)</visible>
 					<left>600</left>
-					<top>260</top>
+					<top>240</top>
 
 					<control type="list" id="49">
 						<left>505</left>
 						<top>0</top>
 						<width>1110</width>
-						<height>495</height>
+						<height>350</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -1140,6 +1175,13 @@
 							</item>
 							
 							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							
+							<item>
 								<label>$LOCALIZE[31067]</label>
 								<label2>$INFO[ListItem.FilenameAndPath]</label2>
 								<onclick>noop</onclick>
@@ -1152,7 +1194,7 @@
 					
 					<control type="image">
 						<left>535</left>
-						<top>255</top>
+						<top>360</top>
 						<width>750</width>
 						<height>1</height>
 						<aspectratio>stretch</aspectratio>
@@ -1175,7 +1217,6 @@
 					<autoscroll delay="10000" time="3000" repeat="15000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Control.IsVisible(50)</visible>
 					<animation effect="slide" start="0,0" end="0,-65" time="0" condition="Container.Content(TVShows)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,-75" time="0" condition="Container.Content(Episodes)">Conditonal</animation>
 				</control>
 				
 				<!--cast-->
