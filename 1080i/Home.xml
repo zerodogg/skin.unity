@@ -598,18 +598,6 @@
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			
-			<!--end image-->
-			<!--control type="image">
-				<description>Background End image</description>
-				<left>0</left>
-				<top>-10</top>
-				<width>60</width>
-				<height>70</height>
-				<colordiffuse>tertiary</colordiffuse>
-				<texture flipy="true" flipx="true">HomeSubEnd.png</texture>
-				<animation effect="slide" start="0,0" end="218,0" time="0" condition="!System.HasAddon(script.globalsearch)">Conditional</animation>
-			</control-->
-			
 			<!--search-->
 			<control type="group">
 				<visible>System.HasAddon(script.globalsearch)</visible>

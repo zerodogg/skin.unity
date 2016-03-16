@@ -168,7 +168,7 @@
 							<top>0</top>
 							<width>1310</width>
 							<height>460</height>
-							<texture>Fanart_Fallback_Music_Small.jpg</texture>
+							<texture>Fanart_Fallback_Music_Small.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<colordiffuse>88FFFFFF</colordiffuse>
 						</control>

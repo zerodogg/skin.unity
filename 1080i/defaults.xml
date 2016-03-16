@@ -156,7 +156,7 @@
 		<label>-</label>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<texturebg>button-focus.png</texturebg>
+		<texturebg>-</texturebg>
 		<textureleft>scroll-left.png</textureleft>
 		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
 		<textureright>scroll-right.png</textureright>
@@ -193,15 +193,15 @@
 	<default type="mover">
 		<left>90</left>
 		<top>288</top>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		<texturefocus>CalibrateTopLeft.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 	</default>
 	
 	<default type="resize">
 		<left>90</left>
 		<top>288</top>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		<texturefocus>CalibratePixelRatio.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 	</default>
 	
 	<default type="edit">
