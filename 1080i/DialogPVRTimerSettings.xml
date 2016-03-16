@@ -131,93 +131,42 @@
 					<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 				</control>
 				
-				<control type="group" id="9001">
-					<left>733</left>
+				<!--bottom buttons-->
+				<control type="grouplist" id="9001">
+					<left>555</left>
 					<top>1015</top>
-					
-					<!--ok circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(28)</visible>
-					</control>
-					
-					<!--ok circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(28)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<width>800</width>
+					<height>60</height>
+					<align>justify</align>
+					<orientation>horizontal</orientation>
+					<onleft>9001</onleft>
+					<onright>9001</onright>
+					<onup>5</onup>
+					<ondown>5</ondown>
 					
 					<!--ok button-->
-					<control type="button" id="28">
-						<left>0</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>70</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
-						<label>186</label>
-						<onleft>29</onleft>
-						<onright>29</onright>
-						<onup>5</onup>
-						<ondown>5</ondown>
-					</control>
-					
-					<!--cancel circle border-->
-					<control type="image">
-						<left>300</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(29)</visible>
-					</control>
-					
-					<!--cancel circle animation-->
-					<control type="image">
-						<left>299</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(29)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="28" />
+						<param name="button-width" value="130" />
+						<param name="button-texture" value="yesbutton" />
+						<param name="button-label" value="186" />
+						<param name="button-onup" value="5" />
+						<param name="button-ondown" value="5" />
+						<param name="button-onleft" value="29" />
+						<param name="button-onright" value="29" />
+					</include>
 					
 					<!--cancel button-->
-					<control type="button" id="29">
-						<left>300</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
-						<label>222</label>
-						<onleft>28</onleft>
-						<onright>28</onright>
-						<onup>5</onup>
-						<ondown>5</ondown>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="29" />
+						<param name="button-width" value="180" />
+						<param name="button-texture" value="nobutton" />
+						<param name="button-label" value="222" />
+						<param name="button-onup" value="5" />
+						<param name="button-ondown" value="5" />
+						<param name="button-onleft" value="28" />
+						<param name="button-onright" value="28" />
+					</include>
 					
 				</control>
 				

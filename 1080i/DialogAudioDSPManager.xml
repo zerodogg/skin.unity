@@ -521,10 +521,18 @@
 					
 				</control>
 				
-				<!--bottom bar-->
-				<control type="group" id="9001">
+				<!--bottom buttons-->
+				<control type="grouplist" id="9001">
 					<left>870</left>
 					<top>1015</top>
+					<width>880</width>
+					<height>60</height>
+					<align>justify</align>
+					<orientation>horizontal</orientation>
+					<onleft>9001</onleft>
+					<onright>9001</onright>
+					<onup>200</onup>
+					<ondown>9000</ondown>
 					
 					<control type="radiobutton" id="22">
 						<description>Default</description>
@@ -533,97 +541,31 @@
 						<width>300</width>
 						<height>60</height>
 						<label>15064</label>
-						<onleft>24</onleft>
-						<onright>23</onright>
-						<onup>200</onup>
-						<ondown>9000</ondown>
-					</control>
-					
-					<!--ok circle border-->
-					<control type="image">
-						<left>325</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(23)</visible>
-					</control>
-					
-					<!--ok circle animation-->
-					<control type="image">
-						<left>324</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(23)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
 					</control>
 					
 					<!--ok button-->
-					<control type="button" id="23">
-						<hitrect x="325" y="0" w="270" h="60" />
-						<left>325</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>225</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
-						<label>14070</label>
-						<onleft>22</onleft>
-						<onright>24</onright>
-						<onup>200</onup>
-						<ondown>9000</ondown>
-					</control>
-					
-					<!--delete circle border-->
-					<control type="image">
-						<left>605</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(24)</visible>
-					</control>
-					
-					<!--delete circle animation-->
-					<control type="image">
-						<left>604</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(24)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="23" />
+						<param name="button-width" value="270" />
+						<param name="button-texture" value="yesbutton" />
+						<param name="button-label" value="14070" />
+						<param name="button-onup" value="200" />
+						<param name="button-ondown" value="9000" />
+						<param name="button-onleft" value="22" />
+						<param name="button-onright" value="24" />
+					</include>
 					
 					<!--delete button-->
-					<control type="button" id="24">
-						<hitrect x="605" y="0" w="270" h="60" />
-						<left>605</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>225</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
-						<label>15066</label>
-						<onleft>23</onleft>
-						<onright>22</onright>
-						<onup>200</onup>
-						<ondown>9000</ondown>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="24" />
+						<param name="button-width" value="270" />
+						<param name="button-texture" value="nobutton" />
+						<param name="button-label" value="15066" />
+						<param name="button-onup" value="200" />
+						<param name="button-ondown" value="9000" />
+						<param name="button-onleft" value="23" />
+						<param name="button-onright" value="22" />
+					</include>
 					
 				</control>
 				

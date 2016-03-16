@@ -371,6 +371,154 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	
+	<include name="AnimatedCircleButtonGroup">
+		<param name="button-id" />
+		<param name="button-width" />
+		<param name="button-visible" default="true" />
+		<param name="button-texture" />
+		<param name="button-colormain" default="text.primary" />
+		<param name="button-coloralt" default="white" />
+		<param name="button-coloranim" default="$VAR[Colour.500]" />
+		<param name="button-label" default="-" />
+		<param name="button-onclick" default="noop" />
+		<param name="button-onup" default="noop" />
+		<param name="button-ondown" default="noop" />
+		<param name="button-onleft" default="noop" />
+		<param name="button-onright" default="noop" />
+		<definition>
+			<control type="group" id="277$PARAM[button-id]">
+				<visible>Control.IsVisible($PARAM[button-id])</visible>
+				<width>$PARAM[button-width]</width>
+				<height>60</height>
+			
+				<!--button circle border-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>60</width>
+					<height>60</height>
+					<texture colordiffuse="$PARAM[button-colormain]">buttons/buttoncircleborder.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+				</control>
+				
+				<!--button circle animation-->
+				<control type="image">
+					<left>-1</left>
+					<top>-1</top>
+					<width>62</width>
+					<height>62</height>
+					<texture colordiffuse="$PARAM[button-coloranim]">buttons/buttoncircle.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+					<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
+				</control>
+				
+				<!--button-->
+				<control type="button" id="$PARAM[button-id]">
+					<visible>$PARAM[button-visible]</visible>
+					<animation effect="fade" start="100" end="25" time="100" condition="!Control.IsEnabled($PARAM[button-id])">Conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[button-width]</width>
+					<height>60</height>
+					<font>button</font>
+					<align>left</align>
+					<textoffsetx>60</textoffsetx>
+					<textwidth>$PARAM[button-width]</textwidth>
+					<textcolor>$PARAM[button-colormain]</textcolor>
+					<focusedcolor>$PARAM[button-colormain]</focusedcolor>
+					<disabledcolor>$PARAM[button-colormain]</disabledcolor>
+					<texturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-texture]f.png</texturefocus>
+					<texturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-texture].png</texturenofocus>
+					<label>$PARAM[button-label]</label>
+					<onclick>$PARAM[button-onclick]</onclick>
+					<onup>$PARAM[button-onup]</onup>
+					<ondown>$PARAM[button-ondown]</ondown>
+					<onleft>$PARAM[button-onleft]</onleft>
+					<onright>$PARAM[button-onright]</onright>
+				</control>
+				
+			</control>
+		</definition>
+	</include>
+	
+	<include name="AnimatedCircleToggleButtonGroup">
+		<param name="button-id" />
+		<param name="button-width" />
+		<param name="button-visible" default="true" />
+		<param name="button-texture" />
+		<param name="button-alttexture" />
+		<param name="button-colormain" default="text.primary" />
+		<param name="button-coloralt" default="white" />
+		<param name="button-coloranim" default="$VAR[Colour.500]" />
+		<param name="button-label" default="-" />
+		<param name="button-altlabel" default="-" />
+		<param name="button-usealt" default="false" />
+		<param name="button-onclick" default="noop" />
+		<param name="button-onup" default="noop" />
+		<param name="button-ondown" default="noop" />
+		<param name="button-onleft" default="noop" />
+		<param name="button-onright" default="noop" />
+		<definition>
+			<control type="group" id="277$PARAM[button-id]">
+				<visible>Control.IsVisible($PARAM[button-id])</visible>
+				<width>$PARAM[button-width]</width>
+				<height>60</height>
+			
+				<!--button circle border-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>60</width>
+					<height>60</height>
+					<texture colordiffuse="$PARAM[button-colormain]">buttons/buttoncircleborder.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+				</control>
+				
+				<!--button circle animation-->
+				<control type="image">
+					<left>-1</left>
+					<top>-1</top>
+					<width>62</width>
+					<height>62</height>
+					<texture colordiffuse="$PARAM[button-coloranim]">buttons/buttoncircle.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+					<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
+				</control>
+				
+				<!--togglebutton-->
+				<control type="togglebutton" id="$PARAM[button-id]">
+					<visible>$PARAM[button-visible]</visible>
+					<animation effect="fade" start="100" end="25" time="100" condition="!Control.IsEnabled($PARAM[button-id])">Conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[button-width]</width>
+					<height>60</height>
+					<font>button</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>60</textoffsetx>
+					<textwidth>$PARAM[button-width]</textwidth>
+					<textcolor>$PARAM[button-colormain]</textcolor>
+					<focusedcolor>$PARAM[button-colormain]</focusedcolor>
+					<disabledcolor>$PARAM[button-colormain]</disabledcolor>
+					<texturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-texture]f.png</texturefocus>
+					<texturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-texture].png</texturenofocus>
+					<alttexturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-alttexture]f.png</alttexturefocus>
+					<alttexturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-alttexture].png</alttexturenofocus>
+					<label>$PARAM[button-label]</label>
+					<altlabel>$PARAM[button-altlabel]</altlabel>
+					<usealttexture>$PARAM[button-usealt]</usealttexture>
+					<onclick>$PARAM[button-onclick]</onclick>
+					<onup>$PARAM[button-onup]</onup>
+					<ondown>$PARAM[button-ondown]</ondown>
+					<onleft>$PARAM[button-onleft]</onleft>
+					<onright>$PARAM[button-onright]</onright>
+				</control>
+				
+			</control>
+		</definition>
+	</include>
+	
 	<include name="SideBladeLeft">
 		<animation effect="slide" start="0,0" end="375,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-450,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>

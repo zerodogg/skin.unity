@@ -309,48 +309,33 @@
 						<texture>homeshadow.png</texture>
 						<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 					</control>
-				
-					<!--ok circle border-->
-					<control type="image">
-						<left>1730</left>
-						<top>660</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-					</control>
-				
-					<!--ok circle animation-->
-					<control type="image">
-						<left>1729</left>
-						<top>659</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
 					
-					<!--ok button-->
-					<control type="button" id="10">
-						<left>1730</left>
+					<!--controls-->
+					<control type="grouplist" id="9000">
+						<left>535</left>
 						<top>660</top>
-						<width>180</width>
+						<width>1390</width>
 						<height>60</height>
-						<label>186</label>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<onleft>10</onleft>
-						<onright>10</onright>
+						<align>justify</align>
+						<orientation>horizontal</orientation>
+						<onleft>9000</onleft>
+						<onright>9000</onright>
 						<onup>61</onup>
-						<ondown>10</ondown>
-						<onclick>Close</onclick>
-						<texturefocus colordiffuse="white">okbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">okbutton.png</texturenofocus>			
+						<ondown>100</ondown>
+						
+						<!--ok button-->
+						<include name="AnimatedCircleButtonGroup">
+							<param name="button-id" value="10" />
+							<param name="button-width" value="160" />
+							<param name="button-texture" value="yesbutton" />
+							<param name="button-label" value="186" />
+							<param name="button-onclick" value="Close" />
+							<param name="button-onup" value="61" />
+							<param name="button-ondown" value="100" />
+							<param name="button-onleft" value="9000" />
+							<param name="button-onright" value="9000" />
+						</include>
+								
 					</control>
 					
 				</control>

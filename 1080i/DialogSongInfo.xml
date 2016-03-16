@@ -117,167 +117,49 @@
 			<!--main content-->
 			<control type="group">
 				
-				<!--button animated circles-->
-				<control type="group">
-					<left>580</left>
-					<top>130</top>
-		
-					<!--ok circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-					</control>
-					
-					<!--ok circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-		
-					<!--cancel circle border-->
-					<control type="image">
-						<left>180</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(11)</visible>
-					</control>
-					
-					<!--cancel circle animation-->
-					<control type="image">
-						<left>179</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(11)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-					
-					<!--album info circle border-->
-					<control type="image">
-						<left>360</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(12)</visible>
-					</control>
-					
-					<!--album info circle animation-->
-					<control type="image">
-						<left>359</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(12)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-		
-					<!--art circle border-->
-					<control type="image">
-						<left>555</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(13)</visible>
-					</control>
-					
-					<!--art circle animation-->
-					<control type="image">
-						<left>554</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(13)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-
-				</control>
-				
 				<!--controls-->
 				<control type="grouplist" id="9000">
-					<left>580</left>
+					<left>535</left>
 					<top>130</top>
-					<width>1545</width>
+					<width>1390</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
-					<align>left</align>
+					<align>justify</align>
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>49</onup>
 					<ondown>49</ondown>
 					
-					<!--ok-->
-					<control type="button" id="10">
-						<width>180</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">okbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">okbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>186</label>
-					</control>
+					<!--album info button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="12" />
+						<param name="button-width" value="270" />
+						<param name="button-texture" value="tunebutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="10523" />
+						<param name="button-onup" value="49" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="7" />
+						<param name="button-onright" value="13" />
+					</include>
 					
-					<!--cancel-->
-					<control type="button" id="11">
-						<width>180</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">cancelbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">cancelbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>222</label>
-					</control>
-									
-					<!--album info-->
-					<control type="button" id="12">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">tunebuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">tunebutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>10523</label>
-					</control>
+					<!--art button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="13" />
+						<param name="button-width" value="180" />
+						<param name="button-texture" value="artbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="13511" />
+						<param name="button-onup" value="49" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="12" />
+						<param name="button-onright" value="7" />
+					</include>
 					
-					<!--get art-->
-					<control type="button" id="13">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">artbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">artbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>13511</label>
-					</control>
-										
 				</control>	
 							
 				<!--song thumb-->
@@ -373,7 +255,7 @@
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+								<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 							</control>
 							
 							<control type="label">

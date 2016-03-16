@@ -180,7 +180,7 @@
 							<width>20</width>
 							<height>20</height>
 							<visible>Control.HasFocus(49)</visible>
-							<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+							<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 						</control>
 						
 						<control type="label">
@@ -353,262 +353,75 @@
 				<top>1015</top>
 				<width>1210</width>
 				<height>60</height>
-				<itemgap>60</itemgap>
-				<align>center</align>
+				<align>justify</align>
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>60</onup>
 				<ondown>49</ondown>
 				
-				<control type="group">
-					<visible>Control.IsVisible(4)</visible>
-					<width>180</width>
-					<height>60</height>
+				<!--browse button-->
+				<include name="AnimatedCircleButtonGroup">
+					<param name="button-id" value="4" />
+					<param name="button-width" value="180" />
+					<param name="button-visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="button-texture" value="browsebutton" />
+					<param name="button-label" value="19003" />
+					<param name="button-onup" value="60" />
+					<param name="button-ondown" value="49" />
+					<param name="button-onleft" value="7" />
+					<param name="button-onright" value="5" />
+				</include>
 				
-					<!--browse circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(4)</visible>
-					</control>
-					
-					<!--browse circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(4)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--browse button-->
-					<control type="button" id="4">
-						<visible>Window.IsActive(PVRGuideInfo)</visible>
-						<left>0</left>
-						<top>0</top>
-						<width>180</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus border="60,0,0,0" colordiffuse="white">browsebuttonf.png</texturefocus>
-						<texturenofocus border="60,0,0,0" colordiffuse="text.primary">browsebutton.png</texturenofocus>	
-						<label>19003</label>
-						<onup>60</onup>
-						<ondown>49</ondown>
-						<onleft>7</onleft>
-						<onright>5</onright>
-					</control>
-					
-				</control>
-					
-				<control type="group">
-					<visible>Control.IsVisible(5)</visible>
-					<width>130</width>
-					<height>60</height>
+				<!--switch button-->
+				<include name="AnimatedCircleButtonGroup">
+					<param name="button-id" value="5" />
+					<param name="button-width" value="130" />
+					<param name="button-visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="button-texture" value="refreshbutton" />
+					<param name="button-label" value="19165" />
+					<param name="button-onup" value="60" />
+					<param name="button-ondown" value="49" />
+					<param name="button-onleft" value="4" />
+					<param name="button-onright" value="8" />
+				</include>
 				
-					<!--switch circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(5)</visible>
-					</control>
-					
-					<!--switch circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(5)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--switch button-->
-					<control type="button" id="5">
-						<visible>Window.IsActive(PVRGuideInfo)</visible>
-						<left>0</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus border="60,0,0,0" colordiffuse="white">refreshbuttonf.png</texturefocus>
-						<texturenofocus border="60,0,0,0" colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
-						<label>19165</label>
-						<onup>60</onup>
-						<ondown>49</ondown>
-						<onleft>4</onleft>
-						<onright>8</onright>
-					</control>
-					
-				</control>
+				<!--play button-->
+				<include name="AnimatedCircleButtonGroup">
+					<param name="button-id" value="8" />
+					<param name="button-width" value="210" />
+					<param name="button-visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="button-texture" value="playbutton" />
+					<param name="button-label" value="19687" />
+					<param name="button-onup" value="60" />
+					<param name="button-ondown" value="49" />
+					<param name="button-onleft" value="5" />
+					<param name="button-onright" value="6" />
+				</include>
 				
-				<control type="group">
-					<visible>Control.IsVisible(8)</visible>
-					<width>205</width>
-					<height>60</height>
+				<!--record button-->
+				<include name="AnimatedCircleButtonGroup">
+					<param name="button-id" value="6" />
+					<param name="button-width" value="180" />
+					<param name="button-visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="button-texture" value="recordbutton" />
+					<param name="button-onup" value="60" />
+					<param name="button-ondown" value="49" />
+					<param name="button-onleft" value="8" />
+					<param name="button-onright" value="7" />
+				</include>
 				
-					<!--play circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(8)</visible>
-					</control>
-					
-					<!--play circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(8)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--play button-->
-					<control type="button" id="8">
-						<visible>Window.IsActive(PVRGuideInfo)</visible>
-						<left>0</left>
-						<top>0</top>
-						<width>205</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>180</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus border="60,0,0,0" colordiffuse="white">playbuttonf.png</texturefocus>
-						<texturenofocus border="60,0,0,0" colordiffuse="text.primary">playbutton.png</texturenofocus>	
-						<label>19687</label>
-						<onup>60</onup>
-						<ondown>49</ondown>
-						<onleft>5</onleft>
-						<onright>6</onright>
-					</control>
-					
-				</control>
-				
-				<control type="group">
-					<visible>Control.IsVisible(6)</visible>
-					<width>130</width>
-					<height>60</height>
-					
-					<!--record circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(6)</visible>
-					</control>
-					
-					<!--record circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(6)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--record button-->
-					<control type="button" id="6">
-						<visible>Window.IsActive(PVRGuideInfo)</visible>
-						<left>0</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">recordbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">recordbutton.png</texturenofocus>	
-						<label>-</label>
-						<onup>60</onup>
-						<ondown>49</ondown>
-						<onleft>8</onleft>
-						<onright>7</onright>
-					</control>
-					
-				</control>
-				
-				<control type="group">
-					<visible>Control.IsVisible(7)</visible>
-					<width>130</width>
-					<height>60</height>
-				
-					<!--ok circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(7)</visible>
-					</control>
-					
-					<!--ok circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(7)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--ok button-->
-					<control type="button" id="7">
-						<left>0</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
-						<label>186</label>
-						<onup>60</onup>
-						<ondown>49</ondown>
-						<onleft>6</onleft>
-						<onright>4</onright>
-					</control>
-					
-				</control>
+				<!--ok button-->
+				<include name="AnimatedCircleButtonGroup">
+					<param name="button-id" value="7" />
+					<param name="button-width" value="130" />
+					<param name="button-texture" value="yesbutton" />
+					<param name="button-label" value="186" />
+					<param name="button-onup" value="60" />
+					<param name="button-ondown" value="49" />
+					<param name="button-onleft" value="6" />
+					<param name="button-onright" value="4" />
+				</include>
 				
 			</control>
 			

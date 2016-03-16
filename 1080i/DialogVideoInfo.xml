@@ -263,7 +263,7 @@
 						<top>0</top>
 						<width>60</width>
 						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
+						<texture colordiffuse="white">buttons/buttoncircleborder.png</texture>
 					</control>
 		
 					<!--arrow-->
@@ -285,266 +285,131 @@
 				<animation effect="slide" start="0,0" end="0,782" time="400" tween="quadratic" easing="out" condition="Control.HasFocus(9003)">Conditional</animation>	
 				<animation effect="slide" start="0,0" end="0,782" time="400" tween="quadratic" easing="out" condition="Control.HasFocus(15)">Conditional</animation>
 				
-				<!--button animated circles-->
-				<control type="group">
-					<left>580</left>
-					<top>160</top>
-		
-					<!--play/browse circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(8)</visible>
-					</control>
-					
-					<!--browse/browse circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(8)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-		
-					<!--cast circle border-->
-					<control type="image">
-						<left>195</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(5)</visible>
-					</control>
-					
-					<!--cast circle animation-->
-					<control type="image">
-						<left>194</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(5)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-		
-					<!--trailer circle border-->
-					<control type="image">
-						<left>390</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="white">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(11) | Control.HasFocus(15)</visible>
-					</control>
-					
-					<!--trailer circle animation-->
-					<control type="image">
-						<left>389</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="white">buttoncircle.png</texture>
-						<visible>Control.HasFocus(11) | Control.HasFocus(15)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>	
-					
-					<control type="group">
-						<animation effect="slide" start="0,0" end="-195,0" time="0" condition="IsEmpty(ListItem.Trailer)">Conditional</animation>
-		
-						<!--refresh circle border-->
-						<control type="image">
-							<left>585</left>
-							<top>0</top>
-							<width>60</width>
-							<height>60</height>
-							<texture colordiffuse="white">buttoncircleborder.png</texture>
-							<visible>Control.HasFocus(6)</visible>
-						</control>
-						
-						<!--refresh circle animation-->
-						<control type="image">
-							<left>584</left>
-							<top>-1</top>
-							<width>62</width>
-							<height>62</height>
-							<texture colordiffuse="white">buttoncircle.png</texture>
-							<visible>Control.HasFocus(6)</visible>
-							<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-						</control>	
-			
-						<!--art circle border-->
-						<control type="image">
-							<left>780</left>
-							<top>0</top>
-							<width>60</width>
-							<height>60</height>
-							<texture colordiffuse="white">buttoncircleborder.png</texture>
-							<visible>Control.HasFocus(10)</visible>
-						</control>
-						
-						<!--art circle animation-->
-						<control type="image">
-							<left>779</left>
-							<top>-1</top>
-							<width>62</width>
-							<height>62</height>
-							<texture colordiffuse="white">buttoncircle.png</texture>
-							<visible>Control.HasFocus(10)</visible>
-							<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-						</control>	
-			
-						<!--tune circle border-->
-						<control type="image">
-							<left>975</left>
-							<top>0</top>
-							<width>60</width>
-							<height>60</height>
-							<texture colordiffuse="white">buttoncircleborder.png</texture>
-							<visible>Control.HasFocus(100)</visible>
-						</control>
-						
-						<!--tune circle animation-->
-						<control type="image">
-							<left>974</left>
-							<top>-1</top>
-							<width>62</width>
-							<height>62</height>
-							<texture colordiffuse="white">buttoncircle.png</texture>
-							<visible>Control.HasFocus(100)</visible>
-							<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-						</control>	
-						
-					</control>
-
-				</control>
-				
 				<!--controls-->
 				<control type="grouplist" id="9000">
-					<left>580</left>
+					<left>535</left>
 					<top>160</top>
-					<width>1545</width>
+					<width>1390</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
-					<align>left</align>
+					<align>justify</align>
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<onup condition="!Control.HasFocus(15)">9003</onup>
-					<onup condition="Control.HasFocus(15)">9000</onup>
-					<ondown condition="!Control.IsVisible(50)">49</ondown>
-					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<onup>9003</onup>
+					<ondown>49</ondown>
 					
-					<!--play/browse to show-->
-					<control type="togglebutton" id="8">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">playbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">playbutton.png</texturenofocus>	
-						<alttexturefocus colordiffuse="$VAR[Colour.900]">playbuttonf.png</alttexturefocus>
-						<alttexturenofocus colordiffuse="white">playbutton.png</alttexturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>208</label>
-						<altlabel>1024</altlabel>
-						<usealttexture>Container.Content(TVShows)</usealttexture>
-					</control>
+					<!--play/browse button-->
+					<include name="AnimatedCircleToggleButtonGroup">
+						<param name="button-id" value="8" />
+						<param name="button-width" value="140" />
+						<param name="button-texture" value="playbutton" />
+						<param name="button-alttexture" value="browsebutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="208" />
+						<param name="button-altlabel" value="1024" />
+						<param name="button-usealt" value="Container.Content(TVShows)" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="100" />
+						<param name="button-onright" value="5" />
+					</include>
 					
-					<!--cast-->
-					<control type="button" id="5">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">castbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">castbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>206</label>
-					</control>
+					<!--cast button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="5" />
+						<param name="button-width" value="120" />
+						<param name="button-texture" value="castbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="206" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="8" />
+						<param name="button-onright" value="11" />
+					</include>
 					
-					<!--trailer-->
-					<control type="button" id="11">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">trailerbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">trailerbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>20410</label>
-						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(HideWindowedTrailer)</visible>
-					</control>
+					<!--trailer button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="11" />
+						<param name="button-width" value="130" />
+						<param name="button-visible" value="!IsEmpty(ListItem.Trailer) + Skin.HasSetting(HideWindowedTrailer)" />
+						<param name="button-texture" value="trailerbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="20410" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="5" />
+						<param name="button-onright" value="15" />
+					</include>
 					
-					<!--windowed trailer-->
-					<control type="button" id="15">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">trailerbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">trailerbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>20410</label>
-						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-						<visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(HideWindowedTrailer)</visible>
-					</control>					
+					<!--windowed trailer button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="15" />
+						<param name="button-width" value="130" />
+						<param name="button-visible" value="!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(HideWindowedTrailer)" />
+						<param name="button-texture" value="trailerbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="20410" />
+						<param name="button-onclick" value="PlayMedia($INFO[ListItem.Trailer],1)" />
+						<param name="button-onup" value="-" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="11" />
+						<param name="button-onright" value="6" />
+					</include>
 					
-					<!--refresh-->
-					<control type="button" id="6">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">refreshbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">refreshbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>184</label>
-					</control>
+					<!--refresh button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="6" />
+						<param name="button-width" value="140" />
+						<param name="button-texture" value="refreshbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="184" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="15" />
+						<param name="button-onright" value="10" />
+					</include>
 					
-					<!--get art-->
-					<control type="button" id="10">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">artbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">artbutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>13511</label>
-					</control>
+					<!--art button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="10" />
+						<param name="button-width" value="180" />
+						<param name="button-texture" value="artbutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="13511" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="6" />
+						<param name="button-onright" value="7" />
+					</include>
 					
-					<!--get tv tune-->
-					<control type="button" id="100">
-						<width>195</width>
-						<textoffsetx>60</textoffsetx>
-						<align>left</align>
-						<textwidth>410</textwidth>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[Colour.900]">tunebuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="white">tunebutton.png</texturenofocus>	
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>31127</label>
-						<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
-						<visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
-					</control>
+					<!--tv tune button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="100" />
+						<param name="button-width" value="160" />
+						<param name="button-visible">Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</param>
+						<param name="button-texture" value="tunebutton" />
+						<param name="button-colormain" value="white" />
+						<param name="button-coloralt" value="$VAR[Colour.900]" />
+						<param name="button-coloranim" value="white" />
+						<param name="button-label" value="31127" />
+						<param name="button-onclick" value="RunScript(script.tvtunes,mode=solo)" />
+						<param name="button-onup" value="9003" />
+						<param name="button-ondown" value="49" />
+						<param name="button-onleft" value="7" />
+						<param name="button-onright" value="8" />
+					</include>
 					
 				</control>	
 				
@@ -646,10 +511,10 @@
 						<top>0</top>
 						<width>1110</width>
 						<height>495</height>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onleft>49</onleft>
+						<onright>49</onright>
 						<onup>9000</onup>
-						<ondown>61</ondown>
+						<ondown>50</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						
@@ -691,7 +556,7 @@
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+								<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 							</control>
 							
 							<control type="label">
@@ -813,10 +678,10 @@
 						<top>0</top>
 						<width>1110</width>
 						<height>495</height>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onleft>49</onleft>
+						<onright>49</onright>
 						<onup>9000</onup>
-						<ondown>61</ondown>
+						<ondown>50</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						
@@ -858,7 +723,7 @@
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+								<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 							</control>
 							
 							<control type="label">
@@ -980,10 +845,10 @@
 						<top>0</top>
 						<width>1110</width>
 						<height>495</height>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onleft>49</onleft>
+						<onright>49</onright>
 						<onup>9000</onup>
-						<ondown>61</ondown>
+						<ondown>50</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						
@@ -1025,7 +890,7 @@
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+								<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 							</control>
 							
 							<control type="label">
@@ -1140,10 +1005,10 @@
 						<top>0</top>
 						<width>1110</width>
 						<height>495</height>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onleft>49</onleft>
+						<onright>49</onright>
 						<onup>9000</onup>
-						<ondown>61</ondown>
+						<ondown>50</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						
@@ -1185,7 +1050,7 @@
 								<width>20</width>
 								<height>20</height>
 								<visible>Control.HasFocus(49)</visible>
-								<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
+								<texture colordiffuse="$VAR[Colour.500]">buttons/buttoncircle.png</texture>
 							</control>
 							
 							<control type="label">
@@ -1319,10 +1184,10 @@
 					<top>680</top>
 					<width>1290</width>
 					<height>370</height>
-					<onleft>9000</onleft>
+					<onleft>50</onleft>
 					<onright>61</onright>
-					<onup>9000</onup>
-					<ondown>50</ondown>
+					<onup>49</onup>
+					<ondown>9000</ondown>
 					<viewtype label="">list</viewtype>
 					<pagecontrol>61</pagecontrol>
 					<scrolltime>200</scrolltime>
