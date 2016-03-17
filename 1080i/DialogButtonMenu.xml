@@ -4,12 +4,6 @@
 
 	<defaultcontrol>9000</defaultcontrol>
 	
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
-	
 	<controls>
 		
 		<!--all content-->
@@ -144,29 +138,37 @@
 					<align>right</align>
 				</control>
 				
+				<!--settings-->
+				<control type="button" id="14">
+					<include>ButtonCommonValues</include>
+					<label>21417</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+					<align>right</align>
+				</control>
+				
 				<control type="group" id="11">
 					<width>510</width>
 					<height>105</height>
 					<visible>System.HasAlarm(shutdowntimer)</visible>
 					
+					<!--alarm background-->
 					<control type="image">
-						<description>background top image</description>
 						<left>0</left>
 						<top>0</top>
-						<width>510</width>
-						<height>105</height>
-						<texture border="25,5,25,5">DialogContextMiddle.png</texture>
+						<width>355</width>
+						<height>110</height>
+						<texture background="true" colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
 					</control>
 					
 					<control type="textbox">
-						<left>38</left>
-						<top>32</top>
-						<width>435</width>
-						<height>73</height>
-						<font>font12</font>
+						<left>0</left>
+						<top>10</top>
+						<width>355</width>
+						<height>90</height>
+						<font>label</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
 						<align>center</align>
+						<aligny>center</aligny>
 						<label>$LOCALIZE[31329] [B]$INFO[System.Alarmpos][/B]</label>
 					</control>
 					
@@ -186,14 +188,6 @@
 					<include>ButtonCommonValues</include>
 					<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
 					<visible>System.HasShutdown + System.IsInhibit</visible>
-					<align>right</align>
-				</control>
-				
-				<!--settings-->
-				<control type="button" id="14">
-					<include>ButtonCommonValues</include>
-					<label>21417</label>
-					<onclick>ActivateWindow(Settings)</onclick>
 					<align>right</align>
 				</control>
 				

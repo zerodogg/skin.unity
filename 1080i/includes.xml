@@ -12,6 +12,7 @@
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
+	<include file="ViewsEventLog.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
@@ -218,6 +219,7 @@
 			Control.HasFocus(9001) | 
 			Control.HasFocus(8999) | 
 			Window.IsVisible(AddonInformation) | 
+			Window.IsVisible(AudioDSPManager) | 
 			Window.IsVisible(ShutdownMenu) | 
 			Window.IsVisible(ContextMenu) | 
 			Window.IsVisible(MovieInformation) | 
@@ -228,7 +230,6 @@
 			Window.IsVisible(AddonSettings) | 
 			Window.IsVisible(ContentSettings) | 
 			Window.IsVisible(SelectDialog) | 
-			Window.IsVisible(FileStackingDialog) | 
 			Window.IsVisible(MediaSource) | 
 			Window.IsVisible(PictureInfo) | 
 			Window.IsVisible(PlayerControls) | 
@@ -241,10 +242,10 @@
 			Window.IsVisible(script-RSS_Editor-rssEditor.xml) | 
 			Window.IsVisible(script-RSS_Editor-setEditor.xml) | 
 			Window.IsVisible(AddonInformation) | 
-			Window.IsVisible(Peripherals) | 
 			Window.IsVisible(PeripheralSettings) | 
-			Window.IsVisible(script-XBMC_Lyrics-main.xml) | 
+			Window.IsVisible(script-cu-lrclyrics-main.xml) | 
 			Window.IsVisible(PVRChannelManager) | 
+			Window.IsVisible(PVRGroupManager) | 
 			Window.IsVisible(MediaFilter) | 
 			Window.IsVisible(OKDialog) | 
 			Window.IsVisible(YesNoDialog) | 
@@ -316,18 +317,6 @@
 		<disabledcolor>disabled</disabledcolor>
 	</include>
 	
-	<include name="ButtonMediaSubCommonValues">
-		<height>60</height>
-		<width>332</width>
-		<textoffsetx>30</textoffsetx>
-		<textwidth>292</textwidth>
-		<aligny>center</aligny>
-		<font>font12_title</font>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus border="5">button-nofocus.png</texturenofocus>
-		<pulseonselect>false</pulseonselect>
-	</include>
-	
 	<include name="ButtonHomeSubCommonValues">
 		<height>60</height>
 		<width>270</width>
@@ -370,8 +359,156 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	
+	<include name="AnimatedCircleButtonGroup">
+		<param name="button-id" />
+		<param name="button-width" />
+		<param name="button-visible" default="true" />
+		<param name="button-texture" />
+		<param name="button-colormain" default="text.primary" />
+		<param name="button-coloralt" default="white" />
+		<param name="button-coloranim" default="$VAR[Colour.500]" />
+		<param name="button-label" default="-" />
+		<param name="button-onclick" default="noop" />
+		<param name="button-onup" default="noop" />
+		<param name="button-ondown" default="noop" />
+		<param name="button-onleft" default="noop" />
+		<param name="button-onright" default="noop" />
+		<definition>
+			<control type="group" id="277$PARAM[button-id]">
+				<visible>Control.IsVisible($PARAM[button-id])</visible>
+				<width>$PARAM[button-width]</width>
+				<height>60</height>
+			
+				<!--button circle border-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>60</width>
+					<height>60</height>
+					<texture colordiffuse="$PARAM[button-colormain]">buttons/buttoncircleborder.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+				</control>
+				
+				<!--button circle animation-->
+				<control type="image">
+					<left>-1</left>
+					<top>-1</top>
+					<width>62</width>
+					<height>62</height>
+					<texture colordiffuse="$PARAM[button-coloranim]">buttons/buttoncircle.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+					<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
+				</control>
+				
+				<!--button-->
+				<control type="button" id="$PARAM[button-id]">
+					<visible>$PARAM[button-visible]</visible>
+					<animation effect="fade" start="100" end="25" time="100" condition="!Control.IsEnabled($PARAM[button-id])">Conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[button-width]</width>
+					<height>60</height>
+					<font>button</font>
+					<align>left</align>
+					<textoffsetx>60</textoffsetx>
+					<textwidth>$PARAM[button-width]</textwidth>
+					<textcolor>$PARAM[button-colormain]</textcolor>
+					<focusedcolor>$PARAM[button-colormain]</focusedcolor>
+					<disabledcolor>$PARAM[button-colormain]</disabledcolor>
+					<texturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-texture]f.png</texturefocus>
+					<texturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-texture].png</texturenofocus>
+					<label>$PARAM[button-label]</label>
+					<onclick>$PARAM[button-onclick]</onclick>
+					<onup>$PARAM[button-onup]</onup>
+					<ondown>$PARAM[button-ondown]</ondown>
+					<onleft>$PARAM[button-onleft]</onleft>
+					<onright>$PARAM[button-onright]</onright>
+				</control>
+				
+			</control>
+		</definition>
+	</include>
+	
+	<include name="AnimatedCircleToggleButtonGroup">
+		<param name="button-id" />
+		<param name="button-width" />
+		<param name="button-visible" default="true" />
+		<param name="button-texture" />
+		<param name="button-alttexture" />
+		<param name="button-colormain" default="text.primary" />
+		<param name="button-coloralt" default="white" />
+		<param name="button-coloranim" default="$VAR[Colour.500]" />
+		<param name="button-label" default="-" />
+		<param name="button-altlabel" default="-" />
+		<param name="button-usealt" default="false" />
+		<param name="button-onclick" default="noop" />
+		<param name="button-onup" default="noop" />
+		<param name="button-ondown" default="noop" />
+		<param name="button-onleft" default="noop" />
+		<param name="button-onright" default="noop" />
+		<definition>
+			<control type="group" id="277$PARAM[button-id]">
+				<visible>Control.IsVisible($PARAM[button-id])</visible>
+				<width>$PARAM[button-width]</width>
+				<height>60</height>
+			
+				<!--button circle border-->
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>60</width>
+					<height>60</height>
+					<texture colordiffuse="$PARAM[button-colormain]">buttons/buttoncircleborder.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+				</control>
+				
+				<!--button circle animation-->
+				<control type="image">
+					<left>-1</left>
+					<top>-1</top>
+					<width>62</width>
+					<height>62</height>
+					<texture colordiffuse="$PARAM[button-coloranim]">buttons/buttoncircle.png</texture>
+					<visible>Control.HasFocus($PARAM[button-id])</visible>
+					<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
+				</control>
+				
+				<!--togglebutton-->
+				<control type="togglebutton" id="$PARAM[button-id]">
+					<visible>$PARAM[button-visible]</visible>
+					<animation effect="fade" start="100" end="25" time="100" condition="!Control.IsEnabled($PARAM[button-id])">Conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[button-width]</width>
+					<height>60</height>
+					<font>button</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>60</textoffsetx>
+					<textwidth>$PARAM[button-width]</textwidth>
+					<textcolor>$PARAM[button-colormain]</textcolor>
+					<focusedcolor>$PARAM[button-colormain]</focusedcolor>
+					<disabledcolor>$PARAM[button-colormain]</disabledcolor>
+					<texturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-texture]f.png</texturefocus>
+					<texturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-texture].png</texturenofocus>
+					<alttexturefocus border="58,0,0,0" colordiffuse="$PARAM[button-coloralt]">buttons/$PARAM[button-alttexture]f.png</alttexturefocus>
+					<alttexturenofocus border="58,0,0,0" colordiffuse="$PARAM[button-colormain]">buttons/$PARAM[button-alttexture].png</alttexturenofocus>
+					<label>$PARAM[button-label]</label>
+					<altlabel>$PARAM[button-altlabel]</altlabel>
+					<usealttexture>$PARAM[button-usealt]</usealttexture>
+					<onclick>$PARAM[button-onclick]</onclick>
+					<onup>$PARAM[button-onup]</onup>
+					<ondown>$PARAM[button-ondown]</ondown>
+					<onleft>$PARAM[button-onleft]</onleft>
+					<onright>$PARAM[button-onright]</onright>
+				</control>
+				
+			</control>
+		</definition>
+	</include>
+	
 	<include name="SideBladeLeft">
-		<animation effect="slide" start="0,0" end="375,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="375,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-450,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
 		<animation effect="slide" start="0,0" end="-75,0" time="300" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
 		<animation effect="slide" start="-75,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -696,8 +833,8 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
-				<texturefocus>floor_buttonFO.png</texturefocus>
-				<texturenofocus>floor_button.png</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -1106,9 +1243,9 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="600">
 				<left>30</left>
-				<top>3</top>
-				<width>58</width>
-				<height>58</height>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
 				<label>-</label>
 				<texturefocus colordiffuse="$VAR[Colour.500]">OSDChannelUPNF.png</texturefocus>
 				<texturenofocus colordiffuse="text.primary">OSDChannelUPNF.png</texturenofocus>
@@ -1119,10 +1256,10 @@
 				<onclick>ChannelDown</onclick>
 			</control>
 			<control type="button" id="601">
-				<left>90</left>
-				<top>3</top>
-				<width>58</width>
-				<height>58</height>
+				<left>80</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
 				<label>-</label>
 				<texturefocus colordiffuse="$VAR[Colour.500]">OSDChannelDownNF.png</texturefocus>
 				<texturenofocus colordiffuse="text.primary">OSDChannelDownNF.png</texturenofocus>
@@ -1133,10 +1270,10 @@
 				<onclick>ChannelUp</onclick>
 			</control>
 			<control type="button" id="603">
-				<left>150</left>
-				<top>3</top>
-				<width>58</width>
-				<height>58</height>
+				<left>130</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
 				<label>-</label>
 				<texturefocus colordiffuse="$VAR[Colour.500]">OSDStopNF.png</texturefocus>
 				<texturenofocus colordiffuse="text.primary">OSDStopNF.png</texturenofocus>
@@ -1148,10 +1285,10 @@
 				<onclick>XBMC.PlayerControl(Stop)</onclick>
 			</control>
 			<control type="togglebutton" id="604">
-				<left>210</left>
-				<top>3</top>
-				<width>58</width>
-				<height>58</height>
+				<left>180</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
 				<label>-</label>
 				<texturefocus colordiffuse="$VAR[Colour.500]">OSDPauseNF.png</texturefocus>
 				<texturenofocus colordiffuse="text.primary">OSDPauseNF.png</texturenofocus>
@@ -1161,27 +1298,57 @@
 				<onleft>603</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
-				<ondown>606</ondown>
+				<ondown>611</ondown>
 				<onback>50</onback>
 				<onclick>XBMC.PlayerControl(Play)</onclick>
 				<enable>Player.PauseEnabled</enable>
 				<animation effect="fade" start="100" end="30" time="100" condition="!Player.PauseEnabled">Conditional</animation>
 			</control>
 			<control type="button" id="605">
-				<left>270</left>
-				<top>3</top>
-				<width>58</width>
-				<height>58</height>
+				<left>230</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
 				<label>-</label>
 				<texturefocus colordiffuse="$VAR[Colour.500]">OSDRecordOffNF.png</texturefocus>
 				<texturenofocus colordiffuse="text.primary">OSDRecordOffNF.png</texturenofocus>
 				<onleft>604</onleft>
-				<onright>50</onright>
+				<onright>606</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>XBMC.PlayerControl(record)</onclick>
 				<enable>Player.CanRecord</enable>
 				<animation effect="fade" start="100" end="30" time="100" condition="!Player.CanRecord">Conditional</animation>
+			</control>
+			<control type="button" id="606">
+				<left>280</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
+				<label>-</label>
+				<visible>RDS.HasRadiotextPlus</visible>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDRadioRDSNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDRadioRDSNF.png</texturenofocus>
+				<onleft>605</onleft>
+				<onright>50</onright>
+				<onup>610</onup>
+				<ondown>611</ondown>
+				<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
+			</control>
+			<control type="button" id="606">
+				<left>280</left>
+				<top>8</top>
+				<width>48</width>
+				<height>48</height>
+				<label>-</label>
+				<visible>!RDS.HasRadiotextPlus</visible>
+				<texturefocus colordiffuse="$VAR[Colour.500]">OSDChannelListNF.png</texturefocus>
+				<texturenofocus colordiffuse="text.primary">OSDChannelListNF.png</texturenofocus>
+				<onleft>605</onleft>
+				<onright>50</onright>
+				<onup>610</onup>
+				<ondown>611</ondown>
+				<onclick>ActivateWindow(PVRGuideInfo)</onclick>
 			</control>
 		</control>
 		<control type="group" id="9005">
@@ -1639,175 +1806,6 @@
 		<font>button</font>
 		<textcolor>tertiary</textcolor>
 		<focusedcolor>white</focusedcolor>
-	</include>
-	
-	<include name="TVNextAiredListCommonLayout">
-		<itemlayout height="225" width="420">
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>420</width>
-				<height>218</height>
-				<texture border="10">button-nofocus.png</texture>
-			</control>
-			<control type="image">
-				<description>Thumb</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
-			</control>
-			<control type="image">
-				<description>Banner</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
-			</control>
-			<control type="image">
-				<description>Logo</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<left>210</left>
-				<top>90</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>white</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Episode Name</description>
-				<left>210</left>
-				<top>120</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(NextTitle)]</label>
-				<textcolor>white</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Next air date/time</description>
-				<left>210</left>
-				<top>150</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>grey2</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Duration</description>
-				<left>210</left>
-				<top>180</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=blue]-[/COLOR] (,)]</label>
-				<textcolor>grey2</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-		</itemlayout>
-		<focusedlayout height="225" width="420">
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>420</width>
-				<height>218</height>
-				<texture border="10">button-focus2.png</texture>
-			</control>
-			<control type="image">
-				<description>Thumb</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
-			</control>
-			<control type="image">
-				<description>Banner</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
-			</control>
-			<control type="image">
-				<description>Logo</description>
-				<left>8</left>
-				<top>8</top>
-				<width>405</width>
-				<height>82</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
-				<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<left>210</left>
-				<top>90</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(NextNumber),$LOCALIZE[20359] [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>selected</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Episode Name</description>
-				<left>210</left>
-				<top>120</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(NextTitle)]</label>
-				<textcolor>selected</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Next air date/time</description>
-				<left>210</left>
-				<top>150</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDate), [COLOR=blue]-[/COLOR] ]</label>
-				<textcolor>white</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<description>Duration</description>
-				<left>210</left>
-				<top>180</top>
-				<width>390</width>
-				<height>22</height>
-				<label>$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]]$INFO[ListItem.Property(Network), [COLOR=blue]-[/COLOR] (,)]</label>
-				<textcolor>white</textcolor>
-				<font>font12</font>
-				<align>center</align>
-			</control>
-		</focusedlayout>
 	</include>
 	
 	<include name="backgroundfade">

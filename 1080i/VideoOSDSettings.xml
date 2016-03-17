@@ -9,7 +9,7 @@
 		<!--all content-->
 		<control type="group">
 			<left>385</left>
-			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(ShutdownMenu)</visible>
+			<visible>![Window.IsActive(FileBrowser) | Window.IsActive(ShutdownMenu) | Window.IsActive(OSDAudioDSPSettings)]</visible>
 			<animation effect="slide" start="1650,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="1650,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			

@@ -147,6 +147,14 @@
 					<label>$INFO[Container(6).NumItems] $LOCALIZE[31025] ($LOCALIZE[31024] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages])</label>
 					<visible>Control.IsVisible(6)</visible>
 				</control>
+				
+				<!--no settings-->
+				<control type="label" id="4">
+					<left>575</left>
+					<top>270</top>
+					<width>1155</width>
+					<align>center</align>
+				</control>
 		
 				<!--content list (simple)-->
 				<control type="list" id="3">
@@ -386,46 +394,18 @@
 					<control type="group">
 						<left>1500</left>
 						<top>1015</top>
-			
-						<!--add circle border-->
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>60</width>
-							<height>60</height>
-							<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-							<visible>Control.HasFocus(5)</visible>
-						</control>
 						
-						<!--add circle animation-->
-						<control type="image">
-							<left>-1</left>
-							<top>-1</top>
-							<width>62</width>
-							<height>62</height>
-							<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-							<visible>Control.HasFocus(5)</visible>
-							<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-						</control>
-					
 						<!--add button-->
-						<control type="button" id="5">
-							<left>0</left>
-							<top>0</top>
-							<width>285</width>
-							<height>60</height>
-							<font>button</font>
-							<align>left</align>
-							<textoffsetx>60</textoffsetx>
-							<textwidth>130</textwidth>
-							<textcolor>text.primary</textcolor>
-							<focusedcolor>text.primary</focusedcolor>
-							<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
-							<texturenofocus colordiffuse="text.primary">addbutton.png</texturenofocus>	
-							<label>186</label>
-							<onup>3</onup>
-							<ondown>3</ondown>
-						</control>
+						<include name="AnimatedCircleButtonGroup">
+							<param name="button-id" value="5" />
+							<param name="button-width" value="200" />
+							<param name="button-texture" value="addbutton" />
+							<param name="button-label" value="186" />
+							<param name="button-onup" value="3" />
+							<param name="button-ondown" value="3" />
+							<param name="button-onleft" value="5" />
+							<param name="button-onright" value="5" />
+						</include>
 						
 					</control>
 					

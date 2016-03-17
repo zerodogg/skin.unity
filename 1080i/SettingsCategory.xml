@@ -3,8 +3,7 @@
 <window>
 
 	<defaultcontrol>3</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<onload condition="IsEmpty(Skin.String(Colour.Theme))">Skin.SetString(Colour.Theme,Red)</onload>
 		
 	<controls>
@@ -65,7 +64,7 @@
 		<control type="group">
 			<top>205</top>
 			<left>-265</left>
-			<visible>!Window.IsActive(PVRChannelManager)</visible>
+			<visible>![Window.IsActive(PVRChannelManager) | Window.IsActive(PVRGroupManager) | Window.IsActive(AudioDSPManager)]</visible>
 			<animation effect="slide" start="0,950" end="0,0" time="400" tween="quadratic" easing="out" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end=",950" time="400" tween="quadratic" easing="out" condition="!Window.Next(Settings.xml)">WindowClose</animation>
 			

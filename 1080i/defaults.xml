@@ -82,6 +82,8 @@
 		<texturedown colordiffuse="text.primary">scroll-down-2.png</texturedown>
 		<textureupfocus colordiffuse="tertiary">scroll-up-2.png</textureupfocus>
 		<texturedownfocus colordiffuse="tertiary">scroll-down-2.png</texturedownfocus>
+		<textureupdisabled colordiffuse="tertiary">scroll-up-2.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="tertiary">scroll-down-2.png</texturedowndisabled>
 		<align>right</align>
 		<width>32</width>
 		<height>36</height>
@@ -109,6 +111,8 @@
 		<texturedown colordiffuse="text.primary">scroll-down-2.png</texturedown>
 		<textureupfocus colordiffuse="tertiary">scroll-up-2.png</textureupfocus>
 		<texturedownfocus colordiffuse="tertiary">scroll-down-2.png</texturedownfocus>
+		<textureupdisabled colordiffuse="tertiary">scroll-up-2.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="tertiary">scroll-down-2.png</texturedowndisabled>
 		<font>button</font>
 		<textcolor>text.primary</textcolor>
 		<focusedcolor>white</focusedcolor>
@@ -128,8 +132,10 @@
 		<radioheight>36</radioheight>
 		<textureradioonfocus colordiffuse="tertiary">radiobutton-focus.png</textureradioonfocus>
 		<textureradioonnofocus colordiffuse="text.primary">radiobutton-focus.png</textureradioonnofocus>
+		<textureradioondisabled colordiffuse="text.primary">radiobutton-focus.png</textureradioondisabled>
 		<textureradioofffocus colordiffuse="tertiary">radiobutton-nofocus.png</textureradioofffocus>
 		<textureradiooffnofocus colordiffuse="text.primary">radiobutton-nofocus.png</textureradiooffnofocus>
+		<textureradiooffdisabled colordiffuse="text.primary">radiobutton-nofocus.png</textureradiooffdisabled>
 		<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<label>215</label>
@@ -150,7 +156,7 @@
 		<label>-</label>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<texturebg>button-focus.png</texturebg>
+		<texturebg>-</texturebg>
 		<textureleft>scroll-left.png</textureleft>
 		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
 		<textureright>scroll-right.png</textureright>
@@ -187,15 +193,15 @@
 	<default type="mover">
 		<left>90</left>
 		<top>288</top>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		<texturefocus>CalibrateTopLeft.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 	</default>
 	
 	<default type="resize">
 		<left>90</left>
 		<top>288</top>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		<texturefocus>CalibratePixelRatio.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 	</default>
 	
 	<default type="edit">

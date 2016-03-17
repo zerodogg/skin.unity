@@ -1,3 +1,8 @@
+[B]16/03/2016 - 0.5.0 [/B]
+[CODED] Initial Jarvis Release
+[CODED] Openelec Management Support
+[CLEANUP] Skin Images and Code Streamlined
+
 [B]05/03/2016 - 0.4.3 [/B]
 [FIXED] Home Menu Addon Items
 [FIXED] Seekbar Behavior During Media Playback

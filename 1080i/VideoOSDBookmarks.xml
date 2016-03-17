@@ -119,10 +119,10 @@
 					<top>105</top>
 					<width>1080</width>
 					<height>780</height>
-					<onleft>2</onleft>
-					<onright>3</onright>
-					<ondown>2</ondown>
-					<onup>2</onup>
+					<onleft>11</onleft>
+					<onright>11</onright>
+					<ondown>9000</ondown>
+					<onup>9000</onup>
 					<scrolltime>200</scrolltime>
 					<viewtype label="536">icon</viewtype>
 					<pagecontrol>-</pagecontrol>
@@ -194,142 +194,48 @@
 					
 				</control>
 				
-				<!--top buttons-->
-				<control type="group" id="9000">
+				<!--controls-->
+				<control type="grouplist" id="9000">
 					<left>555</left>
 					<top>920</top>
-		
-					<!--create bookmark circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(2)</visible>
-					</control>
-					
-					<!--create bookmark circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(2)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<width>360</width>
+					<height>160</height>
+					<itemgap>-10</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>11</onup>
+					<ondown>11</ondown>
 					
 					<!--create bookmark button-->
-					<control type="button" id="2">
-						<left>0</left>
-						<top>0</top>
-						<width>285</width>
-						<height>60</height>
-						<label>294</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>210</textwidth>
-						<selectedcolor>text.primary</selectedcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">addbutton.png</texturenofocus>	
-						<onup>11</onup>
-						<onleft>noop</onleft>
-						<onright>noop</onright>
-						<ondown>3</ondown>
-					</control>
-		
-					<!--clear bookmark circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>50</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(3)</visible>
-					</control>
-					
-					<!--clear bookmark circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>49</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(3)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="2" />
+						<param name="button-width" value="240" />
+						<param name="button-texture" value="addbutton" />
+						<param name="button-label" value="294" />
+						<param name="button-onup" value="11" />
+						<param name="button-ondown" value="3" />
+					</include>
 					
 					<!--clear bookmark button-->
-					<control type="button" id="3">
-						<left>0</left>
-						<top>50</top>
-						<width>285</width>
-						<height>60</height>
-						<label>296</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>210</textwidth>
-						<selectedcolor>text.primary</selectedcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">removebuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">removebutton.png</texturenofocus>	
-						<onup>2</onup>
-						<onleft>noop</onleft>
-						<onright>noop</onright>
-						<ondown>4</ondown>
-					</control>
-		
-					<!--clear bookmark button (episode) circle border-->
-					<control type="image">
-						<left>0</left>
-						<top>100</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(4)</visible>
-						<visible>videoplayer.content(episodes)</visible>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="3" />
+						<param name="button-width" value="240" />
+						<param name="button-texture" value="nobutton" />
+						<param name="button-label" value="296" />
+						<param name="button-onup" value="2" />
+						<param name="button-ondown" value="4" />
+					</include>
 					
-					<!--clear bookmark button (episode) circle animation-->
-					<control type="image">
-						<left>-1</left>
-						<top>99</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(4)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-						<visible>videoplayer.content(episodes)</visible>
-					</control>
-					
-					<!--clear bookmark button (episode)-->
-					<control type="button" id="4">
-						<left>0</left>
-						<top>100</top>
-						<width>285</width>
-						<height>60</height>
-						<label>20406</label>
-						<font>button</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>210</textwidth>
-						<selectedcolor>text.primary</selectedcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">addbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">addbutton.png</texturenofocus>	
-						<onup>3</onup>
-						<onleft>noop</onleft>
-						<onright>noop</onright>
-						<ondown>11</ondown>
-						<visible>videoplayer.content(episodes)</visible>
-					</control>
+					<!--set episode bookmark button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="4" />
+						<param name="button-width" value="240" />
+						<param name="button-visible" value="videoplayer.content(episodes)" />
+						<param name="button-texture" value="addbutton" />
+						<param name="button-label" value="20406" />
+						<param name="button-onup" value="3" />
+						<param name="button-ondown" value="11" />
+					</include>
 					
 				</control>
 				
