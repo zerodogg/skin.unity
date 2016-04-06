@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <addon
-	id="skin.unity"
+	id="skin.unityish"
 	version="0.5.0"
-	name="Unity"
+	name="Unity-ish"
 	provider-name="Eddage, Bumpaneer">
 	<requires>
 		<import addon="xbmc.gui" version="5.10.0"/>
@@ -17,10 +17,10 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">A new skin for Kodi 13 Gotham by Eddage</summary>
-		<summary lang="en_AU">A new skin for Kodi 13 Gotham by Eddage</summary>
-		<summary lang="en_NZ">A new skin for Kodi 13 Gotham by Eddage</summary>
-		<summary lang="en_US">A new skin for Kodi 13 Gotham by Eddage</summary>
+		<summary lang="en">A modification of the Unity skin that removes ratings from videos</summary>
+		<summary lang="en_AU">A modification of the Unity skin that removes ratings from videos</summary>
+		<summary lang="en_NZ">A modification of the Unity skin that removes ratings from videos</summary>
+		<summary lang="en_US">A modification of the Unity skin that removes ratings from videos</summary>
 		<description lang="en">Unity is an adaptation of Confluence based on a material design.</description>
 		<description lang="en_AU">Unity is an adaptation of Confluence based on a material design.</description>
 		<description lang="en_NZ">Unity is an adaptation of Confluence based on a material design.</description>
@@ -31,7 +31,7 @@
 		<disclaimer lang="en_US">More info on the skin can be found at the Kodi Forums.</disclaimer>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=244</forum>
-		<source>https://github.com/bumpaneer/skin.unity/tree/Jarvis</source>
+		<source>https://github.com/zerodogg/skin.unity/</source>
 		<platform>all</platform>
 	</extension>
 </addon>
