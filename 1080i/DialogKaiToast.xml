@@ -41,23 +41,13 @@
 			
 			<!--icon-->
 			<control type="image" id="400">
-				<left>134r</left>
-				<top>130r</top>
-				<width>68</width>
-				<height>68</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="text.primary">DefaultFile.png</texture>
-			</control>
-			
-			<!--icon-->
-			<control type="image" id="400">
 				<description>avatar</description>
 				<left>132r</left>
 				<top>128r</top>
 				<width>63</width>
 				<height>63</height>
 				<aspectratio>keep</aspectratio>
-				<texture></texture>
+				<colordiffuse>text.primary</colordiffuse>
 			</control>
 			
 			<!--line 1-->
@@ -86,39 +76,6 @@
 				<aligny>center</aligny>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
-			</control>
-			
-			<!--info icon-->
-			<control type="image" id="403">
-				<left>132r</left>
-				<top>128r</top>
-				<width>63</width>
-				<height>63</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture colordiffuse="text.primary">DefaultIconInfo.png</texture>
-			</control>
-			
-			<!--warning icon-->
-			<control type="image" id="404">
-				<left>132r</left>
-				<top>128r</top>
-				<width>63</width>
-				<height>63</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture colordiffuse="text.primary">DefaultIconWarning.png</texture>
-			</control>
-			
-			<!--error icon-->
-			<control type="image" id="405">
-				<left>132r</left>
-				<top>128r</top>
-				<width>63</width>
-				<height>63</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture colordiffuse="text.primary">DefaultIconError.png</texture>
 			</control>
 			
 		</control>

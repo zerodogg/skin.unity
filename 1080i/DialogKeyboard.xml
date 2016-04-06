@@ -71,6 +71,100 @@
 				<height>30</height>
 				<texture flipy="true">homeshadow.png</texture>
 			</control>
+			
+			<!--chinese display-->
+			<control type="group">
+				<visible>Control.IsVisible(313)</visible>
+			
+				<!--background-->
+				<control type="image">
+					<left>0</left>
+					<top>400</top>
+					<width>1920</width>
+					<height>140</height>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+
+				<!--title bg-->
+				<control type="image">
+					<left>0</left>
+					<top>400</top>
+					<width>1920</width>
+					<height>70</height>
+					<texture colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
+				</control>
+				
+				<!--title shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>470</top>
+					<width>1920</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+				</control>
+				
+				<!--text entry shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>540</top>
+					<width>1920</width>
+					<height>10</height>
+					<texture>homeshadow.png</texture>
+					<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+				</control>
+				
+				<!--top shadow-->
+				<control type="image">
+					<left>0</left>
+					<top>370</top>
+					<width>1920</width>
+					<height>30</height>
+					<texture flipy="true">homeshadow.png</texture>
+				</control>
+				
+				<!--close button-->
+				<control type="button">
+					<description>Close Window button</description>
+					<left>5</left>
+					<top>400</top>
+					<width>50</width>
+					<height>25</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<visible>system.getbool(input.enablemouse)</visible>
+				</control>
+				
+				<control type="label" id="313">
+					<description>HZCODE label</description>
+					<left>0</left>
+					<top>400</top>
+					<width>1920</width>
+					<height>70</height>
+					<font>button.bold</font>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				
+				<control type="label" id="314">
+					<description>HZLIST label</description>
+					<left>0</left>
+					<top>470</top>
+					<width>1920</width>
+					<height>70</height>
+					<font>button.bold</font>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				
+			</control>
 
 			<!--close button-->
 			<control type="button">
@@ -89,6 +183,7 @@
 				<onup>3</onup>
 				<ondown>3</ondown>
 				<visible>system.getbool(input.enablemouse)</visible>
+				<visible>!Control.IsVisible(313)</visible>
 			</control>
 
 			<!--header label-->

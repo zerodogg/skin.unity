@@ -6,7 +6,7 @@
 		<icon>DefaultMusicArtists.png</icon>
 		<thumb />
 		<visible>Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicLibrary,Artists,return)</action>
+		<action>ActivateWindow(Music,Artists,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>132</label>
@@ -14,7 +14,7 @@
 		<icon>DefaultMusicAlbums.png</icon>
 		<thumb />
 		<visible>Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicLibrary,Albums,return)</action>
+		<action>ActivateWindow(Music,Albums,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>134</label>
@@ -22,14 +22,14 @@
 		<icon>DefaultMusicSongs.png</icon>
 		<thumb />
 		<visible>Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicLibrary,Songs,return)</action>
+		<action>ActivateWindow(Music,Songs,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>744</label>
 		<label2>32019</label2>
 		<icon>DefaultFolder.png</icon>
 		<thumb />
-		<action>ActivateWindow(MusicFiles)</action>
+		<action>ActivateWindow(Music,Files,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>14022</label>
@@ -37,22 +37,13 @@
 		<icon>DefaultFolder.png</icon>
 		<thumb />
 		<visible>Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicLibrary,MusicLibrary,return)</action>
+		<action>ActivateWindow(Music,Root)</action>
 	</shortcut>
 	<shortcut>
 		<label>24001</label>
 		<label2>32019</label2>
 		<icon>DefaultAddonMusic.png</icon>
 		<thumb />
-		<visible>Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicLibrary,Addons,return)</action>
-	</shortcut>
-	<shortcut>
-		<label>24001</label>
-		<label2>32019</label2>
-		<icon>DefaultAddonMusic.png</icon>
-		<thumb />
-		<visible>!Library.HasContent(Music)</visible>
-		<action>ActivateWindow(MusicFiles,Addons,return)</action>
+		<action>ActivateWindow(Music,Addons,return)</action>
 	</shortcut>
 </shortcuts>

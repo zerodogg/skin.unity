@@ -4,8 +4,7 @@
 
 	<defaultcontrol>20</defaultcontrol>
 	
-	<allowoverlay>no</allowoverlay>
-	
+		
 	<controls>
 	
 		<include>CommonBackground</include>

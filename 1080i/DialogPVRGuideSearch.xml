@@ -153,7 +153,7 @@
 					<texturenofocus>-</texturenofocus>
 					<onleft>9</onleft>
 					<onright>9</onright>
-					<onup>26</onup>
+					<onup>9000</onup>
 					<ondown>10</ondown>
 				</control>
 				
@@ -274,7 +274,7 @@
 						<onleft>27</onleft>
 						<onright>27</onright>
 						<onup>22</onup>
-						<ondown>26</ondown>
+						<ondown>9000</ondown>
 					</control>
 					
 				</control>
@@ -384,140 +384,59 @@
 						<onleft>24</onleft>
 						<onright>24</onright>
 						<onup>23</onup>
-						<ondown>26</ondown>
+						<ondown>9000</ondown>
 					</control>
 					
 				</control>
 				
-				<control type="group" id="9000">
+				<!--bottom buttons-->
+				<control type="grouplist" id="9000">
+					<left>650</left>
 					<top>1015</top>
-					<left>765</left>
-					
-					<!--reset circle border-->
-					<control type="image">
-						<left>1</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(28)</visible>
-					</control>
-					
-					<!--reset circle animation-->
-					<control type="image">
-						<left>0</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(28)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<width>1000</width>
+					<height>60</height>
+					<align>justify</align>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>24</onup>
+					<ondown>9</ondown>
 					
 					<!--reset button-->
-					<control type="button" id="28">
-						<left>1</left>
-						<top>0</top>
-						<width>195</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>220</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
-						<label>10035</label>
-						<onleft>26</onleft>
-						<onright>25</onright>
-						<onup>24</onup>
-						<ondown>9</ondown>
-					</control>
-					
-					<!--cancel circle border-->
-					<control type="image">
-						<left>315</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(25)</visible>
-					</control>
-					
-					<!--cancel circle animation-->
-					<control type="image">
-						<left>314</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(25)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="28" />
+						<param name="button-width" value="180" />
+						<param name="button-texture" value="refreshbutton" />
+						<param name="button-label" value="10035" />
+						<param name="button-onup" value="24" />
+						<param name="button-ondown" value="9" />
+						<param name="button-onleft" value="26" />
+						<param name="button-onright" value="25" />
+					</include>
 					
 					<!--cancel button-->
-					<control type="button" id="25">
-						<left>315</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">nobuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">nobutton.png</texturenofocus>	
-						<label>222</label>
-						<onleft>28</onleft>
-						<onright>26</onright>
-						<onup>27</onup>
-						<ondown>9</ondown>
-					</control>
-					
-					<!--search circle border-->
-					<control type="image">
-						<left>630</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(26)</visible>
-					</control>
-					
-					<!--search circle animation-->
-					<control type="image">
-						<left>629</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(26)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="25" />
+						<param name="button-width" value="160" />
+						<param name="button-texture" value="nobutton" />
+						<param name="button-label" value="222" />
+						<param name="button-onup" value="27" />
+						<param name="button-ondown" value="9" />
+						<param name="button-onleft" value="28" />
+						<param name="button-onright" value="26" />
+					</include>
 					
 					<!--search button-->
-					<control type="button" id="26">
-						<left>630</left>
-						<top>0</top>
-						<width>285</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">browsebuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">browsebutton.png</texturenofocus>	
-						<label>137</label>
-						<onleft>25</onleft>
-						<onright>28</onright>
-						<onup>27</onup>
-						<ondown>9</ondown>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="26" />
+						<param name="button-width" value="180" />
+						<param name="button-texture" value="browsebutton" />
+						<param name="button-label" value="137" />
+						<param name="button-onup" value="27" />
+						<param name="button-ondown" value="9" />
+						<param name="button-onleft" value="25" />
+						<param name="button-onright" value="28" />
+					</include>
 					
 				</control>
 				

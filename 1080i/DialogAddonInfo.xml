@@ -356,7 +356,7 @@
 							<left>15</left>
 							<top>677</top>
 							<width>800</width>
-							<height>68</height>
+							<height>100</height>
 							<font>label</font>
 							<align>left</align>
 							<textcolor>text.primary</textcolor>
@@ -449,6 +449,24 @@
 						<disabledcolor>$VAR[Colour.400]</disabledcolor>
 					</control>
 					
+					<control type="radiobutton" id="13">
+						<description>Auto-update button</description>
+						<width>330</width>
+						<height>64</height>
+						<label>21340</label>
+						<align>center</align>
+						<textureradioonfocus colordiffuse="$VAR[Colour.900]">radiobutton-focus.png</textureradioonfocus>
+						<textureradioonnofocus colordiffuse="white">radiobutton-focus.png</textureradioonnofocus>
+						<textureradioondisabled colordiffuse="$VAR[Colour.400]">radiobutton-focus.png</textureradioondisabled>
+						<textureradioofffocus colordiffuse="$VAR[Colour.900]">radiobutton-nofocus.png</textureradioofffocus>
+						<textureradiooffnofocus colordiffuse="white">radiobutton-nofocus.png</textureradiooffnofocus>
+						<textureradiooffdisabled colordiffuse="$VAR[Colour.400]">radiobutton-nofocus.png</textureradiooffdisabled>
+						<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[Colour.900]</focusedcolor>
+						<disabledcolor>$VAR[Colour.400]</disabledcolor>
+					</control>
+					
 					<control type="button" id="12">
 						<description>Launch Addon button</description>
 						<width>330</width>
@@ -480,19 +498,6 @@
 						<width>330</width>
 						<height>64</height>
 						<label>24021</label>
-						<align>center</align>
-						<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
-						<textcolor>white</textcolor>
-						<focusedcolor>$VAR[Colour.900]</focusedcolor>
-						<selectedcolor>$VAR[Colour.900]</selectedcolor>
-						<disabledcolor>$VAR[Colour.400]</disabledcolor>
-					</control>
-					
-					<control type="button" id="11">
-						<description>Rollback button</description>
-						<width>330</width>
-						<height>64</height>
-						<label>24048</label>
 						<align>center</align>
 						<texturefocus colordiffuse="white">backgrounds/white.png</texturefocus>
 						<textcolor>white</textcolor>

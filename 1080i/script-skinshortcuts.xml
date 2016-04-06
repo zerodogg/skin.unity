@@ -5,7 +5,7 @@
 	<defaultcontrol always="true">300</defaultcontrol>
 
 	<controls>
-	
+		
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
@@ -313,6 +313,14 @@
 							<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 						</control>
 						
+						<!--change widget-->
+						<control type="button" id="312">
+							<width>760</width>
+							<label>$ADDON[script.skinshortcuts 32044]</label>
+							<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+							<visible>StringCompare(Window.Property(groupname), mainmenu)</visible>
+						</control>
+						
 						<!--edit sub-menu-->
 						<control type="button" id="405">
 							<width>760</width>
@@ -331,121 +339,43 @@
 				</control>
 				
 				<!--bottom buttons-->
-				<control type="group" id="9001">
+				<control type="grouplist" id="9001">
 					<left>0</left>
 					<top>1015</top>
-
-					<!--ok circle border-->
-					<control type="image">
-						<left>1120</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-					</control>
-					
-					<!--ok circle animation-->
-					<control type="image">
-						<left>1119</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(10)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
-					
-					<!--ok button-->
-					<control type="button" id="10">
-						<left>1120</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
-						<label>186</label>
-						<onup>301</onup>
-						<onleft>308</onleft>
-						<onright>308</onright>
-						<ondown>401</ondown>
-						<onback>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000)</onback>
-						<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000)</onclick>
-						<onclick>Close</onclick>
-						<visible>StringCompare(Window.Property("groupname"),mainmenu)</visible>
-					</control>
-					
-					<!--close button-->
-					<control type="button" id="10">
-						<left>1120</left>
-						<top>0</top>
-						<width>130</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>130</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">yesbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">yesbutton.png</texturenofocus>	
-						<label>186</label>
-						<onup>301</onup>
-						<onleft>308</onleft>
-						<onright>308</onright>
-						<ondown>401</ondown>
-						<onclick>Close</onclick>
-						<visible>!StringCompare(Window.Property("groupname"),mainmenu)</visible>
-					</control>
-
-					<!--reset circle border-->
-					<control type="image">
-						<left>100</left>
-						<top>0</top>
-						<width>60</width>
-						<height>60</height>
-						<texture colordiffuse="text.primary">buttoncircleborder.png</texture>
-						<visible>Control.HasFocus(308)</visible>
-					</control>
-					
-					<!--reset circle animation-->
-					<control type="image">
-						<left>99</left>
-						<top>-1</top>
-						<width>62</width>
-						<height>62</height>
-						<texture colordiffuse="$VAR[Colour.500]">buttoncircle.png</texture>
-						<visible>Control.HasFocus(308)</visible>
-						<animation effect="zoom" start="0" end="100" time="250" center="auto">Visible</animation>
-					</control>
+					<width>1390</width>
+					<height>60</height>
+					<align>justify</align>
+					<orientation>horizontal</orientation>
+					<onleft>9001</onleft>
+					<onright>9001</onright>
+					<onup>301</onup>
+					<ondown>401</ondown>
 					
 					<!--reset button-->
-					<control type="button" id="308">
-						<left>100</left>
-						<top>0</top>
-						<width>195</width>
-						<height>60</height>
-						<font>button</font>
-						<align>left</align>
-						<textoffsetx>60</textoffsetx>
-						<textwidth>170</textwidth>
-						<textcolor>text.primary</textcolor>
-						<focusedcolor>text.primary</focusedcolor>
-						<texturefocus colordiffuse="white">refreshbuttonf.png</texturefocus>
-						<texturenofocus colordiffuse="text.primary">refreshbutton.png</texturenofocus>	
-						<label>$ADDON[script.skinshortcuts 32028]</label>
-						<onup>211</onup>
-						<ondown>211</ondown>
-						<onleft>10</onleft>
-						<onright>10</onright>
-					</control>
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="308" />
+						<param name="button-width" value="275" />
+						<param name="button-texture" value="refreshbutton" />
+						<param name="button-label" value="$ADDON[script.skinshortcuts 32028]" />
+						<param name="button-onup" value="211" />
+						<param name="button-ondown" value="211" />
+						<param name="button-onleft" value="10" />
+						<param name="button-onright" value="10" />
+					</include>
 					
+					<!--ok button-->
+					<include name="AnimatedCircleButtonGroup">
+						<param name="button-id" value="10" />
+						<param name="button-width" value="130" />
+						<param name="button-texture" value="yesbutton" />
+						<param name="button-label" value="186" />
+						<param name="button-onclick" value="Close" />
+						<param name="button-onup" value="301" />
+						<param name="button-ondown" value="401" />
+						<param name="button-onleft" value="308" />
+						<param name="button-onright" value="308" />
+					</include>
+
 				</control>
 				
 			</control>
